@@ -1,0 +1,15 @@
+{
+    "files.defaultLanguage": "c",
+    "files.encoding": "utf8",
+    "C_Cpp.default.cStandard": "c11",
+    "C_Cpp.default.cppStandard": "c++17",
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.runInTerminal": true,
+    "code-runner.executorMap": {
+        "c": "mkdir -p $workspaceRoot/bin && clang -g $fullFileName -o $workspaceRoot/bin/$fileNameWithoutExt -Wall -std=c11 && $workspaceRoot/bin/$fileNameWithoutExt"
+    }
+}

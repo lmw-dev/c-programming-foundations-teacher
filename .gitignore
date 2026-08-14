@@ -1,19 +1,18 @@
 # ============================================
 # C语言教学代码仓库 .gitignore
-# 针对 Visual Studio C/C++ 项目
+# 覆盖 Visual Studio / VS Code / Clang / GCC
 # ============================================
 
-# --- Visual Studio 构建产物 ---
-.vs/
-Debug/
-Release/
-x64/
-x86/
-[Bb]uild/
+# --- 二进制可执行文件与调试符号 ---
 [Bb]in/
-[Dd]ebug/
-[Rr]elease/
+[Bb]uild/
 *.exe
+*.out
+*.app
+*.dSYM/
+*.dSYM
+
+# --- 编译对象与静态/动态库 ---
 *.o
 *.obj
 *.pdb
@@ -24,43 +23,45 @@ x86/
 *.dll
 *.so
 *.dylib
-*.out
-*.app
 
-# --- 临时文件与系统文件 ---
+# --- Visual Studio 构建产物与缓存 ---
+.vs/
+Debug/
+Release/
+x64/
+x86/
+[Dd]ebug/
+[Rr]elease/
+*.pch
+*.ipch
+*.tlog
+*.lastbuildstate
+*.res
+*.manifest
+*.VC.db
+*.VC.opendb
+*.suo
+*.user
+
+# --- 操作系统临时文件 ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
 *.tmp
 *.swp
 *.swo
 *~
-.DS_Store
-Thumbs.db
-desktop.ini
 *.log
 
-# --- 编译中间产物 ---
-*.pch
-*.ipch
-*.tlog
-*.log
-*.lastbuildstate
-*.res
-*.manifest
-
-# --- 学生个人文件（如误放入） ---
-# 如果学生目录中出现以下文件类型，可能包含个人信息
-# *.user          # 取消注释可忽略 VS 用户配置
-# *.suo           # 取消注释可忽略 VS 解决方案用户选项
-
 # ============================================
-# 注意：以下文件不忽略，需保留作为课堂示例工程
-# *.sln           — 解决方案文件
-# *.vcxproj       — 项目文件
-# *.vcxproj.filters — 筛选器文件
-# *.c             — C 源文件（核心教学资产）
+# 允许跟踪的教学核心代码与工程资产：
+# *.c             — C 语言源文件
+# *.h             — C 语言头文件
+# *.md            — 教学文档与说明
+# *.sh            — 辅助脚本
 # ============================================
-
-# --- 待确认 IDE 专属规则 ---
-# 如果机房使用其他 IDE，可能需要追加以下忽略规则：
-# *.vcxproj.user          # VS 用户个人配置（待确认是否需要忽略）
-# *.VC.db                 # VS IntelliSense 数据库（待确认）
-# *.VC.opendb             # VS IntelliSense 打开数据库（待确认）
