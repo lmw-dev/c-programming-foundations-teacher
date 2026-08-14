@@ -1,0 +1,66 @@
+# ============================================
+# C语言教学代码仓库 .gitignore
+# 针对 Visual Studio C/C++ 项目
+# ============================================
+
+# --- Visual Studio 构建产物 ---
+.vs/
+Debug/
+Release/
+x64/
+x86/
+[Bb]uild/
+[Bb]in/
+[Dd]ebug/
+[Rr]elease/
+*.exe
+*.o
+*.obj
+*.pdb
+*.ilk
+*.idb
+*.exp
+*.lib
+*.dll
+*.so
+*.dylib
+*.out
+*.app
+
+# --- 临时文件与系统文件 ---
+*.tmp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+
+# --- 编译中间产物 ---
+*.pch
+*.ipch
+*.tlog
+*.log
+*.lastbuildstate
+*.res
+*.manifest
+
+# --- 学生个人文件（如误放入） ---
+# 如果学生目录中出现以下文件类型，可能包含个人信息
+# *.user          # 取消注释可忽略 VS 用户配置
+# *.suo           # 取消注释可忽略 VS 解决方案用户选项
+
+# ============================================
+# 注意：以下文件不忽略，需保留作为课堂示例工程
+# *.sln           — 解决方案文件
+# *.vcxproj       — 项目文件
+# *.vcxproj.filters — 筛选器文件
+# *.c             — C 源文件（核心教学资产）
+# ============================================
+
+# --- 待确认 IDE 专属规则 ---
+# 如果机房使用其他 IDE，可能需要追加以下忽略规则：
+# *.vcxproj.user          # VS 用户个人配置（待确认是否需要忽略）
+# *.VC.db                 # VS IntelliSense 数据库（待确认）
+# *.VC.opendb             # VS IntelliSense 打开数据库（待确认）
