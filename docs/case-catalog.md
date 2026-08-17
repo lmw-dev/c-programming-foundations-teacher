@@ -64,36 +64,36 @@
 ### 案例 2-1：合法与非法标识符辨析
 | 字段 | 内容 |
 |------|------|
-| 讲次与案例名称 | L02-01 标识符合法性判断 |
-| 教学目标 | 掌握标识符命名规则 |
-| 输入 | 程序内嵌标识符列表（_temp、2a、double、a.b、My_val等） |
-| 核心处理 | 对每个标识符判断是否合法 |
-| 输出 | 合法/非法标识符及判断理由 |
-| 关键知识点 | 标识符命名规则：字母/数字/下划线，首字符非数字，区分大小写，非关键字 |
-| 测试正常值 | 典型合法标识符（sum、_count、MAX_SIZE） |
-| 测试边界值 | 单字符标识符（a、_）、长标识符 |
-| 测试特殊值/错误输入 | 数字开头(2a)、含点号(a.b)、关键字(double) |
-| 常见错误 | 混淆关键字与合法标识符 |
-| 对应源文件 | 待补：`lessons/L02_data-types/exercises/identifier_check.c` |
-| 对应PPT页码 | 待确认 |
-| 当前状态 | 待补代码 |
+| 讲次与案例名称 | L02-01 标识符合法性判断与命名天条 |
+| 教学目标 | 掌握标识符命名规则与四大天条（字母数字下划线、首字符非数字、区分大小写、非关键字） |
+| 输入 | 程序内嵌标识符列表（`score_1`, `2score`, `_temp`, `char`, `my$price`, `018`, `0xg`） |
+| 核心处理 | 对每个标识符判断是否合法并分析违反规则 |
+| 输出 | 合法/非法标识符及深层原因剖析 |
+| 关键知识点 | 标识符命名规则、保留关键字、八/十六进制常量陷阱、蛇形命名法 |
+| 测试正常值 | 典型合法标识符（`score_1`, `_temp`, `student_age`） |
+| 测试边界值 | 单下划线 `_`、长标识符 |
+| 测试特殊值/错误输入 | 数字开头(`2score`)、含非法符号(`my$price`)、关键字(`char`)、八进制非法数字(`018`) |
+| 常见错误 | 混淆关键字与合法标识符、大小写拼写混淆 |
+| 对应源文件 | [`lessons/L02_data-types/exercises/exercise_identifier_check.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L02_data-types/exercises/exercise_identifier_check.c) |
+| 对应PPT页码 | 第5~7页 |
+| 当前状态 | **已定稿** |
 
-### 案例 2-2：变量声明与sizeof观察
+### 案例 2-2：变量声明、初始化与 sizeof 内存量地尺
 | 字段 | 内容 |
 |------|------|
-| 讲次与案例名称 | L02-02 sizeof类型观察 |
-| 教学目标 | 初步认识基本数据类型、sizeof运算符 |
-| 输入 | 无（程序内声明变量） |
-| 核心处理 | 声明 int/float/double/char 变量并 sizeof 输出 |
-| 输出 | 各类型占用字节数 |
-| 关键知识点 | sizeof 运算符、基本数据类型、变量初始化 |
-| 测试正常值 | int=4, float=4, double=8, char=1（平台相关） |
-| 测试边界值 | 无符号类型、short、long |
-| 测试特殊值/错误输入 | 变量未初始化的风险说明 |
-| 常见错误 | sizeof 误用为函数调用、忘记分号 |
-| 对应源文件 | 待补：`lessons/L02_data-types/lecture-demo/sizeof_demo.c` |
-| 对应PPT页码 | 待确认 |
-| 当前状态 | 待补代码 |
+| 讲次与案例名称 | L02-02 内存收纳盒物理映像与 sizeof 测量 |
+| 教学目标 | 理解变量物理内存模型（先声明后使用、补码存储、幽灵垃圾值）及掌握 sizeof 运算符 |
+| 输入 | 变量声明与基本数据类型关键字 |
+| 核心处理 | 声明 `int/float/double/char` 变量，使用 `sizeof` 运算符测量物理字节长度 |
+| 输出 | 各变量实例及核心数据类型的字节数表格输出 |
+| 关键知识点 | `sizeof` 运算符、基本数据类型（`char/short/int/long/float/double`）、未初始化幽灵垃圾值 |
+| 测试正常值 | `char=1`, `short=2`, `int=4`, `float=4`, `double=8` |
+| 测试边界值 | 浮点数带 `f` 后缀避免双精度截断警告、大写字母加 32 偏移转换 |
+| 测试特殊值/错误输入 | 局部变量未初始化直接使用产生随机垃圾值 |
+| 常见错误 | `sizeof` 误当成函数、连等声明错误、字符单双引号混淆 |
+| 对应源文件 | [`lessons/L02_data-types/lecture-demo/2.1_ghost_value.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L02_data-types/lecture-demo/2.1_ghost_value.c)<br>[`lessons/L02_data-types/solutions/2.3_sizeof_ruler.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L02_data-types/solutions/2.3_sizeof_ruler.c) |
+| 对应PPT页码 | 第9~18页 |
+| 当前状态 | **已定稿** |
 
 ---
 
