@@ -2,6 +2,7 @@
 # ==============================================================================
 # 脚本名称: verify_all.sh
 # 作用: 批量扫描并编译检查全仓库所有 C 语言源文件，验证语法与可执行性
+# 特性: 自动注入模拟输入，防止包含 scanf 的交互式程序阻塞挂起
 # ==============================================================================
 
 set -u
@@ -48,10 +49,10 @@ for file in ${C_FILES}; do
 
     printf "[%2d] 正在编译检查: %-55s " "${TOTAL_COUNT}" "${REL_PATH}"
 
-    # 编译命令
+    # 1. 编译命令
     if ${CC} -Wall -Wextra -std=c11 "${file}" -o "${TARGET_BIN}" >/dev/null 2>&1; then
-        # 运行测试
-        if "${TARGET_BIN}" >/dev/null 2>&1; then
+        # 2. 运行测试（通过管道注入模拟输入 10\n10\n，防止 scanf 阻塞挂起等待键盘输入）
+        if printf "10\n10\n10\n" | "${TARGET_BIN}" >/dev/null 2>&1; then
             echo "✅ [通过]"
             PASS_COUNT=$((PASS_COUNT + 1))
         else
