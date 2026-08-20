@@ -15,7 +15,7 @@
 | 07 | L07_one-dimensional-arrays | 一维数组 | 数组定义、遍历、求和/最值/排序 | 斐波那契数组递推、成绩大满贯打擂台与起泡排序 | 斐波那契生成器、打擂台最值、起泡排序升序 | **已定稿** |
 | 08 | L08_two-dimensional-arrays | 二维数组 + 阶段回收1 | 二维数组、矩阵运算、数组阶段复习 | 矩阵转置与连续内存、矩阵打擂台、回文判定 | 矩阵转置、二维最值坐标定位、回文字符串 | **已定稿** |
 | 09 | L09_strings | 字符数组与字符串 | '\0'结束符、scanf限宽/fgets、strlen/strcpy/strcmp | strlen vs sizeof对决、凯撒密码环形加密、FSM单词统计 | 字符串安全复制、凯撒加密器、状态机单词统计 | **已定稿** |
-| 10 | L10_functions | 函数基础 | 函数定义/声明/调用、值传递、返回值 | 两数最大值函数、素数判断函数、嵌套调用 | 编写回文数判断函数 | 待补代码 |
+| 10 | L10_functions | 函数基础 | 函数定义/声明/调用、值传递、返回值 | 圆形体体积3层架构、作用域遮蔽与static、回文数函数 | 圆形体计算器、回文数判定函数、static计数器 | **已定稿** |
 | 11 | L11_function-parameters-and-scope | 函数进阶 | 数组作参数(地址转换)、作用域、static、预处理 | 冒泡排序函数、static计数器、宏定义常量 | 接收数组返回平均值 | 待补代码 |
 | 12 | L12_pointers-basics | 函数综合 + 指针入门 + 阶段回收2 | 指针概念、&和*、指针参数解引用 | swap值传递vs指针对比、函数流水线 | 指针重写swap验证 | 待补代码 |
 | 13 | L13_pointers-and-arrays | 指针与数组 | 数组名转换首元素地址、指针算术、指针遍历 | 指针遍历数组求和(对比下标)、指针统计最值 | 指针遍历统计总和/平均/最大值 | 待补代码 |
@@ -27,8 +27,8 @@
 
 | 状态 | 数量 | 说明 |
 |------|------|------|
-| 已定稿 | 9 | L01_intro, L02_data-types, L03_sequential-programming, L04_selection, L05_selection-and-loops, L06_loops, L07_one-dimensional-arrays, L08_two-dimensional-arrays, L09_strings 代码与教案资产闭环定稿 |
-| 待补代码 | 7 | L10 ~ L16 按教学节奏有序建设 |
+| 已定稿 | 10 | L01_intro, L02_data-types, L03_sequential-programming, L04_selection, L05_selection-and-loops, L06_loops, L07_one-dimensional-arrays, L08_two-dimensional-arrays, L09_strings, L10_functions 代码与教案资产闭环定稿 |
+| 待补代码 | 6 | L11 ~ L16 按教学节奏有序建设 |
 | 待验证 | 0 | — |
 
 ## 阶段回收节点
