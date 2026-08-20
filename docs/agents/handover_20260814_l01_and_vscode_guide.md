@@ -13,38 +13,39 @@
 - 第08讲：`/Users/liumingwei/vaults/WorkbenchVault/1_Projects/P-202608-Adjunct-Teaching_C-Language-Foundation/02-课件逐字稿/lecture-08-ppt.md`
 - 第09讲：`/Users/liumingwei/vaults/WorkbenchVault/1_Projects/P-202608-Adjunct-Teaching_C-Language-Foundation/02-课件逐字稿/lecture-09-ppt.md`
 - 第10讲：`/Users/liumingwei/vaults/WorkbenchVault/1_Projects/P-202608-Adjunct-Teaching_C-Language-Foundation/02-课件逐字稿/lecture-10-ppt.md`
-- 第11讲：`/Users/liumingwei/vaults/WorkbenchVault/1_Projects/P-202608-Adjunct-Teaching_C-Language-Foundation/02-课件逐字稿/lecture-11-ppt.md`  
-**完成讲次**：`L01_intro`（已定稿）, `L02_data-types`（已定稿）, `L03_sequential-programming`（已定稿）, `L04_selection`（已定稿）, `L05_selection-and-loops`（已定稿）, `L06_loops`（已定稿）, `L07_one-dimensional-arrays`（已定稿）, `L08_two-dimensional-arrays`（已定稿 ⭐阶段回收节点1）, `L09_strings`（已定稿）, `L10_functions`（已定稿）, `L11_function-parameters-and-scope`（已定稿）
+- 第11讲：`/Users/liumingwei/vaults/WorkbenchVault/1_Projects/P-202608-Adjunct-Teaching_C-Language-Foundation/02-课件逐字稿/lecture-11-ppt.md`
+- 第12讲：`/Users/liumingwei/vaults/WorkbenchVault/1_Projects/P-202608-Adjunct-Teaching_C-Language-Foundation/02-课件逐字稿/lecture-12-ppt.md`  
+**完成讲次**：`L01_intro`（已定稿）, `L02_data-types`（已定稿）, `L03_sequential-programming`（已定稿）, `L04_selection`（已定稿）, `L05_selection-and-loops`（已定稿）, `L06_loops`（已定稿）, `L07_one-dimensional-arrays`（已定稿）, `L08_two-dimensional-arrays`（已定稿 ⭐阶段回收节点1）, `L09_strings`（已定稿）, `L10_functions`（已定稿）, `L11_function-parameters-and-scope`（已定稿）, `L12_pointers-basics`（已定稿 ⭐阶段回收节点2）
 
 ---
 
-## 一、 L11 数组参数、作用域、static与预处理模块建设成果
+## 一、 L12 多函数协作与指针基础模块建设成果（⭐阶段回收节点2）
 
-基于谭版、何版、北石化版与湖大版深度融合的 PPT 逐页文稿（共 20 页），闭环构建了第 11 讲全部代码与教案：
+基于谭版、何版、北石化版与湖大版深度融合的 PPT 逐页文稿（共 20 页），闭环构建了第 12 讲全部代码与教案：
 
-1. **课堂演示代码 (`lessons/L11_function-parameters-and-scope/lecture-demo/`)**：
-   - `11.1_array_reverse.c`：数组传参底层机制解密，演示数组名退化为首元素指针、`sizeof(arr)` 测量退化（40B vs 8B）、共享物理内存原地换血与双指针向心对碰逆序算法。
-   - `11.2_macro_trap.c`：编译预处理宏替换陷阱，现场对比 `SQUARE_BAD(a+b)` 展开为 $a+b \times a+b=11$ 与 `SQUARE_GOOD` 展开为 25、`10/MIX_BAD(2,5)=25` 等结合性陷阱，总结双重圆括号黄金防错法则。
-2. **学生起步模板 (`lessons/L11_function-parameters-and-scope/starter/`)**：
-   - `task1_array_reverse_starter.c`：数组传参与原地逆序模板。
-   - `task2_macro_trap_starter.c`：带参宏防坑模板。
-   - `task3_static_tracker_starter.c`：基于 static 的日志追踪器模板。
-3. **当堂练习与评测 (`lessons/L11_function-parameters-and-scope/exercises/`)**：
-   - `exercises_11.md`：数组传参正误找茬、`static` 静态变量打表 Trace Table、北石化经典带参宏分步纯文本无脑替换推演、同伴黑盒测试单、离堂小测。
-   - `exercise_fix_param_macro_errors.c`：专升本经典改错（二维形参省略列数报错、宏末尾加分号、带参宏未加括号导致乘除优先级夺权、auto 变量每次归零无法累计）。
-4. **教师参考答案 (`lessons/L11_function-parameters-and-scope/solutions/`)**：
-   - `11.3_static_tracker.c`：基于 `static` 静态局部变量的登录安全审计与防暴力破解警报系统。
-   - `exercises_11_answers.md`：全套题目标准答案与专升本考点深度解析。
+1. **课堂演示代码 (`lessons/L12_pointers-basics/lecture-demo/`)**：
+   - `12.1_pointer_basics.c`：特工008寻宝游戏，解剖变量/物理地址/指针变量三要素，演示 `&` 取地址与 `*` 解引用、间接改值 `*p = 555`、野指针闪退机理与 `NULL` 安全防御拦截。
+   - `12.2_swap_comparison.c`：swap 三国演义对决，深度对比 `swap_by_value`（值传递自我感动）、`swap_pointers_themselves`（偷梁换柱换标签）、`swap_by_address`（开锁原地换血），配齐 ASCII 物理栈帧隔离图。
+2. **学生起步模板 (`lessons/L12_pointers-basics/starter/`)**：
+   - `task1_pointer_swap_starter.c`：指针重写 swap 模板。
+   - `task2_sort3_starter.c`：三数升序排序器 `sort3` 模板。
+   - `task3_max_min_starter.c`：利用指针多值带回极值模板。
+3. **当堂练习与评测 (`lessons/L12_pointers-basics/exercises/`)**：
+   - `exercises_12.md`：指针基础找茬、swap 三国演义栈帧追踪表、`&*p` 与 `*&a` 符号时序对决、同伴极限黑盒测试单、离堂小测。
+   - `exercise_fix_pointer_errors.c`：专升本经典改错（未初始化野指针强行解引用写值、调用指针函数实参漏写 `&`、子函数内只交换局部指针变量）。
+4. **教师参考答案 (`lessons/L12_pointers-basics/solutions/`)**：
+   - `12.3_max_min_finder.c`：突破 return 限制实现多值带回（打擂台提取最高分/最低分 + `NULL` 空指针防御检查）。
+   - `exercises_12_answers.md`：全套题目标准答案与专升本考点深度解析。
 5. **全景理实一体化导学案**：
-   - [`lessons/L11_function-parameters-and-scope/README.md`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L11_function-parameters-and-scope/README.md)：包含数组传参退化、二维列数不可省、内存三区模型、static 三重人格、宏替换双重括号防御与 4 课时时间分配。
+   - [`lessons/L12_pointers-basics/README.md`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L12_pointers-basics/README.md)：包含特工008寻宝比喻、狸猫换太子、swap 三国演义 ASCII 栈帧图、多函数协作黄金三步法、前半学期核心技术大回收与 4 课时时间分配。
 
 ---
 
 ## 二、 自动化验证结果
 
 运行 `./tools/verify_all.sh`：
-- **全库总 C 文件数**：82
-- **成功通过**：82
+- **全库总 C 文件数**：89
+- **成功通过**：89
 - **异常失败**：0
 - **通过率**：100%
 
@@ -52,4 +53,4 @@
 
 ## 三、 下一步推进建议
 
-- **第 12 讲（`L12_pointers-basics` ⭐阶段回收节点2）**：进入 C 语言核心灵魂——指针。构建 `swap` 函数普通值传递 vs 指针解引用对比、指针变量 `&` 取地址与 `*` 解引用、空指针 `NULL` 防御与前半学期大综合流水线。
+- **第 13 讲（`L13_pointers-and-arrays`）**：推进指针与一维数组、二维数组的等价性、指针算术移动 `p+1`（步长取决于指向的数据类型字节数）、`*(p+i)` vs `p[i]` 对决与高效指针遍历检索。
