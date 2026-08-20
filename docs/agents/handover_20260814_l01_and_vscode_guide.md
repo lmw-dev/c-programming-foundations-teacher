@@ -9,38 +9,39 @@
 - 第04讲：`/Users/liumingwei/vaults/WorkbenchVault/1_Projects/P-202608-Adjunct-Teaching_C-Language-Foundation/02-课件逐字稿/lecture-04-ppt.md`
 - 第05讲：`/Users/liumingwei/vaults/WorkbenchVault/1_Projects/P-202608-Adjunct-Teaching_C-Language-Foundation/02-课件逐字稿/lecture-05-ppt.md`
 - 第06讲：`/Users/liumingwei/vaults/WorkbenchVault/1_Projects/P-202608-Adjunct-Teaching_C-Language-Foundation/02-课件逐字稿/lecture-06-ppt.md`
-- 第07讲：`/Users/liumingwei/vaults/WorkbenchVault/1_Projects/P-202608-Adjunct-Teaching_C-Language-Foundation/02-课件逐字稿/lecture-07-ppt.md`  
-**完成讲次**：`L01_intro`（已定稿）, `L02_data-types`（已定稿）, `L03_sequential-programming`（已定稿）, `L04_selection`（已定稿）, `L05_selection-and-loops`（已定稿）, `L06_loops`（已定稿）, `L07_one-dimensional-arrays`（已定稿）
+- 第07讲：`/Users/liumingwei/vaults/WorkbenchVault/1_Projects/P-202608-Adjunct-Teaching_C-Language-Foundation/02-课件逐字稿/lecture-07-ppt.md`
+- 第08讲：`/Users/liumingwei/vaults/WorkbenchVault/1_Projects/P-202608-Adjunct-Teaching_C-Language-Foundation/02-课件逐字稿/lecture-08-ppt.md`  
+**完成讲次**：`L01_intro`（已定稿）, `L02_data-types`（已定稿）, `L03_sequential-programming`（已定稿）, `L04_selection`（已定稿）, `L05_selection-and-loops`（已定稿）, `L06_loops`（已定稿）, `L07_one-dimensional-arrays`（已定稿）, `L08_two-dimensional-arrays`（已定稿 ⭐阶段回收节点1）
 
 ---
 
-## 一、 L07 一维数组与批量数据处理模块建设成果
+## 一、 L08 二维数组、矩阵处理与阶段回收1建设成果
 
-基于谭版、何版与湖大版双书深度融合的 PPT 逐页文稿（共 19 页），闭环构建了第 07 讲全部代码与教案：
+基于谭版、何版与湖大版双书深度融合的 PPT 逐页文稿（共 20 页），闭环构建了第 08 讲全部代码与教案（前半学期阶段大回收）：
 
-1. **课堂演示代码 (`lessons/L07_one-dimensional-arrays/lecture-demo/`)**：
-   - `7.1_fibonacci.c`：斐波那契数列生成器，建立一维数组连续内存模型（Contiguous Memory），利用空间换时间递推公式 $f[i]=f[i-1]+f[i-2]$，控制台每行 5 个制表符规整排版。
-   - `7.2_grade_master.c`：成绩大满贯，包含 10 个学生成绩批量录入与防御性校验、打擂台算法（最高分/最低分及其学号下标同步更新）、升序起泡排序（Bubble Sort 双重循环与三步易位交换）。
-2. **学生起步模板 (`lessons/L07_one-dimensional-arrays/starter/`)**：
-   - `task1_fibonacci_starter.c`：斐波那契数列递推模板。
-   - `task2_grade_master_starter.c`：成绩大满贯与打擂台模板。
-   - `task3_bubble_sort_starter.c`：起泡排序升序算法模板。
-3. **当堂练习与评测 (`lessons/L07_one-dimensional-arrays/exercises/`)**：
-   - `exercises_07.md`：数组定义与初始化正误判断、内存总字节计算、字符串 `\0` 隐式终结符、打擂台时序跟踪表、同伴自查单、离堂小测。
-   - `exercise_fix_array_errors.c`：专升本经典改错题（`i <= 5` 越界地雷、整数除法精度截断、未赋初值导致垃圾值排雷）。
-4. **教师参考答案 (`lessons/L07_one-dimensional-arrays/solutions/`)**：
-   - `7.3_array_bounds_demo.c`：数组越界排雷与栈内存幽灵改值实验（证明 C 不进行运行期边界检查，揭示 Buffer Overflow 破坏相邻栈变量与系统崩溃的物理机理）。
-   - `exercises_07_answers.md`：全套题目标准答案与专升本考点深度解析。
+1. **课堂演示代码 (`lessons/L08_two-dimensional-arrays/lecture-demo/`)**：
+   - `8.1_matrix_transpose.c`：二维数组行优先连续线性存储（Row-Major Order）与十六进制物理地址 (%p) 验证，矩阵转置算法 $b[j][i]=a[i][j]$，剖析为什么第二维列数绝对不能省略。
+   - `8.2_matrix_max.c`：二维打擂台算法，双重嵌套循环、`max_row`/`max_col` 双维坐标锚点锁定，杜绝擂主初始化为 0 导致全负数误判。
+2. **学生起步模板 (`lessons/L08_two-dimensional-arrays/starter/`)**：
+   - `task1_matrix_transpose_starter.c`：矩阵转置模板。
+   - `task2_matrix_max_starter.c`：二维矩阵打擂台与坐标锁定模板。
+   - `task3_palindrome_starter.c`：双指针向心逼近回文判定模板。
+3. **当堂练习与评测 (`lessons/L08_two-dimensional-arrays/exercises/`)**：
+   - `exercises_08.md`：二维定义与初始化找茬、行优先物理地址推演、字符数组 vs 字符串内存字节对决、"烫烫烫"乱码成因、阶段自查表、离堂小测。
+   - `exercise_fix_matrix_string_errors.c`：专升本阶段大排雷（省略第二维报错、双重循环行列边界张冠李戴、字符数组漏 `'\0'` 导致内存垃圾裸奔）。
+4. **教师参考答案 (`lessons/L08_two-dimensional-arrays/solutions/`)**：
+   - `8.3_palindrome_check.c`：阶段综合实战参考答案（字符数组与字符串结束符 `'\0'` 物理机制、`scanf("%99s")` 防缓冲区溢出、双指针向心对碰回文判定算法）。
+   - `exercises_08_answers.md`：全套题目标准答案与专升本考点深度解析。
 5. **全景理实一体化导学案**：
-   - [`lessons/L07_one-dimensional-arrays/README.md`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L07_one-dimensional-arrays/README.md)：包含超市储物柜模型、部分初始化自动清零、打擂台与起泡排序物理时序、越界幽灵改值与 4 课时时间分配。
+   - [`lessons/L08_two-dimensional-arrays/README.md`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L08_two-dimensional-arrays/README.md)：包含阶段回收节点 1 大串联、行优先线性内存模型、矩阵转置与打擂台时序、字符数组与 `'\0'` 机制、4 课时时间分配。
 
 ---
 
 ## 二、 自动化验证结果
 
 运行 `./tools/verify_all.sh`：
-- **全库总 C 文件数**：54
-- **成功通过**：54
+- **全库总 C 文件数**：61
+- **成功通过**：61
 - **异常失败**：0
 - **通过率**：100%
 
@@ -48,4 +49,4 @@
 
 ## 三、 下一步推进建议
 
-- **第 08 讲（`L08_two-dimensional-arrays` ⭐阶段回收1）**：推进二维数组多维内存行优先展开、矩阵转置、学生成绩表多维管理与前半学期阶段大回收。
+- **第 09 讲（`L09_strings`）**：推进字符数组与字符串高级处理库（`<string.h>` 中 `strlen`、`strcpy`、`strcmp`、`strcat` 底层手写实现与安全函数 `fgets` 进阶）。
