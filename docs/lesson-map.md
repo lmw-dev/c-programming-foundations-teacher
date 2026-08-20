@@ -10,7 +10,7 @@
 | 02 | L02_data-types | 标识符与数据类型 | 标识符命名、常量/变量、int/float/double/char、sizeof | 幽灵垃圾值、ASCII面具实验、sizeof量地尺 | 测量系统字节大小、符号常量价格计算器 | **已定稿** |
 | 03 | L03_sequential-programming | 运算符与顺序结构 | 算术/关系/逻辑运算符、自增自减、printf/scanf | 华氏转摄氏5/9排雷、两数计算器、银行复利 | 华氏转摄氏、两数多功能计算器、银行复利存单 | **已定稿** |
 | 04 | L04_selection | if与条件表达式 | if单/双/多分支、条件运算符、else匹配 | 闰年双书对比、三数求最大打擂台、智能除零拦截计算器 | 闰年判定、打擂台求max、智能四则运算计算器 | **已定稿** |
-| 05 | L05_selection-and-loops | switch与循环入门 | switch-case、while、do-while、循环三要素 | switch菜单、while累加、do-while输入验证 | 计算1!+2!+...+10! | 待补代码 |
+| 05 | L05_selection-and-loops | switch与循环入门 | switch-case、while、do-while、循环三要素 | 常驻菜单计算器、阶乘累加防爆仓、do-while猜数 | 常驻菜单计算器、阶乘累加求和、猜数字游戏 | **已定稿** |
 | 06 | L06_loops | 三类循环与嵌套 | for循环、循环嵌套、break/continue | 九九乘法表、素数判断、排除7倍数求和 | 输出100以内所有素数 | 待补代码 |
 | 07 | L07_one-dimensional-arrays | 一维数组 | 数组定义、遍历、求和/最值/排序 | 成绩统计(总分/平均/最值)、数组逆序、冒泡排序 | 输入10整数找最大值及下标 | 待补代码 |
 | 08 | L08_two-dimensional-arrays | 二维数组 + 阶段回收1 | 二维数组、矩阵运算、数组阶段复习 | 3×3矩阵转置、学生成绩表管理、常见错误汇总 | 矩阵转置、阶段综合练习 | 待补代码 |
@@ -27,8 +27,8 @@
 
 | 状态 | 数量 | 说明 |
 |------|------|------|
-| 已定稿 | 4 | L01_intro, L02_data-types, L03_sequential-programming, L04_selection 代码与教案资产闭环定稿 |
-| 待补代码 | 12 | L05 ~ L16 按教学节奏有序建设 |
+| 已定稿 | 5 | L01_intro, L02_data-types, L03_sequential-programming, L04_selection, L05_selection-and-loops 代码与教案资产闭环定稿 |
+| 待补代码 | 11 | L06 ~ L16 按教学节奏有序建设 |
 | 待验证 | 0 | — |
 
 ## 阶段回收节点

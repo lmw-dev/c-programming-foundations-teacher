@@ -175,39 +175,39 @@
 
 ## L05 — 多分支选择、循环结构入门
 
-### 案例 5-1：switch简易菜单
+### 案例 5-1：常驻交互式智能计算器系统
 | 字段 | 内容 |
 |------|------|
-| 讲次与案例名称 | L05-01 switch菜单 |
-| 教学目标 | 用 switch-case 实现多分支菜单选择 |
-| 输入 | 用户选择（1=加法 2=减法 3=退出） |
-| 核心处理 | switch-case 分支执行对应操作 |
-| 输出 | 计算结果或退出提示 |
-| 关键知识点 | switch-case、break、fall-through |
-| 测试正常值 | 输入1/2/3分别执行 |
-| 测试边界值 | 输入0、输入4 |
-| 测试特殊值/错误输入 | 输入字符、输入浮点数 |
-| 常见错误 | case 缺少 break 导致穿透 |
-| 对应源文件 | 待补：`lessons/L05_selection-and-loops/lecture-demo/switch_menu.c` |
-| 对应PPT页码 | 待确认 |
-| 当前状态 | 待补代码 |
+| 讲次与案例名称 | L05-01 常驻菜单计算器与 switch 分支 |
+| 教学目标 | 掌握 while(is_running) 状态哨兵架构、switch-case 直达电梯与除零防御拦截 |
+| 输入 | 菜单选择 choice (0-4)，以及两操作数 (double) |
+| 核心处理 | switch(choice) 分流执行 +、-、*、/，除法时 `fabs(num2)<1e-6` 拦截除零 |
+| 输出 | 运算结果或退出提示，循环常驻直到输入 0 |
+| 关键知识点 | switch-case、break 刹车片、case 穿透、while 状态哨兵、除零防御性编程 |
+| 测试正常值 | 选 1 输入 12.5 3.5 → 输出 16.00；选 0 → 安全退出 |
+| 测试边界值 | 选 4 输入 10.0 0 → 拦截除零并重新回到菜单 |
+| 测试特殊值/错误输入 | 选 5 越界输入 → 提示无效选项 |
+| 常见错误 | case 缺少 break 导致坠落穿透、switch 括号内误用浮点数 |
+| 对应源文件 | [`lessons/L05_selection-and-loops/lecture-demo/5.1_menu_calculator.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L05_selection-and-loops/lecture-demo/5.1_menu_calculator.c) |
+| 对应PPT页码 | 第14~15页 |
+| 当前状态 | **已定稿** |
 
-### 案例 5-2：while/do-while 循环
+### 案例 5-2：while 循环阶乘累加和与防爆仓
 | 字段 | 内容 |
 |------|------|
-| 讲次与案例名称 | L05-02 while累加 + do-while验证 |
-| 教学目标 | 理解 while 与 do-while 的区别 |
-| 输入 | while版：无输入；do-while版：输入1-7的数字 |
-| 核心处理 | while: 累加1到100；do-while: 输入验证循环 |
-| 输出 | 累加结果；有效输入或错误提示 |
-| 关键知识点 | while/do-while区别、循环三要素、do-while至少执行一次 |
-| 测试正常值 | 累加=5005、输入4→星期四 |
-| 测试边界值 | 输入1和7（边界） |
-| 测试特殊值/错误输入 | 输入0、输入8（do-while重新输入） |
-| 常见错误 | 循环变量未更新导致死循环 |
-| 对应源文件 | 待补：`lessons/L05_selection-and-loops/lecture-demo/while_do_while.c` |
-| 对应PPT页码 | 待确认 |
-| 当前状态 | 待补代码 |
+| 讲次与案例名称 | L05-02 while 阶乘累加和 (1!+...+10!) |
+| 教学目标 | 掌握循环控制三大基石（起点/终点/步长）与 long long 大数防爆仓 |
+| 输入 | 无（程序内置 1 到 10 计算） |
+| 核心处理 | 单层 while 循环同步计算 `fact = fact * i` 与 `sum = sum + fact`，步长 `i++` |
+| 输出 | 每一轮的阶乘项与累计总和表格，最终总和 4037913 |
+| 关键知识点 | while 循环三要素、累乘累加双重流动、long long (%lld) 防大数溢出 |
+| 测试正常值 | i 从 1 累加到 10，输出总和 4037913 |
+| 测试边界值 | 1! 到 5! 累加和为 153 |
+| 测试特殊值/错误输入 | 漏写 `i++` 引发死循环测试 |
+| 常见错误 | 漏写循环控制变量更新导致死循环、使用 16 位 int 导致溢出为负数 |
+| 对应源文件 | [`lessons/L05_selection-and-loops/lecture-demo/5.2_factorial_sum.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L05_selection-and-loops/lecture-demo/5.2_factorial_sum.c) |
+| 对应PPT页码 | 第17页 |
+| 当前状态 | **已定稿** |
 
 ---
 
