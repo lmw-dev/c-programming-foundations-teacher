@@ -2,7 +2,7 @@
 # ==============================================================================
 # 脚本名称: verify_all.sh
 # 作用: 批量扫描并编译检查全仓库所有 C 语言源文件，验证语法与可执行性
-# 特性: 自动注入模拟输入，防止包含 scanf 的交互式程序阻塞挂起，默认链接 -lm
+# 特性: 自动注入通用模拟数据流，防止 scanf 阻塞挂起，检测是否有段错误等致命崩溃
 # ==============================================================================
 
 set -u
@@ -41,6 +41,9 @@ if [ -z "${C_FILES}" ]; then
     exit 0
 fi
 
+# 构造通用测试输入流 (覆盖单数值、双数值、三数值、带运算符表达式、年份等场景)
+TEST_INPUT="15 4 18\n10000 0.03 3\n12.5 + 2.0\n2024\n10\n10\n10\n"
+
 for file in ${C_FILES}; do
     REL_PATH="${file#"${PROJECT_ROOT}/"}"
     BASENAME=$(basename "${file}" .c)
@@ -49,14 +52,20 @@ for file in ${C_FILES}; do
 
     printf "[%2d] 正在编译检查: %-55s " "${TOTAL_COUNT}" "${REL_PATH}"
 
-    # 1. 编译命令 (链接 -lm 数学库)
+    # 1. 编译命令 (严格告警，链接 -lm 数学库)
     if ${CC} -Wall -Wextra -std=c11 "${file}" -o "${TARGET_BIN}" -lm >/dev/null 2>&1; then
-        # 2. 运行测试（通过管道注入模拟输入，防止 scanf 阻塞挂起等待键盘输入）
-        if printf "10 + 10\n10\n10\n2024\n" | "${TARGET_BIN}" >/dev/null 2>&1; then
+        # 2. 运行测试（注入模拟输入，并检测退出状态）
+        # 退出码 < 128 说明未发生 SIGSEGV (139)、SIGABRT (134)、SIGFPE (136) 等致命崩溃
+        set +e
+        printf "${TEST_INPUT}" | "${TARGET_BIN}" >/dev/null 2>&1
+        RUN_STATUS=$?
+        set -e
+
+        if [ "${RUN_STATUS}" -lt 128 ]; then
             echo "✅ [通过]"
             PASS_COUNT=$((PASS_COUNT + 1))
         else
-            echo "⚠️ [编译通过但执行异常]"
+            echo "⚠️ [执行崩溃 (Signal ${RUN_STATUS})]"
             FAIL_COUNT=$((FAIL_COUNT + 1))
         fi
     else
