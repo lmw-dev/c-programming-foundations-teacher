@@ -12,7 +12,7 @@
 | 04 | L04_selection | if与条件表达式 | if单/双/多分支、条件运算符、else匹配 | 闰年双书对比、三数求最大打擂台、智能除零拦截计算器 | 闰年判定、打擂台求max、智能四则运算计算器 | **已定稿** |
 | 05 | L05_selection-and-loops | switch与循环入门 | switch-case、while、do-while、循环三要素 | 常驻菜单计算器、阶乘累加防爆仓、do-while猜数 | 常驻菜单计算器、阶乘累加求和、猜数字游戏 | **已定稿** |
 | 06 | L06_loops | 三类循环与嵌套 | for循环、循环嵌套、break/continue | 九九乘法表时钟模型、100以内素数优化、成绩过滤 | 九九乘法表、素数过滤器、教务成绩质检系统 | **已定稿** |
-| 07 | L07_one-dimensional-arrays | 一维数组 | 数组定义、遍历、求和/最值/排序 | 成绩统计(总分/平均/最值)、数组逆序、冒泡排序 | 输入10整数找最大值及下标 | 待补代码 |
+| 07 | L07_one-dimensional-arrays | 一维数组 | 数组定义、遍历、求和/最值/排序 | 斐波那契数组递推、成绩大满贯打擂台与起泡排序 | 斐波那契生成器、打擂台最值、起泡排序升序 | **已定稿** |
 | 08 | L08_two-dimensional-arrays | 二维数组 + 阶段回收1 | 二维数组、矩阵运算、数组阶段复习 | 3×3矩阵转置、学生成绩表管理、常见错误汇总 | 矩阵转置、阶段综合练习 | 待补代码 |
 | 09 | L09_strings | 字符数组与字符串 | '\0'结束符、scanf限宽/fgets、strlen/strcpy/strcmp | 手写strlen、手写strcpy、字符串比较 | 统计字符类型个数 | 待补代码 |
 | 10 | L10_functions | 函数基础 | 函数定义/声明/调用、值传递、返回值 | 两数最大值函数、素数判断函数、嵌套调用 | 编写回文数判断函数 | 待补代码 |
@@ -27,8 +27,8 @@
 
 | 状态 | 数量 | 说明 |
 |------|------|------|
-| 已定稿 | 6 | L01_intro, L02_data-types, L03_sequential-programming, L04_selection, L05_selection-and-loops, L06_loops 代码与教案资产闭环定稿 |
-| 待补代码 | 10 | L07 ~ L16 按教学节奏有序建设 |
+| 已定稿 | 7 | L01_intro, L02_data-types, L03_sequential-programming, L04_selection, L05_selection-and-loops, L06_loops, L07_one-dimensional-arrays 代码与教案资产闭环定稿 |
+| 待补代码 | 9 | L08 ~ L16 按教学节奏有序建设 |
 | 待验证 | 0 | — |
 
 ## 阶段回收节点
