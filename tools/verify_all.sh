@@ -51,8 +51,8 @@ for file in ${C_FILES}; do
 
     # 1. 编译命令 (链接 -lm 数学库)
     if ${CC} -Wall -Wextra -std=c11 "${file}" -o "${TARGET_BIN}" -lm >/dev/null 2>&1; then
-        # 2. 运行测试（通过管道注入模拟输入 10\n10\n，防止 scanf 阻塞挂起等待键盘输入）
-        if printf "10\n10\n10\n" | "${TARGET_BIN}" >/dev/null 2>&1; then
+        # 2. 运行测试（通过管道注入模拟输入，防止 scanf 阻塞挂起等待键盘输入）
+        if printf "10 + 10\n10\n10\n2024\n" | "${TARGET_BIN}" >/dev/null 2>&1; then
             echo "✅ [通过]"
             PASS_COUNT=$((PASS_COUNT + 1))
         else

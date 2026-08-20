@@ -59,14 +59,14 @@ int main(void)
         // =========================================================================
         if (fabs(num2) < 1e-6) {
             printf("❌ [Fatal Error] 除数不能为零！系统已强行拦截除零操作，防止程序崩溃闪退。\n");
-            return 1;
+            return 0;
         } else {
             result = num1 / num2;
             printf("✅ 计算结果: %.2f / %.2f = %.2f\n", num1, num2, result);
         }
     } else {
         printf("❌ [Error] 未知的运算符 '%c'！本计算器仅支持 +, -, *, /。\n", op);
-        return 1;
+        return 0;
     }
 
     printf("\n====================================================\n");
