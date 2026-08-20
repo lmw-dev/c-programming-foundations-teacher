@@ -41,8 +41,8 @@ if [ -z "${C_FILES}" ]; then
     exit 0
 fi
 
-# 构造通用测试输入流 (覆盖单数值、双数值、三数值、带运算符表达式、年份等场景)
-TEST_INPUT="15 4 18\n10000 0.03 3\n12.5 + 2.0\n2024\n10\n10\n10\n"
+# 构造通用测试输入流 (覆盖单数值、双数值、10个成绩流、文本字符串、回文词、带运算符表达式、退出哨兵等场景)
+TEST_INPUT="Hello_C_Programming_World\nradar\n15 4 18\n10000 0.03 3\n12.5 + 2.0\n2024\n85\n92\n78\n90\n88\n76\n95\n89\n60\n100\n0\n-1\n"
 
 for file in ${C_FILES}; do
     mkdir -p "${BIN_DIR}"
