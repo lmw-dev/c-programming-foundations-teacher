@@ -64,7 +64,19 @@ int main(void)
 void reverse_array(int arr[], int size)
 {
     // 🚨 现场抓包：在子函数中测量 sizeof(arr)
-    printf("   🔍 [子函数内现场] sizeof(arr) = %lu 字节 (已退化为指针变量的物理大小！)\n", sizeof(arr));
+#if defined(__clang__)
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wsizeof-array-argument"
+#elif defined(__GNUC__)
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wsizeof-array-argument"
+#endif
+    printf("   🔍 [子函数内现场] sizeof(arr) = %lu 字节 (已退化为指针变量的物理大小！)\n", (unsigned long)sizeof(arr));
+#if defined(__clang__)
+#pragma clang diagnostic pop
+#elif defined(__GNUC__)
+#pragma GCC diagnostic pop
+#endif
     printf("   🔍 [子函数内现场] arr 接收到的首地址: %p (与 main 中的地址完全一致！)\n", (void*)arr);
 
     int left = 0;
