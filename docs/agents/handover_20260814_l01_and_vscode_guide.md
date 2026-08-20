@@ -14,38 +14,39 @@
 - 第09讲：`/Users/liumingwei/vaults/WorkbenchVault/1_Projects/P-202608-Adjunct-Teaching_C-Language-Foundation/02-课件逐字稿/lecture-09-ppt.md`
 - 第10讲：`/Users/liumingwei/vaults/WorkbenchVault/1_Projects/P-202608-Adjunct-Teaching_C-Language-Foundation/02-课件逐字稿/lecture-10-ppt.md`
 - 第11讲：`/Users/liumingwei/vaults/WorkbenchVault/1_Projects/P-202608-Adjunct-Teaching_C-Language-Foundation/02-课件逐字稿/lecture-11-ppt.md`
-- 第12讲：`/Users/liumingwei/vaults/WorkbenchVault/1_Projects/P-202608-Adjunct-Teaching_C-Language-Foundation/02-课件逐字稿/lecture-12-ppt.md`  
-**完成讲次**：`L01_intro`（已定稿）, `L02_data-types`（已定稿）, `L03_sequential-programming`（已定稿）, `L04_selection`（已定稿）, `L05_selection-and-loops`（已定稿）, `L06_loops`（已定稿）, `L07_one-dimensional-arrays`（已定稿）, `L08_two-dimensional-arrays`（已定稿 ⭐阶段回收节点1）, `L09_strings`（已定稿）, `L10_functions`（已定稿）, `L11_function-parameters-and-scope`（已定稿）, `L12_pointers-basics`（已定稿 ⭐阶段回收节点2）
+- 第12讲：`/Users/liumingwei/vaults/WorkbenchVault/1_Projects/P-202608-Adjunct-Teaching_C-Language-Foundation/02-课件逐字稿/lecture-12-ppt.md`
+- 第13讲：`/Users/liumingwei/vaults/WorkbenchVault/1_Projects/P-202608-Adjunct-Teaching_C-Language-Foundation/02-课件逐字稿/lecture-13-ppt.md`  
+**完成讲次**：`L01_intro`（已定稿）, `L02_data-types`（已定稿）, `L03_sequential-programming`（已定稿）, `L04_selection`（已定稿）, `L05_selection-and-loops`（已定稿）, `L06_loops`（已定稿）, `L07_one-dimensional-arrays`（已定稿）, `L08_two-dimensional-arrays`（已定稿 ⭐阶段回收节点1）, `L09_strings`（已定稿）, `L10_functions`（已定稿）, `L11_function-parameters-and-scope`（已定稿）, `L12_pointers-basics`（已定稿 ⭐阶段回收节点2）, `L13_pointers-and-arrays`（已定稿）
 
 ---
 
-## 一、 L12 多函数协作与指针基础模块建设成果（⭐阶段回收节点2）
+## 一、 L13 指针与数组、字符串及综合应用模块建设成果
 
-基于谭版、何版、北石化版与湖大版深度融合的 PPT 逐页文稿（共 20 页），闭环构建了第 12 讲全部代码与教案：
+基于谭版、何版、北石化版与湖大版深度融合的 PPT 逐页文稿（共 20 页），闭环构建了第 13 讲全部代码与教案：
 
-1. **课堂演示代码 (`lessons/L12_pointers-basics/lecture-demo/`)**：
-   - `12.1_pointer_basics.c`：特工008寻宝游戏，解剖变量/物理地址/指针变量三要素，演示 `&` 取地址与 `*` 解引用、间接改值 `*p = 555`、野指针闪退机理与 `NULL` 安全防御拦截。
-   - `12.2_swap_comparison.c`：swap 三国演义对决，深度对比 `swap_by_value`（值传递自我感动）、`swap_pointers_themselves`（偷梁换柱换标签）、`swap_by_address`（开锁原地换血），配齐 ASCII 物理栈帧隔离图。
-2. **学生起步模板 (`lessons/L12_pointers-basics/starter/`)**：
-   - `task1_pointer_swap_starter.c`：指针重写 swap 模板。
-   - `task2_sort3_starter.c`：三数升序排序器 `sort3` 模板。
-   - `task3_max_min_starter.c`：利用指针多值带回极值模板。
-3. **当堂练习与评测 (`lessons/L12_pointers-basics/exercises/`)**：
-   - `exercises_12.md`：指针基础找茬、swap 三国演义栈帧追踪表、`&*p` 与 `*&a` 符号时序对决、同伴极限黑盒测试单、离堂小测。
-   - `exercise_fix_pointer_errors.c`：专升本经典改错（未初始化野指针强行解引用写值、调用指针函数实参漏写 `&`、子函数内只交换局部指针变量）。
-4. **教师参考答案 (`lessons/L12_pointers-basics/solutions/`)**：
-   - `12.3_max_min_finder.c`：突破 return 限制实现多值带回（打擂台提取最高分/最低分 + `NULL` 空指针防御检查）。
-   - `exercises_12_answers.md`：全套题目标准答案与专升本考点深度解析。
+1. **课堂演示代码 (`lessons/L13_pointers-and-arrays/lecture-demo/`)**：
+   - `13.1_array_reverse_ptr.c`：指针算术自适应步长与双指针向心原地逆序算法，演示丢弃下标 `[i]`、完全使用纯指针 `left++` 与 `right--` 相向滑动原地换血。
+   - `13.2_matrix_ptr_walking.c`：二维数组行/列指针步长实测，演示 Row-Major 连续平铺内存、列指针 `col_ptr+1` 步长 4B vs 行指针 `row_ptr+1` 步长 16B，以及四种多维寻址等价公式。
+2. **学生起步模板 (`lessons/L13_pointers-and-arrays/starter/`)**：
+   - `task1_array_reverse_ptr_starter.c`：双指针向心逆序模板。
+   - `task2_matrix_walker_starter.c`：二维行/列指针遍历模板。
+   - `task3_string_cipher_starter.c`：字符指针电码加密器模板。
+3. **当堂练习与评测 (`lessons/L13_pointers-and-arrays/exercises/`)**：
+   - `exercises_13.md`：数组名找茬、运算符时序大对决（`*p++` vs `*(++p)` vs `(*p)++`）、二维行/列指针寻址抢答、同伴黑盒测试单、离堂小测。
+   - `exercise_fix_pointer_array_errors.c`：专升本经典改错（数组名常量执行 `a++` 自增报错、字符指针未分配栈空间直接 `scanf`、只读常量区强行改写段错误）。
+4. **教师参考答案 (`lessons/L13_pointers-and-arrays/solutions/`)**：
+   - `13.3_string_cipher.c`：基于字符指针滑动扫描的电码加密器（`fgets` 防溢出 + `\0` 哨兵扫描 + 栈区可写与只读区防护）。
+   - `exercises_13_answers.md`：全套题目标准答案与专升本考点深度解析。
 5. **全景理实一体化导学案**：
-   - [`lessons/L12_pointers-basics/README.md`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L12_pointers-basics/README.md)：包含特工008寻宝比喻、狸猫换太子、swap 三国演义 ASCII 栈帧图、多函数协作黄金三步法、前半学期核心技术大回收与 4 课时时间分配。
+   - [`lessons/L13_pointers-and-arrays/README.md`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L13_pointers-and-arrays/README.md)：包含四大剑客等价矩阵、指针自适应步长公式、运算符时序对决三剑客、二维行指针 vs 列指针、字符安全防线与 4 课时时间分配。
 
 ---
 
 ## 二、 自动化验证结果
 
 运行 `./tools/verify_all.sh`：
-- **全库总 C 文件数**：89
-- **成功通过**：89
+- **全库总 C 文件数**：96
+- **成功通过**：96
 - **异常失败**：0
 - **通过率**：100%
 
@@ -53,4 +54,4 @@
 
 ## 三、 下一步推进建议
 
-- **第 13 讲（`L13_pointers-and-arrays`）**：推进指针与一维数组、二维数组的等价性、指针算术移动 `p+1`（步长取决于指向的数据类型字节数）、`*(p+i)` vs `p[i]` 对决与高效指针遍历检索。
+- **第 14 讲（`L14_structures`）**：推进自定义结构体 `struct`、成员访问 `.` 运算符、结构体数组、结构体指针与 `->` 箭头运算符，构建图书/学生信息管理系统。

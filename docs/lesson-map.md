@@ -18,7 +18,7 @@
 | 10 | L10_functions | 函数基础 | 函数定义/声明/调用、值传递、返回值 | 圆形体体积3层架构、作用域遮蔽与static、回文数函数 | 圆形体计算器、回文数判定函数、static计数器 | **已定稿** |
 | 11 | L11_function-parameters-and-scope | 函数进阶 | 数组作参数(退化指针)、作用域、static、预处理宏 | 数组原地逆序、宏替换陷阱与括号法则、static安全追踪 | 数组逆序、带参宏防坑、static登录监控 | **已定稿** |
 | 12 | L12_pointers-basics | 函数综合 + 指针入门 + 阶段回收2 | 指针概念、&和*、指针参数解引用 | swap三国演义对决、特工008寻宝、指针多值带回 | 指针swap、三数升序sort3、多值带回极值 | **已定稿** |
-| 13 | L13_pointers-and-arrays | 指针与数组 | 数组名转换首元素地址、指针算术、指针遍历 | 指针遍历数组求和(对比下标)、指针统计最值 | 指针遍历统计总和/平均/最大值 | 待补代码 |
+| 13 | L13_pointers-and-arrays | 指针与数组 | 数组名转换首地址、指针算术、行/列指针、字符指针 | 双指针向心逆序、二维行/列指针步长实测、电码加密 | 双指针逆序、二维矩阵遍历、电码加密器 | **已定稿** |
 | 14 | L14_structures | 结构体 | struct定义、成员访问.运算符、结构体数组 | 图书结构体录入/查询/平均价格统计 | 录入5条图书记录查询统计 | 待补代码 |
 | 15 | L15_files | 文件操作 | FILE*、fopen/fclose、fprintf/fscanf、失败检查 | 学生成绩写入文件、读取求平均、NULL检查 | 学生信息写入+读取 | 待补代码 |
 | 16 | L16_comprehensive-review | 全课程综合 + 阶段回收3 | 十章串联、选择/读程序/改错/编程四题型 | 分层综合训练、升本模拟(10+3+2+2) | 升本模拟综合练习 | 待补代码 |
@@ -27,8 +27,8 @@
 
 | 状态 | 数量 | 说明 |
 |------|------|------|
-| 已定稿 | 12 | L01_intro, L02_data-types, L03_sequential-programming, L04_selection, L05_selection-and-loops, L06_loops, L07_one-dimensional-arrays, L08_two-dimensional-arrays, L09_strings, L10_functions, L11_function-parameters-and-scope, L12_pointers-basics 代码与教案资产闭环定稿 |
-| 待补代码 | 4 | L13 ~ L16 按教学节奏有序建设 |
+| 已定稿 | 13 | L01_intro, L02_data-types, L03_sequential-programming, L04_selection, L05_selection-and-loops, L06_loops, L07_one-dimensional-arrays, L08_two-dimensional-arrays, L09_strings, L10_functions, L11_function-parameters-and-scope, L12_pointers-basics, L13_pointers-and-arrays 代码与教案资产闭环定稿 |
+| 待补代码 | 3 | L14 ~ L16 按教学节奏有序建设 |
 | 待验证 | 0 | — |
 
 ## 阶段回收节点
