@@ -53,8 +53,8 @@ for file in ${C_FILES}; do
 
     printf "[%2d] 正在编译检查: %-55s " "${TOTAL_COUNT}" "${REL_PATH}"
 
-    # 1. 编译命令 (严格告警，链接 -lm 数学库)
-    if ${CC} -Wall -Wextra -std=c11 "${file}" -o "${TARGET_BIN}" -lm >/dev/null 2>&1; then
+    # 1. 编译命令 (严格告警，链接 -lm 数学库，-fno-stack-protector 允许教学越界沙箱演示)
+    if ${CC} -Wall -Wextra -std=c11 -fno-stack-protector "${file}" -o "${TARGET_BIN}" -lm >/dev/null 2>&1; then
         # 2. 运行测试（注入模拟输入，并检测退出状态）
         # 退出码 < 128 说明未发生 SIGSEGV (139)、SIGABRT (134)、SIGFPE (136) 等致命崩溃
         set +e
