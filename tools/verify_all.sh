@@ -45,6 +45,7 @@ fi
 TEST_INPUT="15 4 18\n10000 0.03 3\n12.5 + 2.0\n2024\n10\n10\n10\n"
 
 for file in ${C_FILES}; do
+    mkdir -p "${BIN_DIR}"
     REL_PATH="${file#"${PROJECT_ROOT}/"}"
     BASENAME=$(basename "${file}" .c)
     TARGET_BIN="${BIN_DIR}/${BASENAME}_test"
