@@ -21,14 +21,14 @@
 | 13 | L13_pointers-and-arrays | 指针与数组 | 数组名转换首地址、指针算术、行/列指针、字符指针 | 双指针向心逆序、二维行/列指针步长实测、电码加密 | 双指针逆序、二维矩阵遍历、电码加密器 | **已定稿** |
 | 14 | L14_structures | 结构体 | struct定义、嵌套、结构体数组、指针传参 | 结构体基础与块复制、指针运算符对决、成绩降序排序 | 结构体基础、结构指针、学生总分排序器 | **已定稿** |
 | 15 | L15_files | 文件操作 | FILE*、fopen/fclose、fprintf/fscanf、异常防护 | 字符级文件流拷贝、结构体成绩持久化、安全日志追加 | 字符拷贝、成绩持久化读写、日志追加器 | **已定稿** |
-| 16 | L16_comprehensive-review | 全课程综合 + 阶段回收3 | 十章串联、选择/读程序/改错/编程四题型 | 分层综合训练、升本模拟(10+3+2+2) | 升本模拟综合练习 | 待补代码 |
+| 16 | L16_comprehensive-review | 全课程综合 + 阶段回收3 | 十章串联、选择/读程序/改错/编程四题型 | 考点排雷诊断、static作用域、单链表降序落盘 | 考点大找茬、静态生命期、升本压轴链表 | **已定稿** |
 
 ## 代码资产统计
 
 | 状态 | 数量 | 说明 |
 |------|------|------|
-| 已定稿 | 15 | L01_intro, L02_data-types, L03_sequential-programming, L04_selection, L05_selection-and-loops, L06_loops, L07_one-dimensional-arrays, L08_two-dimensional-arrays, L09_strings, L10_functions, L11_function-parameters-and-scope, L12_pointers-basics, L13_pointers-and-arrays, L14_structures, L15_files 代码与教案资产闭环定稿 |
-| 待补代码 | 1 | L16 按教学节奏有序建设 |
+| 已定稿 | 16 | L01 ~ L16 全课程 16 讲代码库、起步模板、改错题单、练习答案与理实一体化导学案**全部闭环定稿交付** |
+| 待补代码 | 0 | 全课程代码资产已 100% 建设完毕 |
 | 待验证 | 0 | — |
 
 ## 阶段回收节点
