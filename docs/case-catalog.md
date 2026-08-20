@@ -436,22 +436,22 @@
 
 ## L15 — 文件、FILE指针、fopen/fclose、fprintf/fscanf
 
-### 案例 15-1：学生信息文件读写
+### 案例 15-1：学生成绩格式化持久化与安全日志管理
 | 字段 | 内容 |
 |------|------|
-| 讲次与案例名称 | L15-01 文件读写 |
-| 教学目标 | 掌握文件操作完整流程 |
-| 输入 | 5个学生信息（学号、姓名、成绩） |
-| 核心处理 | fprintf写入student.txt → fscanf读取并输出 |
-| 输出 | 文件内容 |
-| 关键知识点 | FILE*、fopen("w"/"r")、fprintf/fscanf、fclose、NULL检查 |
-| 测试正常值 | 写入后读取内容一致 |
-| 测试边界值 | 文件不存在（r模式）、覆盖写入（w模式） |
-| 测试特殊值/错误输入 | fopen返回NULL（磁盘满、权限不足） |
-| 常见错误 | 忘记fclose导致数据丢失、读写格式不匹配 |
-| 对应源文件 | 待补：`lessons/L15_files/exercises/file_read_write.c` |
-| 对应PPT页码 | 待确认 |
-| 当前状态 | 待补代码 |
+| 讲次与案例名称 | L15-01 文件读写与数据持久化 |
+| 教学目标 | 掌握文件打开/关闭完整控制流、格式化持久化读写与异常防御盾体系 |
+| 输入 | 学生结构体记录或系统运行事件字符串 |
+| 核心处理 | fprintf 格式化输出至文本文件 → fscanf 精准反序列化读回内存（或追加模式 "a" 记录日志） |
+| 输出 | 磁盘文件内容以及屏幕验证输出 |
+| 关键知识点 | FILE*、fopen("w"/"r"/"a")、fprintf/fscanf、fclose冲刷落盘、feof/ferror异常检测 |
+| 测试正常值 | 写入后读回内容与格式完全一致 |
+| 测试边界值 | 文件不存在（"r"模式报错NULL，"a"模式自动创建） |
+| 测试特殊值/错误输入 | 文件末尾空行（fscanf==3过滤拦截） |
+| 常见错误 | fopen漏做NULL检查、日志误用"w"模式抹除历史、未fclose丢数据 |
+| 对应源文件 | [`lessons/L15_files/lecture-demo/15.2_score_persistence.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L15_files/lecture-demo/15.2_score_persistence.c) |
+| 对应PPT页码 | 第7, 8, 12, 13, 17, 18页 |
+| 当前状态 | **已定稿** |
 
 ---
 
