@@ -38,10 +38,10 @@ lessons/L12_pointers-basics/
 
 | 序号 | 资产源文件 | 对应 PPT 页码 | 教学定位 | 核心考点 / 技能点 |
 |:---:|:---|:---:|:---|:---|
-| 1 | [`12.1_pointer_basics.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L12_pointers-basics/lecture-demo/12.1_pointer_basics.c) | 第4, 5, 6, 7, 9, 10页 | 课上精讲：特工008寻宝与指针解剖 | 变量/地址/指针收纳盒三要素、`&` 取地址与 `*` 解引用、间接改值 `*p = 555`、野指针闪退机理与 `NULL` 安全防线 |
-| 2 | [`12.2_swap_comparison.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L12_pointers-basics/lecture-demo/12.2_swap_comparison.c) | 第2, 12~15, 18页 | 核心攻坚：swap 三国演义对决 | `swap_by_value` 副本自我感动、`swap_pointers_themselves` 换钥匙标签偷梁换柱、`swap_by_address` 砸开大门原地换血 |
-| 3 | [`12.3_max_min_finder.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L12_pointers-basics/solutions/12.3_max_min_finder.c) | 第16, 17页 | 工业实战：利用指针突破 return 实现多值带回 | 指针多值带回“黄金三步法则”、打擂台算法、空指针 `NULL` 与非法数组边界防御拦截 |
-| 4 | [`exercise_fix_pointer_errors.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L12_pointers-basics/exercises/exercise_fix_pointer_errors.c) | 第9, 14, 15页 | 专升本经典改错：指针三大翻车陷阱 | 未初始化指针强行解引用写值、调用指针传参函数漏写 `&`、子函数内只交换局部指针变量 |
+| 1 | [`12.1_pointer_basics.c`](lecture-demo/12.1_pointer_basics.c) | 第4, 5, 6, 7, 9, 10页 | 课上精讲：特工008寻宝与指针解剖 | 变量/地址/指针收纳盒三要素、`&` 取地址与 `*` 解引用、间接改值 `*p = 555`、野指针闪退机理与 `NULL` 安全防线 |
+| 2 | [`12.2_swap_comparison.c`](lecture-demo/12.2_swap_comparison.c) | 第2, 12~15, 18页 | 核心攻坚：swap 三国演义对决 | `swap_by_value` 副本自我感动、`swap_pointers_themselves` 换钥匙标签偷梁换柱、`swap_by_address` 砸开大门原地换血 |
+| 3 | [`12.3_max_min_finder.c`](solutions/12.3_max_min_finder.c) | 第16, 17页 | 工业实战：利用指针突破 return 实现多值带回 | 指针多值带回“黄金三步法则”、打擂台算法、空指针 `NULL` 与非法数组边界防御拦截 |
+| 4 | [`exercise_fix_pointer_errors.c`](exercises/exercise_fix_pointer_errors.c) | 第9, 14, 15页 | 专升本经典改错：指针三大翻车陷阱 | 未初始化指针强行解引用写值、调用指针传参函数漏写 `&`、子函数内只交换局部指针变量 |
 
 ---
 

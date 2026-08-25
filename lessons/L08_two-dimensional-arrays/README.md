@@ -37,10 +37,10 @@ lessons/L08_two-dimensional-arrays/
 
 | 序号 | 资产源文件 | 对应 PPT 页码 | 教学定位 | 核心考点 / 技能点 |
 |:---:|:---|:---:|:---|:---|
-| 1 | [`8.1_matrix_transpose.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L08_two-dimensional-arrays/lecture-demo/8.1_matrix_transpose.c) | 第5, 8页 | 课上精讲：内存真相与转置 | 打印 `%p` 证明行优先线性连续存储 (Row-Major Order)、第二维不可省略原理、`b[j][i]=a[i][j]` 矩阵转置 |
-| 2 | [`8.2_matrix_max.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L08_two-dimensional-arrays/lecture-demo/8.2_matrix_max.c) | 第9~10页 | 算法演进：二维打擂台 | 二维空间最值检索、`max_row`/`max_col` 坐标锚点锁定、初始擂主必须为 `matrix[0][0]` 杜绝全负数漏洞 |
-| 3 | [`8.3_palindrome_check.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L08_two-dimensional-arrays/solutions/8.3_palindrome_check.c) | 第17~19页 | 阶段大综合：文本与回文 | 字符数组与 `'\0'` 结束符物理机制、`scanf("%99s")` 防缓冲区溢出、双指针向心对碰判定算法 |
-| 4 | [`exercise_fix_matrix_string_errors.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L08_two-dimensional-arrays/exercises/exercise_fix_matrix_string_errors.c) | 第6, 11, 15页 | 阶段大排雷：三大经典漏洞 | 二维省略第二维报错、双重循环行列边界张冠李戴、字符数组漏 `'\0'` 引发“烫烫烫”内存乱码 |
+| 1 | [`8.1_matrix_transpose.c`](lecture-demo/8.1_matrix_transpose.c) | 第5, 8页 | 课上精讲：内存真相与转置 | 打印 `%p` 证明行优先线性连续存储 (Row-Major Order)、第二维不可省略原理、`b[j][i]=a[i][j]` 矩阵转置 |
+| 2 | [`8.2_matrix_max.c`](lecture-demo/8.2_matrix_max.c) | 第9~10页 | 算法演进：二维打擂台 | 二维空间最值检索、`max_row`/`max_col` 坐标锚点锁定、初始擂主必须为 `matrix[0][0]` 杜绝全负数漏洞 |
+| 3 | [`8.3_palindrome_check.c`](solutions/8.3_palindrome_check.c) | 第17~19页 | 阶段大综合：文本与回文 | 字符数组与 `'\0'` 结束符物理机制、`scanf("%99s")` 防缓冲区溢出、双指针向心对碰判定算法 |
+| 4 | [`exercise_fix_matrix_string_errors.c`](exercises/exercise_fix_matrix_string_errors.c) | 第6, 11, 15页 | 阶段大排雷：三大经典漏洞 | 二维省略第二维报错、双重循环行列边界张冠李戴、字符数组漏 `'\0'` 引发“烫烫烫”内存乱码 |
 
 ---
 

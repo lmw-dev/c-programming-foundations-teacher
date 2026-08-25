@@ -16,7 +16,8 @@ lessons/L01_intro/
 │   ├── 1.1_hello_world.c                    # 最简标准C结构逐行剖析 (PPT 第5~6页)
 │   ├── 1.2_multi_line_output.c              # 多行输出与 \n 换行符机制 (PPT 第7~8页)
 │   ├── 1.3_student_card.c                   # 三行“我的程序名片”标准案例 (PPT 第12~13页)
-│   └── 1.4_error_playground.c               # 5大高频报错排雷游乐场 (PPT 第11页)
+│   ├── 1.4_error_examples.md                # 常见编译报错案例剖析与排雷指南 (PPT 第11页)
+│   └── 1.4_error_fixed.c                    # 唯一要求可编译运行的标准修正版 (PPT 第11页)
 ├── starter/                                 # 学生起步模板（上机骨架与 TODO 指引）
 │   ├── task1_hello_starter.c                # 任务1：运行 Hello, C!
 │   ├── task2_student_card_starter.c         # 任务2：个人名片骨架填空
@@ -38,17 +39,17 @@ lessons/L01_intro/
 
 | 序号 | 源文件名 | 对应 PPT 页码 | 教学定位 | 核心考点 / 技能点 |
 |:---:|:---|:---:|:---|:---|
-| 1 | [`1.1_hello_world.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L01_intro/lecture-demo/1.1_hello_world.c) | 第5~6页 | 课上精讲：最简标准C程序结构 | 预处理指令、`main(void)` 入口、`printf`、`return 0`、分号 `;` |
-| 2 | [`1.2_multi_line_output.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L01_intro/lecture-demo/1.2_multi_line_output.c) | 第7~8页 | 课上精讲：多行输出与转义换行 | 顺序执行逻辑、`\n` 换行符与 `/n` 错误辨析 |
-| 3 | [`1.3_student_card.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L01_intro/lecture-demo/1.3_student_card.c) | 第12~13页 | 课上案例：三行“我的程序名片” | 多语句组合排版、格式化输出、学习目标设定 |
-| 4 | [`1.4_error_playground.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L01_intro/lecture-demo/1.4_error_playground.c) | 第11页 | 纠错示范：常见错误初步辨析 | 漏分号、中文标点、`mian` 入口拼写、双引号未闭合 |
+| 1 | [`1.1_hello_world.c`](lecture-demo/1.1_hello_world.c) | 第5~6页 | 课上精讲：最简标准C程序结构 | 预处理指令、`main(void)` 入口、`printf`、`return 0`、分号 `;` |
+| 2 | [`1.2_multi_line_output.c`](lecture-demo/1.2_multi_line_output.c) | 第7~8页 | 课上精讲：多行输出与转义换行 | 顺序执行逻辑、`\n` 换行符与 `/n` 错误辨析 |
+| 3 | [`1.3_student_card.c`](lecture-demo/1.3_student_card.c) | 第12~13页 | 课上案例：三行“我的程序名片” | 多语句组合排版、格式化输出、学习目标设定 |
+| 4 | [`1.4_error_examples.md`](lecture-demo/1.4_error_examples.md)<br>[`1.4_error_fixed.c`](lecture-demo/1.4_error_fixed.c) | 第11页 | 纠错示范：常见错误初步辨析 | 报错案例剖析（漏分号/中文标点/`mian`拼写/未闭合引号）与唯一可编译运行修正版 |
 
 ---
 
 ## 🏫 教学实施精细化指引
 
 ### 1. 案例精析：最简标准 C 结构（PPT 第5~6页）
-- **核心源码**：[`1.1_hello_world.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L01_intro/lecture-demo/1.1_hello_world.c)
+- **核心源码**：[`1.1_hello_world.c`](lecture-demo/1.1_hello_world.c)
 - **场景导入**（PPT 第2页）：日常手机、游戏里的程序，如何从代码变成屏幕上的结果？从最小的 C 程序开始走通“编辑—编译—运行—检查”。
 - **经典“建筑模型”板书**：
   - `#include <stdio.h>` $\rightarrow$ **“拉外援 / 拿工具箱”**（引入标准输入输出库，否则不认识 `printf`）。
@@ -60,7 +61,7 @@ lessons/L01_intro/
   - `return 0;` $\rightarrow$ **“安全到家”**（向操作系统汇报：程序正常执行完毕，无异常）。
 
 ### 2. 案例精析：多行输出与转义换行（PPT 第7~8页）
-- **核心源码**：[`1.2_multi_line_output.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L01_intro/lecture-demo/1.2_multi_line_output.c)
+- **核心源码**：[`1.2_multi_line_output.c`](lecture-demo/1.2_multi_line_output.c)
 - **顺序执行思维**：C 程序是单向自动扶梯，自上而下严格按顺序逐行执行。
 - **`\n` 换行符的机制对比**：
   - 不带 `\n`：`printf("Hello"); printf("World");` $\rightarrow$ 输出 `HelloWorld`（挤在同一行）。
@@ -70,7 +71,7 @@ lessons/L01_intro/
   - 重点强调按键位置与斜杠方向：“**反斜杠向后倒 `\`（回车键上方），正斜杠向前倾 `/`（除号/问号键）**”。
 
 ### 3. 上机任务组织：规范格式个人信息名卡（PPT 第12~15页）
-- **核心源码**：[`1.3_student_card.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L01_intro/lecture-demo/1.3_student_card.c)
+- **核心源码**：[`1.3_student_card.c`](lecture-demo/1.3_student_card.c)
 - **实操任务**：在机房打开集成开发环境（Visual Studio 或 Dev-C++），新建源文件 `1.3_student_card.c`，编写并运行一个格式规范的个人信息名卡。
 - **目标效果展示**：
   ```text
@@ -92,7 +93,7 @@ lessons/L01_intro/
   - $\square$ 控制台输出的名卡边框整齐对齐，信息完整
 
 ### 4. 常见错误辨析与排雷（PPT 第11页）
-- **核心源码**：[`1.4_error_playground.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L01_intro/lecture-demo/1.4_error_playground.c)
+- **核心源码**：[`1.4_error_fixed.c`](lecture-demo/1.4_error_fixed.c)
 
 | 错误类型 | 典型错误代码 | 编译器经典报错提示 | 排查与修复方法 |
 |:---|:---|:---|:---|
@@ -119,7 +120,7 @@ lessons/L01_intro/
 
 | 资产类别 | 包含文件 | 当前状态 | 备注 |
 |:---|:---|:---:|:---|
-| **课堂演示代码** | `1.1_hello_world.c`, `1.2_multi_line_output.c`, `1.3_student_card.c`, `1.4_error_playground.c` | **已定稿** | 4 份演示源文件全量通过编译验证 |
+| **课堂演示代码** | `1.1_hello_world.c`, `1.2_multi_line_output.c`, `1.3_student_card.c`, `1.4_error_fixed.c` | **已定稿** | 4 份演示源文件全量通过编译验证 |
 | **起步模板** | `task1_hello_starter.c`, `task2_student_card_starter.c`, `task3_goal_card_starter.c` | **已定稿** | 3 份上机任务骨架 |
 | **当堂练习** | `exercises_01.md`, `exercise_fix_errors.c` | **已定稿** | 1 份测评题单 + 1 份改错练习 |
 | **参考答案** | `task1`~`task3_solution.c`, `homework_01_solution.c`, `exercises_01_answers.md` | **已定稿** | 4 份代码答案 + 1 份题目解析 |

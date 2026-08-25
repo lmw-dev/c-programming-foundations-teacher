@@ -53,7 +53,7 @@
 | 测试边界值 | 中英文字符混排宽度对齐（中文占2列，英文占1列） |
 | 测试特殊值/错误输入 | 漏分号、双引号不匹配、中文标点误用 |
 | 常见错误 | 字符数未算准导致右侧边框错位、换行符漏写 |
-| 对应源文件 | [`lessons/L01_intro/lecture-demo/1.3_student_card.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L01_intro/lecture-demo/1.3_student_card.c) |
+| 对应源文件 | [`lessons/L01_intro/lecture-demo/1.3_student_card.c`](../lessons/L01_intro/lecture-demo/1.3_student_card.c) |
 | 对应PPT页码 | 第12~15页 |
 | 当前状态 | **已定稿** |
 
@@ -74,7 +74,7 @@
 | 测试边界值 | 单下划线 `_`、长标识符 |
 | 测试特殊值/错误输入 | 数字开头(`2score`)、含非法符号(`my$price`)、关键字(`char`)、八进制非法数字(`018`) |
 | 常见错误 | 混淆关键字与合法标识符、大小写拼写混淆 |
-| 对应源文件 | [`lessons/L02_data-types/exercises/exercise_identifier_check.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L02_data-types/exercises/exercise_identifier_check.c) |
+| 对应源文件 | [`lessons/L02_data-types/exercises/exercise_identifier_check.c`](../lessons/L02_data-types/exercises/exercise_identifier_check.c) |
 | 对应PPT页码 | 第5~7页 |
 | 当前状态 | **已定稿** |
 
@@ -91,7 +91,7 @@
 | 测试边界值 | 浮点数带 `f` 后缀避免双精度截断警告、大写字母加 32 偏移转换 |
 | 测试特殊值/错误输入 | 局部变量未初始化直接使用产生随机垃圾值 |
 | 常见错误 | `sizeof` 误当成函数、连等声明错误、字符单双引号混淆 |
-| 对应源文件 | [`lessons/L02_data-types/lecture-demo/2.1_ghost_value.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L02_data-types/lecture-demo/2.1_ghost_value.c)<br>[`lessons/L02_data-types/solutions/2.3_sizeof_ruler.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L02_data-types/solutions/2.3_sizeof_ruler.c) |
+| 对应源文件 | [`lessons/L02_data-types/lecture-demo/2.1_ghost_value.c`](../lessons/L02_data-types/lecture-demo/2.1_ghost_value.c)<br>[`lessons/L02_data-types/solutions/2.3_sizeof_ruler.c`](../lessons/L02_data-types/solutions/2.3_sizeof_ruler.c) |
 | 对应PPT页码 | 第9~18页 |
 | 当前状态 | **已定稿** |
 
@@ -112,7 +112,7 @@
 | 测试边界值 | f=32.0 → celsius=0.00；f=212.0 → celsius=100.00 |
 | 测试特殊值/错误输入 | 非法字符输入、负温度值 |
 | 常见错误 | 5/9 截断为 0 导致温度被冻结、scanf 漏写 & 产生段错误闪退 |
-| 对应源文件 | [`lessons/L03_sequential-programming/lecture-demo/3.1_temp_convert.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L03_sequential-programming/lecture-demo/3.1_temp_convert.c) |
+| 对应源文件 | [`lessons/L03_sequential-programming/lecture-demo/3.1_temp_convert.c`](../lessons/L03_sequential-programming/lecture-demo/3.1_temp_convert.c) |
 | 对应PPT页码 | 第14~15页 |
 | 当前状态 | **已定稿** |
 
@@ -129,7 +129,7 @@
 | 测试边界值 | A=20, B=-3 → 商:-6, 精确商:-6.67, 余数:2；A=-15, B=-4 → 商:3, 精确商:3.75, 余数:-3 |
 | 测试特殊值/错误输入 | B=0 除零错误校验 |
 | 常见错误 | 取模操作数混入浮点数、余数正负号判断混淆 |
-| 对应源文件 | [`lessons/L03_sequential-programming/lecture-demo/3.2_calculator.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L03_sequential-programming/lecture-demo/3.2_calculator.c) |
+| 对应源文件 | [`lessons/L03_sequential-programming/lecture-demo/3.2_calculator.c`](../lessons/L03_sequential-programming/lecture-demo/3.2_calculator.c) |
 | 对应PPT页码 | 第16~17页 |
 | 当前状态 | **已定稿** |
 
@@ -150,7 +150,7 @@
 | 测试边界值 | year <= 0 防御性拦截 |
 | 测试特殊值/错误输入 | 非数字输入、负数年份 |
 | 常见错误 | 混淆世纪闰年规则、逻辑与/或优先级混淆 |
-| 对应源文件 | [`lessons/L04_selection/lecture-demo/4.1_leap_year.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L04_selection/lecture-demo/4.1_leap_year.c) |
+| 对应源文件 | [`lessons/L04_selection/lecture-demo/4.1_leap_year.c`](../lessons/L04_selection/lecture-demo/4.1_leap_year.c) |
 | 对应PPT页码 | 第12页 |
 | 当前状态 | **已定稿** |
 
@@ -167,7 +167,7 @@
 | 测试边界值 | 三个相同值 (5, 5, 5)、负数比较 (-5, -10, -2 → max=-2) |
 | 测试特殊值/错误输入 | 极大/极小整数 |
 | 常见错误 | 嵌套层次过深导致 else 配对错位、打擂台初始擂主未赋值 |
-| 对应源文件 | [`lessons/L04_selection/lecture-demo/4.2_three_max.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L04_selection/lecture-demo/4.2_three_max.c) |
+| 对应源文件 | [`lessons/L04_selection/lecture-demo/4.2_three_max.c`](../lessons/L04_selection/lecture-demo/4.2_three_max.c) |
 | 对应PPT页码 | 第15页 |
 | 当前状态 | **已定稿** |
 
@@ -188,7 +188,7 @@
 | 测试边界值 | 选 4 输入 10.0 0 → 拦截除零并重新回到菜单 |
 | 测试特殊值/错误输入 | 选 5 越界输入 → 提示无效选项 |
 | 常见错误 | case 缺少 break 导致坠落穿透、switch 括号内误用浮点数 |
-| 对应源文件 | [`lessons/L05_selection-and-loops/lecture-demo/5.1_menu_calculator.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L05_selection-and-loops/lecture-demo/5.1_menu_calculator.c) |
+| 对应源文件 | [`lessons/L05_selection-and-loops/lecture-demo/5.1_menu_calculator.c`](../lessons/L05_selection-and-loops/lecture-demo/5.1_menu_calculator.c) |
 | 对应PPT页码 | 第14~15页 |
 | 当前状态 | **已定稿** |
 
@@ -205,7 +205,7 @@
 | 测试边界值 | 1! 到 5! 累加和为 153 |
 | 测试特殊值/错误输入 | 漏写 `i++` 引发死循环测试 |
 | 常见错误 | 漏写循环控制变量更新导致死循环、使用 16 位 int 导致溢出为负数 |
-| 对应源文件 | [`lessons/L05_selection-and-loops/lecture-demo/5.2_factorial_sum.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L05_selection-and-loops/lecture-demo/5.2_factorial_sum.c) |
+| 对应源文件 | [`lessons/L05_selection-and-loops/lecture-demo/5.2_factorial_sum.c`](../lessons/L05_selection-and-loops/lecture-demo/5.2_factorial_sum.c) |
 | 对应PPT页码 | 第17页 |
 | 当前状态 | **已定稿** |
 
@@ -226,7 +226,7 @@
 | 测试边界值 | 1*1=1 (起点), 9*9=81 (终点) |
 | 测试特殊值/错误输入 | 无 |
 | 常见错误 | 混淆 `i` 与 `j` 导致打印矩形、换行语句误写在内层循环 |
-| 对应源文件 | [`lessons/L06_loops/lecture-demo/6.1_multiplication_table.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L06_loops/lecture-demo/6.1_multiplication_table.c) |
+| 对应源文件 | [`lessons/L06_loops/lecture-demo/6.1_multiplication_table.c`](../lessons/L06_loops/lecture-demo/6.1_multiplication_table.c) |
 | 对应PPT页码 | 第9~10页 |
 | 当前状态 | **已定稿** |
 
@@ -243,7 +243,7 @@
 | 测试边界值 | 2 是最小素数，4 是最小合数，9 是奇合数 |
 | 测试特殊值/错误输入 | 非法负数拦截 |
 | 常见错误 | break 误以为能跳出外层循环、未试除到 sqrt(n) 边界漏判 |
-| 对应源文件 | [`lessons/L06_loops/lecture-demo/6.2_prime_filter.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L06_loops/lecture-demo/6.2_prime_filter.c) |
+| 对应源文件 | [`lessons/L06_loops/lecture-demo/6.2_prime_filter.c`](../lessons/L06_loops/lecture-demo/6.2_prime_filter.c) |
 | 对应PPT页码 | 第16~17页 |
 | 当前状态 | **已定稿** |
 
@@ -264,7 +264,7 @@
 | 测试边界值 | fib[0]=1, fib[1]=1, fib[19]=6765 |
 | 测试特殊值/错误输入 | 无 |
 | 常见错误 | 下标误写为 `fib[20]` 越界、递推初始两项未赋初值 |
-| 对应源文件 | [`lessons/L07_one-dimensional-arrays/lecture-demo/7.1_fibonacci.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L07_one-dimensional-arrays/lecture-demo/7.1_fibonacci.c) |
+| 对应源文件 | [`lessons/L07_one-dimensional-arrays/lecture-demo/7.1_fibonacci.c`](../lessons/L07_one-dimensional-arrays/lecture-demo/7.1_fibonacci.c) |
 | 对应PPT页码 | 第9页 |
 | 当前状态 | **已定稿** |
 
@@ -281,7 +281,7 @@
 | 测试边界值 | 全部相同成绩、含 0 分与 100 分边界 |
 | 测试特殊值/错误输入 | 超出 0~100 范围的成绩防御性重试 |
 | 常见错误 | 遍历边界用 `<=10` 越界、更新擂主时忘记同步更新下标 |
-| 对应源文件 | [`lessons/L07_one-dimensional-arrays/lecture-demo/7.2_grade_master.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L07_one-dimensional-arrays/lecture-demo/7.2_grade_master.c) |
+| 对应源文件 | [`lessons/L07_one-dimensional-arrays/lecture-demo/7.2_grade_master.c`](../lessons/L07_one-dimensional-arrays/lecture-demo/7.2_grade_master.c) |
 | 对应PPT页码 | 第10~12, 16页 |
 | 当前状态 | **已定稿** |
 
@@ -302,7 +302,7 @@
 | 测试边界值 | 全零矩阵、对称方阵 |
 | 测试特殊值/错误输入 | 无 |
 | 常见错误 | 行列边界张冠李戴、声明时省略第二维（列数） |
-| 对应源文件 | [`lessons/L08_two-dimensional-arrays/lecture-demo/8.1_matrix_transpose.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L08_two-dimensional-arrays/lecture-demo/8.1_matrix_transpose.c) |
+| 对应源文件 | [`lessons/L08_two-dimensional-arrays/lecture-demo/8.1_matrix_transpose.c`](../lessons/L08_two-dimensional-arrays/lecture-demo/8.1_matrix_transpose.c) |
 | 对应PPT页码 | 第5, 8页 |
 | 当前状态 | **已定稿** |
 
@@ -323,7 +323,7 @@
 | 测试边界值 | 'z'/'Z' 回绕为 'c'/'C'、全特殊符号 |
 | 测试特殊值/错误输入 | 无 |
 | 常见错误 | 忘记添加末尾 '\0'、越界字符未取模回绕 |
-| 对应源文件 | [`lessons/L09_strings/lecture-demo/9.2_caesar_cipher.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L09_strings/lecture-demo/9.2_caesar_cipher.c) |
+| 对应源文件 | [`lessons/L09_strings/lecture-demo/9.2_caesar_cipher.c`](../lessons/L09_strings/lecture-demo/9.2_caesar_cipher.c) |
 | 对应PPT页码 | 第18页 |
 | 当前状态 | **已定稿** |
 
@@ -344,7 +344,7 @@
 | 测试边界值 | 0→是, 9→是, -121→否 (负数拦截) |
 | 测试特殊值/错误输入 | 非法字母 "abc" (安全拦截提示重试) |
 | 常见错误 | 负数未做拦截、函数定义在 main 之后且无原型声明 |
-| 对应源文件 | [`lessons/L10_functions/solutions/10.3_palindrome_checker.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L10_functions/solutions/10.3_palindrome_checker.c) |
+| 对应源文件 | [`lessons/L10_functions/solutions/10.3_palindrome_checker.c`](../lessons/L10_functions/solutions/10.3_palindrome_checker.c) |
 | 对应PPT页码 | 第17~19页 |
 | 当前状态 | **已定稿** |
 
@@ -365,7 +365,7 @@
 | 测试边界值 | 单元素数组、偶数/奇数个元素 |
 | 测试特殊值/错误输入 | 无 |
 | 常见错误 | 子函数中误用 sizeof(arr) 测长、形参二维数组漏写列数 |
-| 对应源文件 | [`lessons/L11_function-parameters-and-scope/lecture-demo/11.1_array_reverse.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L11_function-parameters-and-scope/lecture-demo/11.1_array_reverse.c) |
+| 对应源文件 | [`lessons/L11_function-parameters-and-scope/lecture-demo/11.1_array_reverse.c`](../lessons/L11_function-parameters-and-scope/lecture-demo/11.1_array_reverse.c) |
 | 对应PPT页码 | 第4, 5, 18页 |
 | 当前状态 | **已定稿** |
 
@@ -386,7 +386,7 @@
 | 测试边界值 | a=b 的情况、单元素数组 |
 | 测试特殊值/错误输入 | NULL 空指针防御拦截 |
 | 常见错误 | 指针未初始化即强行解引用写值（野指针）、调用时漏写&、子函数仅交换局部指针变量 |
-| 对应源文件 | [`lessons/L12_pointers-basics/lecture-demo/12.2_swap_comparison.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L12_pointers-basics/lecture-demo/12.2_swap_comparison.c) |
+| 对应源文件 | [`lessons/L12_pointers-basics/lecture-demo/12.2_swap_comparison.c`](../lessons/L12_pointers-basics/lecture-demo/12.2_swap_comparison.c) |
 | 对应PPT页码 | 第2, 12~15, 18页 |
 | 当前状态 | **已定稿** |
 
@@ -407,7 +407,7 @@
 | 测试边界值 | 偶数/奇数个元素、单元素数组 |
 | 测试特殊值/错误输入 | NULL 空指针防御拦截 |
 | 常见错误 | 对常量数组名执行 a++ 自增、指针步长误解为仅加 1 字节 |
-| 对应源文件 | [`lessons/L13_pointers-and-arrays/lecture-demo/13.1_array_reverse_ptr.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L13_pointers-and-arrays/lecture-demo/13.1_array_reverse_ptr.c) |
+| 对应源文件 | [`lessons/L13_pointers-and-arrays/lecture-demo/13.1_array_reverse_ptr.c`](../lessons/L13_pointers-and-arrays/lecture-demo/13.1_array_reverse_ptr.c) |
 | 对应PPT页码 | 第4, 5, 6, 16页 |
 | 当前状态 | **已定稿** |
 
@@ -428,7 +428,7 @@
 | 测试边界值 | 并列相同总分学生、单科目满分/及格临界值 |
 | 测试特殊值/错误输入 | NULL 空指针防御拦截 |
 | 常见错误 | 结构体末尾漏分号、字符数组成员直接用等号赋值、排序时仅交换分数字段 |
-| 对应源文件 | [`lessons/L14_structures/solutions/14.3_student_sorter.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L14_structures/solutions/14.3_student_sorter.c) |
+| 对应源文件 | [`lessons/L14_structures/solutions/14.3_student_sorter.c`](../lessons/L14_structures/solutions/14.3_student_sorter.c) |
 | 对应PPT页码 | 第9, 10, 17, 18页 |
 | 当前状态 | **已定稿** |
 
@@ -449,7 +449,7 @@
 | 测试边界值 | 文件不存在（"r"模式报错NULL，"a"模式自动创建） |
 | 测试特殊值/错误输入 | 文件末尾空行（fscanf==3过滤拦截） |
 | 常见错误 | fopen漏做NULL检查、日志误用"w"模式抹除历史、未fclose丢数据 |
-| 对应源文件 | [`lessons/L15_files/lecture-demo/15.2_score_persistence.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L15_files/lecture-demo/15.2_score_persistence.c) |
+| 对应源文件 | [`lessons/L15_files/lecture-demo/15.2_score_persistence.c`](../lessons/L15_files/lecture-demo/15.2_score_persistence.c) |
 | 对应PPT页码 | 第7, 8, 12, 13, 17, 18页 |
 | 当前状态 | **已定稿** |
 
@@ -470,6 +470,6 @@
 | 测试边界值 | 空链表插入、插入最高分/最低分、并列同分插入 |
 | 测试特殊值/错误输入 | malloc 失败 NULL 防御拦截、写文件 NULL 拦截 |
 | 常见错误 | 链表断链丢失后继节点、未释放堆内存泄漏、野指针解引用 |
-| 对应源文件 | [`lessons/L16_comprehensive-review/solutions/16.3_bachelor_rush.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L16_comprehensive-review/solutions/16.3_bachelor_rush.c) |
+| 对应源文件 | [`lessons/L16_comprehensive-review/solutions/16.3_bachelor_rush.c`](../lessons/L16_comprehensive-review/solutions/16.3_bachelor_rush.c) |
 | 对应PPT页码 | 第15, 16, 18, 19, 20页 |
 | 当前状态 | **已定稿** |

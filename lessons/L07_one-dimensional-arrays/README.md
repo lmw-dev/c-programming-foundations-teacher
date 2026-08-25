@@ -37,10 +37,10 @@ lessons/L07_one-dimensional-arrays/
 
 | 序号 | 资产源文件 | 对应 PPT 页码 | 教学定位 | 核心考点 / 技能点 |
 |:---:|:---|:---:|:---|:---|
-| 1 | [`7.1_fibonacci.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L07_one-dimensional-arrays/lecture-demo/7.1_fibonacci.c) | 第9页 | 课上精讲：连续内存递推 | 数组连续内存寻址、空间换时间 $O(1)$ 随机访问、`(i+1)%5==0` 格式化制表符排版 |
-| 2 | [`7.2_grade_master.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L07_one-dimensional-arrays/lecture-demo/7.2_grade_master.c) | 第10~12, 16页 | 实践工坊：综合算法大满贯 | 打擂台算法（最值与学号下标同步更新）、升序起泡排序（外层趟数+内层相邻比对） |
-| 3 | [`7.3_array_bounds_demo.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L07_one-dimensional-arrays/solutions/7.3_array_bounds_demo.c) | 第6, 15页 | 实验诊断：越界幽灵改值 | 证明 C 不进行运行期边界检查、越界野蛮读写破坏相邻栈内存（Buffer Overflow 漏洞防范） |
-| 4 | [`exercise_fix_array_errors.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L07_one-dimensional-arrays/exercises/exercise_fix_array_errors.c) | 第15页 | 质检排雷：常见错误盘点 | `i <= 10` 越界地雷、求平均整数截断、累加器未初始化垃圾值排查 |
+| 1 | [`7.1_fibonacci.c`](lecture-demo/7.1_fibonacci.c) | 第9页 | 课上精讲：连续内存递推 | 数组连续内存寻址、空间换时间 $O(1)$ 随机访问、`(i+1)%5==0` 格式化制表符排版 |
+| 2 | [`7.2_grade_master.c`](lecture-demo/7.2_grade_master.c) | 第10~12, 16页 | 实践工坊：综合算法大满贯 | 打擂台算法（最值与学号下标同步更新）、升序起泡排序（外层趟数+内层相邻比对） |
+| 3 | [`7.3_array_bounds_demo.c`](solutions/7.3_array_bounds_demo.c) | 第6, 15页 | 实验诊断：越界幽灵改值 | 证明 C 不进行运行期边界检查、越界野蛮读写破坏相邻栈内存（Buffer Overflow 漏洞防范） |
+| 4 | [`exercise_fix_array_errors.c`](exercises/exercise_fix_array_errors.c) | 第15页 | 质检排雷：常见错误盘点 | `i <= 10` 越界地雷、求平均整数截断、累加器未初始化垃圾值排查 |
 
 ---
 

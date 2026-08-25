@@ -38,10 +38,10 @@ lessons/L16_comprehensive-review/
 
 | 序号 | 资产源文件 | 对应 PPT 页码 | 教学定位 | 核心考点 / 技能点 |
 |:---:|:---|:---:|:---|:---|
-| 1 | [`16.1_exam_traps.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L16_comprehensive-review/lecture-demo/16.1_exam_traps.c) | 第3, 4, 8, 14, 17页 | 考点精讲：五大高频面具考点排雷 | 补码溢出、逻辑短路空气开关、`*p++` 时序、共用体内存覆盖、无括号宏替换 |
-| 2 | [`16.2_static_and_scope.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L16_comprehensive-review/lecture-demo/16.2_static_and_scope.c) | 第11, 13页 | 核心剖析：作用域与生命期 | 全局/局部重名遮蔽、`static` 局部变量“不释放、不重置”、块作用域隔离 |
-| 3 | [`16.3_bachelor_rush.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L16_comprehensive-review/solutions/16.3_bachelor_rush.c) | 第15, 16, 18, 19, 20页 | 升本压轴：单链表降序构建与落盘 | `malloc`/`free` 动态内存、链表降序有序插入 `insert_sorted`、文件落盘与内存回收 |
-| 4 | [`exercise_fix_exam_traps.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L16_comprehensive-review/exercises/exercise_fix_exam_traps.c) | 第4, 8, 10, 15, 17页 | 专升本经典改错：四大真题排雷 | 宏替换括号结界、常量只读区保护、结构体整包置换铁律、动态内存安全 |
+| 1 | [`16.1_exam_traps.c`](lecture-demo/16.1_exam_traps.c) | 第3, 4, 8, 14, 17页 | 考点精讲：五大高频面具考点排雷 | 补码溢出、逻辑短路空气开关、`*p++` 时序、共用体内存覆盖、无括号宏替换 |
+| 2 | [`16.2_static_and_scope.c`](lecture-demo/16.2_static_and_scope.c) | 第11, 13页 | 核心剖析：作用域与生命期 | 全局/局部重名遮蔽、`static` 局部变量“不释放、不重置”、块作用域隔离 |
+| 3 | [`16.3_bachelor_rush.c`](solutions/16.3_bachelor_rush.c) | 第15, 16, 18, 19, 20页 | 升本压轴：单链表降序构建与落盘 | `malloc`/`free` 动态内存、链表降序有序插入 `insert_sorted`、文件落盘与内存回收 |
+| 4 | [`exercise_fix_exam_traps.c`](exercises/exercise_fix_exam_traps.c) | 第4, 8, 10, 15, 17页 | 专升本经典改错：四大真题排雷 | 宏替换括号结界、常量只读区保护、结构体整包置换铁律、动态内存安全 |
 
 ---
 

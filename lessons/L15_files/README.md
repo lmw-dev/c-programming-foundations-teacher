@@ -38,10 +38,10 @@ lessons/L15_files/
 
 | 序号 | 资产源文件 | 对应 PPT 页码 | 教学定位 | 核心考点 / 技能点 |
 |:---:|:---|:---:|:---|:---|
-| 1 | [`15.1_file_copy.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L15_files/lecture-demo/15.1_file_copy.c) | 第5, 6, 7, 8, 10, 11页 | 课上精讲：字符流拷贝与缓冲区机制 | 缓冲文件系统 512B 仓库、`fgetc`/`fputc` 字节级流动、`int ch` 接收 `EOF`、`fclose` 强制冲刷落盘 |
-| 2 | [`15.2_score_persistence.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L15_files/lecture-demo/15.2_score_persistence.c) | 第12, 13, 17, 18页 | 核心攻坚：结构体数据格式化持久化 | 序列化（内存->磁盘）与反序列化（磁盘->内存）、`fprintf`/`fscanf` 制表排版、`fscanf == 3` 安全边界 |
-| 3 | [`15.3_safe_logger.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L15_files/solutions/15.3_safe_logger.c) | 第7, 8, 16, 17, 18页 | 工业实战：异常防御型系统日志追加器 | 追加模式 `"a"` 安全特性、`fp == NULL` 拦截、`ferror` 硬件故障排查、`clearerr` 状态复位、`feof` 校验 |
-| 4 | [`exercise_fix_file_errors.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L15_files/exercises/exercise_fix_file_errors.c) | 第7, 8, 10, 11页 | 专升本经典改错：文件四大翻车地雷 | `fopen` 漏写 `NULL` 检查、日志误用 `"w"` 抹除历史、`char` 接收 `EOF` 判别失效、漏写 `fclose` 丢数据 |
+| 1 | [`15.1_file_copy.c`](lecture-demo/15.1_file_copy.c) | 第5, 6, 7, 8, 10, 11页 | 课上精讲：字符流拷贝与缓冲区机制 | 缓冲文件系统 512B 仓库、`fgetc`/`fputc` 字节级流动、`int ch` 接收 `EOF`、`fclose` 强制冲刷落盘 |
+| 2 | [`15.2_score_persistence.c`](lecture-demo/15.2_score_persistence.c) | 第12, 13, 17, 18页 | 核心攻坚：结构体数据格式化持久化 | 序列化（内存->磁盘）与反序列化（磁盘->内存）、`fprintf`/`fscanf` 制表排版、`fscanf == 3` 安全边界 |
+| 3 | [`15.3_safe_logger.c`](solutions/15.3_safe_logger.c) | 第7, 8, 16, 17, 18页 | 工业实战：异常防御型系统日志追加器 | 追加模式 `"a"` 安全特性、`fp == NULL` 拦截、`ferror` 硬件故障排查、`clearerr` 状态复位、`feof` 校验 |
+| 4 | [`exercise_fix_file_errors.c`](exercises/exercise_fix_file_errors.c) | 第7, 8, 10, 11页 | 专升本经典改错：文件四大翻车地雷 | `fopen` 漏写 `NULL` 检查、日志误用 `"w"` 抹除历史、`char` 接收 `EOF` 判别失效、漏写 `fclose` 丢数据 |
 
 ---
 

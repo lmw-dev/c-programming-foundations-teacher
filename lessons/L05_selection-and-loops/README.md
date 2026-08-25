@@ -37,10 +37,10 @@ lessons/L05_selection-and-loops/
 
 | 序号 | 资产源文件 | 对应 PPT 页码 | 教学定位 | 核心考点 / 技能点 |
 |:---:|:---|:---:|:---|:---|
-| 1 | [`5.1_menu_calculator.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L05_selection-and-loops/lecture-demo/5.1_menu_calculator.c) | 第14~15页 | 课上精讲：常驻交互架构 | `while(is_running)` 状态哨兵维持终端生命周期、`switch-case` 多路派发、`break` 刹车片、除零防御 |
-| 2 | [`5.2_factorial_sum.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L05_selection-and-loops/lecture-demo/5.2_factorial_sum.c) | 第17页 | 实践工坊：循环三大基石 | 循环初始化/判定/步长三位一体、单层 while 同步累乘累加、`long long` (%lld) 大数防爆仓 |
-| 3 | [`5.3_guess_number.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L05_selection-and-loops/solutions/5.3_guess_number.c) | 第19页 | 课后挑战：游戏化实战 | `do-while`“至少执行一次”先斩后奏特性、`srand(time(NULL))` 随机数种子、`rand()%100+1` 区间映射 |
-| 4 | [`exercise_fix_loop_errors.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L05_selection-and-loops/exercises/exercise_fix_loop_errors.c) | 第16页 | 质检排雷：常见错误盘点 | `case` 漏 `break` 穿透、`while ();` 空语句死循环、漏写 `i++` 计数器未更新 |
+| 1 | [`5.1_menu_calculator.c`](lecture-demo/5.1_menu_calculator.c) | 第14~15页 | 课上精讲：常驻交互架构 | `while(is_running)` 状态哨兵维持终端生命周期、`switch-case` 多路派发、`break` 刹车片、除零防御 |
+| 2 | [`5.2_factorial_sum.c`](lecture-demo/5.2_factorial_sum.c) | 第17页 | 实践工坊：循环三大基石 | 循环初始化/判定/步长三位一体、单层 while 同步累乘累加、`long long` (%lld) 大数防爆仓 |
+| 3 | [`5.3_guess_number.c`](solutions/5.3_guess_number.c) | 第19页 | 课后挑战：游戏化实战 | `do-while`“至少执行一次”先斩后奏特性、`srand(time(NULL))` 随机数种子、`rand()%100+1` 区间映射 |
+| 4 | [`exercise_fix_loop_errors.c`](exercises/exercise_fix_loop_errors.c) | 第16页 | 质检排雷：常见错误盘点 | `case` 漏 `break` 穿透、`while ();` 空语句死循环、漏写 `i++` 计数器未更新 |
 
 ---
 

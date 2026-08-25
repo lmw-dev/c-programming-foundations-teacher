@@ -37,10 +37,10 @@ lessons/L09_strings/
 
 | 序号 | 资产源文件 | 对应 PPT 页码 | 教学定位 | 核心考点 / 技能点 |
 |:---:|:---|:---:|:---|:---|
-| 1 | [`9.1_string_len_copy.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L09_strings/lecture-demo/9.1_string_len_copy.c) | 第6, 7, 13, 14页 | 课上精讲：字符串内存与安全复制 | 单字符 `'A'` (1B) vs 字符串 `"A"` (2B)、`strlen` (数货) vs `sizeof` (量盒子)、手写带边界检查安全复制与显式 `'\0'` 封口 |
-| 2 | [`9.2_caesar_cipher.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L09_strings/lecture-demo/9.2_caesar_cipher.c) | 第18页 | 密码学实战：凯撒密码 | 字符逐位扫描、`(c - 'a' + offset) % 26 + 'a'` 模运算环形回绕、对称加解密验证 |
-| 3 | [`9.3_word_counter.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L09_strings/solutions/9.3_word_counter.c) | 第11, 17页 | 文本流解析：有限状态机与安全输入 | 彻底废弃 `gets()`，`fgets()` 工业级安全防线、`in_word` 状态突变 (0->1) 统计单词、多重空格鲁棒解析 |
-| 4 | [`exercise_fix_string_errors.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L09_strings/exercises/exercise_fix_string_errors.c) | 第8, 11, 12, 15页 | 专升本经典改错：字符串四大雷区 | 漏给 `'\0'` 预留空间引发“烫烫烫”乱码、直接赋值或双等号比较地址、`strcat` 缓冲区空间不足 |
+| 1 | [`9.1_string_len_copy.c`](lecture-demo/9.1_string_len_copy.c) | 第6, 7, 13, 14页 | 课上精讲：字符串内存与安全复制 | 单字符 `'A'` (1B) vs 字符串 `"A"` (2B)、`strlen` (数货) vs `sizeof` (量盒子)、手写带边界检查安全复制与显式 `'\0'` 封口 |
+| 2 | [`9.2_caesar_cipher.c`](lecture-demo/9.2_caesar_cipher.c) | 第18页 | 密码学实战：凯撒密码 | 字符逐位扫描、`(c - 'a' + offset) % 26 + 'a'` 模运算环形回绕、对称加解密验证 |
+| 3 | [`9.3_word_counter.c`](solutions/9.3_word_counter.c) | 第11, 17页 | 文本流解析：有限状态机与安全输入 | 彻底废弃 `gets()`，`fgets()` 工业级安全防线、`in_word` 状态突变 (0->1) 统计单词、多重空格鲁棒解析 |
+| 4 | [`exercise_fix_string_errors.c`](exercises/exercise_fix_string_errors.c) | 第8, 11, 12, 15页 | 专升本经典改错：字符串四大雷区 | 漏给 `'\0'` 预留空间引发“烫烫烫”乱码、直接赋值或双等号比较地址、`strcat` 缓冲区空间不足 |
 
 ---
 

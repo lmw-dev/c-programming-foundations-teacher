@@ -1,7 +1,7 @@
 # 第04讲 练习与测试参考答案及考点解析
 
 > **适用对象**：教师备课讲评 / 课后答疑  
-> **对应学生题单**：[`exercises_04.md`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L04_selection/exercises/exercises_04.md)
+> **对应学生题单**：[`exercises_04.md`](../exercises/exercises_04.md)
 
 ---
 

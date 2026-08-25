@@ -37,10 +37,10 @@ lessons/L04_selection/
 
 | 序号 | 资产源文件 | 对应 PPT 页码 | 教学定位 | 核心考点 / 技能点 |
 |:---:|:---|:---:|:---|:---|
-| 1 | [`4.1_leap_year.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L04_selection/lecture-demo/4.1_leap_year.c) | 第12页 | 课上精讲：双书对比 | 嵌套逻辑树 vs 复合逻辑表达式、短路求值（`&&` / `\|\|`）提前截断机制 |
-| 2 | [`4.2_three_max.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L04_selection/lecture-demo/4.2_three_max.c) | 第15页 | 机房实战：算法演进 | 嵌套两两比较 vs **“打擂台（Arena）算法”**，$O(N)$ 线性复杂度演进 |
-| 3 | [`4.3_smart_calculator.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L04_selection/solutions/4.3_smart_calculator.c) | 第16~17页 | 实践工坊：防御性编程 | `scanf("%f %c %f")` 缓冲区排雷（空格吃回车）、`fabs(num2) < 1e-6` 浮点除零拦截 |
-| 4 | [`exercise_fix_if_errors.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L04_selection/exercises/exercise_fix_if_errors.c) | 第13~14页 | 质检排雷：8大翻车地雷 | `if ();` 空语句地雷、`if (x = 5)` 赋值恒真、`score >= 60` 边界等号 |
+| 1 | [`4.1_leap_year.c`](lecture-demo/4.1_leap_year.c) | 第12页 | 课上精讲：双书对比 | 嵌套逻辑树 vs 复合逻辑表达式、短路求值（`&&` / `\|\|`）提前截断机制 |
+| 2 | [`4.2_three_max.c`](lecture-demo/4.2_three_max.c) | 第15页 | 机房实战：算法演进 | 嵌套两两比较 vs **“打擂台（Arena）算法”**，$O(N)$ 线性复杂度演进 |
+| 3 | [`4.3_smart_calculator.c`](solutions/4.3_smart_calculator.c) | 第16~17页 | 实践工坊：防御性编程 | `scanf("%f %c %f")` 缓冲区排雷（空格吃回车）、`fabs(num2) < 1e-6` 浮点除零拦截 |
+| 4 | [`exercise_fix_if_errors.c`](exercises/exercise_fix_if_errors.c) | 第13~14页 | 质检排雷：8大翻车地雷 | `if ();` 空语句地雷、`if (x = 5)` 赋值恒真、`score >= 60` 边界等号 |
 
 ---
 

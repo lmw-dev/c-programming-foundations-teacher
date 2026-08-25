@@ -37,10 +37,10 @@ lessons/L02_data-types/
 
 | 序号 | 资产源文件 | 对应 PPT 页码 | 教学定位 | 核心考点 / 技能点 |
 |:---:|:---|:---:|:---|:---|
-| 1 | [`2.1_ghost_value.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L02_data-types/lecture-demo/2.1_ghost_value.c) | 第11页 | 课上精讲：内存复用与初始化 | 局部变量未初始化残留值、`volatile` 读取、赋初值必要性 |
-| 2 | [`2.2_ascii_mask.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L02_data-types/lecture-demo/2.2_ascii_mask.c) | 第16页 | 课上精讲：字符型的本质 | `char` 1 字节整数本质、`%c` vs `%d` 视角、ASCII 码映射、字符加法 |
-| 3 | [`task1_sizeof_ruler_starter.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L02_data-types/starter/task1_sizeof_ruler_starter.c)<br>[`2.3_sizeof_ruler.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L02_data-types/solutions/2.3_sizeof_ruler.c) | 第17~18页 | 上机实操：sizeof 量地尺 | `sizeof` 运算符、测量变量与类型字节数、平台与编译器尺寸差异 |
-| 4 | [`task2_price_calc_starter.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L02_data-types/starter/task2_price_calc_starter.c)<br>[`2.4_uppercase_swap.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L02_data-types/solutions/2.4_uppercase_swap.c) | 第8、19页 | 课后挑战：字符运算与符号常量 | 大小写 ASCII 偏移（+32）、`#define` 符号常量、`scanf` 与 `%.2f` 输出 |
+| 1 | [`2.1_ghost_value.c`](lecture-demo/2.1_ghost_value.c) | 第11页 | 课上精讲：内存复用与初始化 | 局部变量未初始化残留值、`volatile` 读取、赋初值必要性 |
+| 2 | [`2.2_ascii_mask.c`](lecture-demo/2.2_ascii_mask.c) | 第16页 | 课上精讲：字符型的本质 | `char` 1 字节整数本质、`%c` vs `%d` 视角、ASCII 码映射、字符加法 |
+| 3 | [`task1_sizeof_ruler_starter.c`](starter/task1_sizeof_ruler_starter.c)<br>[`2.3_sizeof_ruler.c`](solutions/2.3_sizeof_ruler.c) | 第17~18页 | 上机实操：sizeof 量地尺 | `sizeof` 运算符、测量变量与类型字节数、平台与编译器尺寸差异 |
+| 4 | [`task2_price_calc_starter.c`](starter/task2_price_calc_starter.c)<br>[`2.4_uppercase_swap.c`](solutions/2.4_uppercase_swap.c) | 第8、19页 | 课后挑战：字符运算与符号常量 | 大小写 ASCII 偏移（+32）、`#define` 符号常量、`scanf` 与 `%.2f` 输出 |
 
 ---
 

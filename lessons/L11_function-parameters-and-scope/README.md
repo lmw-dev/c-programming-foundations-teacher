@@ -38,10 +38,10 @@ lessons/L11_function-parameters-and-scope/
 
 | 序号 | 资产源文件 | 对应 PPT 页码 | 教学定位 | 核心考点 / 技能点 |
 |:---:|:---|:---:|:---|:---|
-| 1 | [`11.1_array_reverse.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L11_function-parameters-and-scope/lecture-demo/11.1_array_reverse.c) | 第4, 5, 18页 | 课上精讲：数组传参本质与原地逆序 | 数组名自动退化为首元素指针、`sizeof(arr)` 退化为 8B/4B、实参形参共享内存原地换血、成对法则传 `size` |
-| 2 | [`11.2_macro_trap.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L11_function-parameters-and-scope/lecture-demo/11.2_macro_trap.c) | 第13, 14, 15页 | 预处理机制：宏替换陷阱与防御 | 预处理纯文本无脑替换本质、`SQUARE_BAD(a+b)` 展开为 $a+b \times a+b$ 陷阱、带参宏双重括号黄金防错法则 |
-| 3 | [`11.3_static_tracker.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L11_function-parameters-and-scope/solutions/11.3_static_tracker.c) | 第10, 11, 19页 | 工业实战：静态局部变量状态持久化 | `static` 静态局部变量只初始化一次、存储在静态数据区、跨函数调用状态保留、代替易污染全局变量 |
-| 4 | [`exercise_fix_param_macro_errors.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L11_function-parameters-and-scope/exercises/exercise_fix_param_macro_errors.c) | 第6, 10, 14页 | 专升本经典改错：数组参数与宏三大陷阱 | 二维数组形参漏列数报错、宏末尾加分号灾难、宏无括号优先级错乱、`auto` 变量每次归零 |
+| 1 | [`11.1_array_reverse.c`](lecture-demo/11.1_array_reverse.c) | 第4, 5, 18页 | 课上精讲：数组传参本质与原地逆序 | 数组名自动退化为首元素指针、`sizeof(arr)` 退化为 8B/4B、实参形参共享内存原地换血、成对法则传 `size` |
+| 2 | [`11.2_macro_trap.c`](lecture-demo/11.2_macro_trap.c) | 第13, 14, 15页 | 预处理机制：宏替换陷阱与防御 | 预处理纯文本无脑替换本质、`SQUARE_BAD(a+b)` 展开为 $a+b \times a+b$ 陷阱、带参宏双重括号黄金防错法则 |
+| 3 | [`11.3_static_tracker.c`](solutions/11.3_static_tracker.c) | 第10, 11, 19页 | 工业实战：静态局部变量状态持久化 | `static` 静态局部变量只初始化一次、存储在静态数据区、跨函数调用状态保留、代替易污染全局变量 |
+| 4 | [`exercise_fix_param_macro_errors.c`](exercises/exercise_fix_param_macro_errors.c) | 第6, 10, 14页 | 专升本经典改错：数组参数与宏三大陷阱 | 二维数组形参漏列数报错、宏末尾加分号灾难、宏无括号优先级错乱、`auto` 变量每次归零 |
 
 ---
 

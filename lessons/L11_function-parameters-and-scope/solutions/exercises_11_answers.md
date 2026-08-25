@@ -1,7 +1,7 @@
 # 第11讲 练习与测试参考答案及考点解析
 
 > **适用对象**：教师备课讲评 / 专升本考点辅导  
-> **对应学生题单**：[`exercises_11.md`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L11_function-parameters-and-scope/exercises/exercises_11.md)
+> **对应学生题单**：[`exercises_11.md`](../exercises/exercises_11.md)
 
 ---
 

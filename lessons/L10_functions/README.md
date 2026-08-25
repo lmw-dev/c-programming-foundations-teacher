@@ -38,10 +38,10 @@ lessons/L10_functions/
 
 | 序号 | 资产源文件 | 对应 PPT 页码 | 教学定位 | 核心考点 / 技能点 |
 |:---:|:---|:---:|:---|:---|
-| 1 | [`10.1_circular_calculator.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L10_functions/lecture-demo/10.1_circular_calculator.c) | 第5, 6, 7, 11页 | 课上精讲：3层5函数模块化架构 | 自顶向下拆解（调度层、计算控制层、专业工具层）、函数原型声明与定义分离、形参实参单向值传递、返回值类型强制转换 |
-| 2 | [`10.2_scope_and_static.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L10_functions/lecture-demo/10.2_scope_and_static.c) | 第12, 13, 14页 | 内存进阶：作用域与 static 机制 | 局部变量（栈区随生随死） vs 全局变量（常驻内存）、同名局部遮蔽全局原则、`static` 静态局部变量单次初始化与状态保留 |
-| 3 | [`10.3_palindrome_checker.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L10_functions/solutions/10.3_palindrome_checker.c) | 第17~19页 | 工业实战：关注点分离与防御性检测 | 单一职责原则（输入清洗 `read_valid_integer` 与业务判定 `is_palindrome` 解耦）、纯数学逆序算法、负数安检与缓冲区冲刷防御 |
-| 4 | [`exercise_fix_function_errors.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L10_functions/exercises/exercise_fix_function_errors.c) | 第6, 11, 16页 | 专升本经典改错：函数四大翻车陷阱 | 函数定义首部末尾误加分号、形参漏写类型、非 void 分支漏写 return、返回值类型不匹配导致精度被截断 |
+| 1 | [`10.1_circular_calculator.c`](lecture-demo/10.1_circular_calculator.c) | 第5, 6, 7, 11页 | 课上精讲：3层5函数模块化架构 | 自顶向下拆解（调度层、计算控制层、专业工具层）、函数原型声明与定义分离、形参实参单向值传递、返回值类型强制转换 |
+| 2 | [`10.2_scope_and_static.c`](lecture-demo/10.2_scope_and_static.c) | 第12, 13, 14页 | 内存进阶：作用域与 static 机制 | 局部变量（栈区随生随死） vs 全局变量（常驻内存）、同名局部遮蔽全局原则、`static` 静态局部变量单次初始化与状态保留 |
+| 3 | [`10.3_palindrome_checker.c`](solutions/10.3_palindrome_checker.c) | 第17~19页 | 工业实战：关注点分离与防御性检测 | 单一职责原则（输入清洗 `read_valid_integer` 与业务判定 `is_palindrome` 解耦）、纯数学逆序算法、负数安检与缓冲区冲刷防御 |
+| 4 | [`exercise_fix_function_errors.c`](exercises/exercise_fix_function_errors.c) | 第6, 11, 16页 | 专升本经典改错：函数四大翻车陷阱 | 函数定义首部末尾误加分号、形参漏写类型、非 void 分支漏写 return、返回值类型不匹配导致精度被截断 |
 
 ---
 

@@ -37,10 +37,10 @@ lessons/L06_loops/
 
 | 序号 | 资产源文件 | 对应 PPT 页码 | 教学定位 | 核心考点 / 技能点 |
 |:---:|:---|:---:|:---|:---|
-| 1 | [`6.1_multiplication_table.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L06_loops/lecture-demo/6.1_multiplication_table.c) | 第9~10页 | 课上精讲：双重循环经典 | 双重 for 嵌套、时钟分针秒针模型、`j <= i` 直角三角形约束、`\t` 硬件级对齐 |
-| 2 | [`6.2_prime_filter.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L06_loops/lecture-demo/6.2_prime_filter.c) | 第16~17页 | 算法演进：数学级减负 | `break` 一票否决制提前跳出内层、`sqrt(num)`（`<math.h>`）将复杂度由 $O(N)$ 降至 $O(\sqrt{N})$ |
-| 3 | [`6.3_score_skipper.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L06_loops/solutions/6.3_score_skipper.c) | 第11~15页 | 实践工坊：控制流刹车 | `break` 哨兵退出 (-1) vs `continue` 异常跳过、深度拦截 while 中 continue 导致的死循环 |
-| 4 | [`exercise_fix_nested_errors.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L06_loops/exercises/exercise_fix_nested_errors.c) | 第7, 15页 | 质检排雷：三大夺命地雷 | `for ();` 空循环分号地雷、内外层循环计数器同名打架、换行排版错位 |
+| 1 | [`6.1_multiplication_table.c`](lecture-demo/6.1_multiplication_table.c) | 第9~10页 | 课上精讲：双重循环经典 | 双重 for 嵌套、时钟分针秒针模型、`j <= i` 直角三角形约束、`\t` 硬件级对齐 |
+| 2 | [`6.2_prime_filter.c`](lecture-demo/6.2_prime_filter.c) | 第16~17页 | 算法演进：数学级减负 | `break` 一票否决制提前跳出内层、`sqrt(num)`（`<math.h>`）将复杂度由 $O(N)$ 降至 $O(\sqrt{N})$ |
+| 3 | [`6.3_score_skipper.c`](solutions/6.3_score_skipper.c) | 第11~15页 | 实践工坊：控制流刹车 | `break` 哨兵退出 (-1) vs `continue` 异常跳过、深度拦截 while 中 continue 导致的死循环 |
+| 4 | [`exercise_fix_nested_errors.c`](exercises/exercise_fix_nested_errors.c) | 第7, 15页 | 质检排雷：三大夺命地雷 | `for ();` 空循环分号地雷、内外层循环计数器同名打架、换行排版错位 |
 
 ---
 

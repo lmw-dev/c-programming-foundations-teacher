@@ -1,7 +1,7 @@
 # 第16讲 升本冲刺测评参考答案及考点深度解析（⭐阶段大回收3）
 
 > **适用对象**：教师备课讲评 / 专升本考前冲刺辅导 / 阶段大回收评估  
-> **对应学生题单**：[`exercises_16.md`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L16_comprehensive-review/exercises/exercises_16.md)
+> **对应学生题单**：[`exercises_16.md`](../exercises/exercises_16.md)
 
 ---
 
@@ -55,5 +55,5 @@
 ## 💻 第四部分：编程大题实战参考
 
 见标准代码库实现：
-- 结构体整包置换排序：[`14.3_student_sorter.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L14_structures/solutions/14.3_student_sorter.c)
-- 单链表按成绩降序动态构建与落盘：[`16.3_bachelor_rush.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L16_comprehensive-review/solutions/16.3_bachelor_rush.c)
+- 结构体整包置换排序：[`14.3_student_sorter.c`](../../L14_structures/solutions/14.3_student_sorter.c)
+- 单链表按成绩降序动态构建与落盘：[`16.3_bachelor_rush.c`](16.3_bachelor_rush.c)

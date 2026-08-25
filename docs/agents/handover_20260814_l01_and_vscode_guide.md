@@ -1,6 +1,6 @@
-# 教学资产交付与全景维护交接文档（全课程 16 讲终局圆满交付）
+# 教学资产交付与全景维护交接文档（全课程 16 讲终局圆满交付与链接规范化）
 
-**更新日期**：2026-08-20  
+**更新日期**：2026-08-25  
 **维护人**：Antigravity  
 **关联课件**：
 - 第01讲：`/Users/liumingwei/vaults/WorkbenchVault/1_Projects/P-202608-Adjunct-Teaching_C-Language-Foundation/02-课件逐字稿/第01讲-PPT逐页文稿-待审定.md`
@@ -23,25 +23,17 @@
 
 ---
 
-## 一、 L16 全课程综合复习与升本题型训练（⭐阶段大回收3）建设成果
+## 一、 最新整改与规范化落地
 
-基于谭版、何版、北石化版、湖大版及专升本统考真题大纲（共 20 页 PPT 逐页文稿），闭环构建了第 16 讲全部代码与教案：
-
-1. **课堂演示代码 (`lessons/L16_comprehensive-review/lecture-demo/`)**：
-   - `16.1_exam_traps.c`：五大考场高频“面具考点”诊断排雷（补码爆仓与溢出、逻辑短路空气开关、`*p++` 时序、共用体首地址覆盖、无括号宏展开）。
-   - `16.2_static_and_scope.c`：作用域与生命期解密（全局/局部重名遮蔽、`static` 局部变量“不释放、不重置”、复合语句块作用域隔离）。
-2. **学生起步模板 (`lessons/L16_comprehensive-review/starter/`)**：
-   - `task1_exam_traps_starter.c`：考点排雷起步模板。
-   - `task2_static_and_scope_starter.c`：作用域与 static 模板。
-   - `task3_bachelor_rush_starter.c`：单链表降序构建与落盘模板。
-3. **当堂练习与评测 (`lessons/L16_comprehensive-review/exercises/`)**：
-   - `exercises_16.md`：全课程大回收模拟试卷（单选10题 + 读程序3题 + 改错2题 + 编程大题2题）。
-   - `exercise_fix_exam_traps.c`：专升本经典改错（带参宏括号、字符常量区改写崩溃、结构体排序局部交换错位、动态内存安全）。
-4. **教师参考答案 (`lessons/L16_comprehensive-review/solutions/`)**：
-   - `16.3_bachelor_rush.c`：升本/期末压轴大题标杆（`malloc`/`free` 动态内存 + 单链表原地降序有序插入 `insert_sorted` + `save_list_to_file` 文件持久化落盘 + `free_list` 物理内存安全回收）。
-   - `exercises_16_answers.md`：模拟卷标准答案与升本考点深度解析。
-5. **全景理实一体化导学案**：
-   - [`lessons/L16_comprehensive-review/README.md`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L16_comprehensive-review/README.md)：包含全书知识版图、存储区/作用域/生命期全景图、单链表指针穿针引线图解与 4 课时时间分配。
+1. **L01 故意报错代码解耦拆分**：
+   - 移除原有的 `1.4_error_playground.c`；
+   - 拆解为：
+     - `1.4_error_examples.md`：详细列举常见编译报错案例代码片段与现象、原因、排错方法；
+     - `1.4_error_fixed.c`：唯一要求可编译运行的标准修正版。
+2. **全库 Markdown 绝对路径链接规范化**：
+   - 将全库 35 份 Markdown 文档中所有本机绝对路径（`file:///Users/...`）批量转换为标准的相对路径链接（如 `[Hello World](lecture-demo/1.1_hello_world.c)`），杜绝换电脑或在不同环境下链接失效问题。
+3. **根目录 README.md 同步升级**：
+   - 全面更新根目录 `README.md`，真实体现 16 讲全量完成、117 个 C 源文件通过验证、工具链完善的状态。
 
 ---
 

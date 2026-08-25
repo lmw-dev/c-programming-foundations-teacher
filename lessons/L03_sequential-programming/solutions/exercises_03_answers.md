@@ -1,7 +1,7 @@
 # 第03讲 练习与测试参考答案及考点解析
 
 > **适用对象**：教师备课讲评 / 课后答疑  
-> **对应学生题单**：[`exercises_03.md`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L03_sequential-programming/exercises/exercises_03.md)
+> **对应学生题单**：[`exercises_03.md`](../exercises/exercises_03.md)
 
 ---
 

@@ -20,7 +20,7 @@
 ## 💻 二、 编程改错题（升本常考题型）
 
 ### 题目 2：排查并修复语法错误
-请阅读并尝试编译同目录下的源文件 [`exercise_fix_errors.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L01_intro/exercises/exercise_fix_errors.c)。  
+请阅读并尝试编译同目录下的源文件 [`exercise_fix_errors.c`](exercise_fix_errors.c)。  
 该程序中故意埋设了 3 处初学者最容易犯的典型错误。请在不改变原输出意图的前提下，将所有错误修复并成功运行。
 
 ---

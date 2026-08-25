@@ -1,7 +1,7 @@
 # 第08讲 练习与测试参考答案及考点解析 (阶段回收节点 1)
 
 > **适用对象**：教师备课讲评 / 前半学期阶段大回收考核  
-> **对应学生题单**：[`exercises_08.md`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L08_two-dimensional-arrays/exercises/exercises_08.md)
+> **对应学生题单**：[`exercises_08.md`](../exercises/exercises_08.md)
 
 ---
 

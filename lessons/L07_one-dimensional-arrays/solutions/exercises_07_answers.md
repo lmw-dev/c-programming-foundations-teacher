@@ -1,7 +1,7 @@
 # 第07讲 练习与测试参考答案及考点解析
 
 > **适用对象**：教师备课讲评 / 课后答疑  
-> **对应学生题单**：[`exercises_07.md`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L07_one-dimensional-arrays/exercises/exercises_07.md)
+> **对应学生题单**：[`exercises_07.md`](../exercises/exercises_07.md)
 
 ---
 

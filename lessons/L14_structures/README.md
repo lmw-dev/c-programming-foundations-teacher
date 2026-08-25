@@ -38,10 +38,10 @@ lessons/L14_structures/
 
 | 序号 | 资产源文件 | 对应 PPT 页码 | 教学定位 | 核心考点 / 技能点 |
 |:---:|:---|:---:|:---|:---|
-| 1 | [`14.1_struct_basics.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L14_structures/lecture-demo/14.1_struct_basics.c) | 第4, 5, 6, 7, 8页 | 课上精讲：结构体图纸、嵌套与块复制 | 类型不占内存 vs 变量分配空间、嵌套结构体 Date、`strcpy` 字符数组赋值排雷、`stu3 = stu1` 块复制 |
-| 2 | [`14.2_struct_pointer.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L14_structures/lecture-demo/14.2_struct_pointer.c) | 第11, 12, 13, 14页 | 核心攻坚：结构指针与传参性能大对决 | 三大等价访问形态（`stu.id` <=> `(*ptr).id` <=> `ptr->id`）、`.` 与 `*` 优先级陷阱、值传递栈拷贝 vs 指针传递零开销 |
-| 3 | [`14.3_student_sorter.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L14_structures/solutions/14.3_student_sorter.c) | 第9, 10, 17, 18页 | 工业实战：学生多科成绩降序排序器 | 结构体数组批量管理、降序起泡排序算法、【整包置换铁律】彻底杜绝人分错位灾难、格式化对齐打印 |
-| 4 | [`exercise_fix_struct_errors.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L14_structures/exercises/exercise_fix_struct_errors.c) | 第4, 12, 16页 | 专升本经典改错：结构体四大致命翻车地雷 | 结构体定义末尾漏写分号、字符数组成员非法赋值、普通变量误用箭头、未初始化结构指针空中解引用 |
+| 1 | [`14.1_struct_basics.c`](lecture-demo/14.1_struct_basics.c) | 第4, 5, 6, 7, 8页 | 课上精讲：结构体图纸、嵌套与块复制 | 类型不占内存 vs 变量分配空间、嵌套结构体 Date、`strcpy` 字符数组赋值排雷、`stu3 = stu1` 块复制 |
+| 2 | [`14.2_struct_pointer.c`](lecture-demo/14.2_struct_pointer.c) | 第11, 12, 13, 14页 | 核心攻坚：结构指针与传参性能大对决 | 三大等价访问形态（`stu.id` <=> `(*ptr).id` <=> `ptr->id`）、`.` 与 `*` 优先级陷阱、值传递栈拷贝 vs 指针传递零开销 |
+| 3 | [`14.3_student_sorter.c`](solutions/14.3_student_sorter.c) | 第9, 10, 17, 18页 | 工业实战：学生多科成绩降序排序器 | 结构体数组批量管理、降序起泡排序算法、【整包置换铁律】彻底杜绝人分错位灾难、格式化对齐打印 |
+| 4 | [`exercise_fix_struct_errors.c`](exercises/exercise_fix_struct_errors.c) | 第4, 12, 16页 | 专升本经典改错：结构体四大致命翻车地雷 | 结构体定义末尾漏写分号、字符数组成员非法赋值、普通变量误用箭头、未初始化结构指针空中解引用 |
 
 ---
 

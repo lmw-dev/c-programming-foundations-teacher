@@ -37,10 +37,10 @@ lessons/L03_sequential-programming/
 
 | 序号 | 资产源文件 | 对应 PPT 页码 | 教学定位 | 核心考点 / 技能点 |
 |:---:|:---|:---:|:---|:---|
-| 1 | [`3.1_temp_convert.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L03_sequential-programming/lecture-demo/3.1_temp_convert.c) | 第14~15页 | 课上精讲：除法截断与 scanf 排雷 | `5/9` 截断为 0 原理、`5.0f/9.0f` 隐式提升、`scanf` 取地址符 `&` 内存机理 |
-| 2 | [`3.2_calculator.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L03_sequential-programming/lecture-demo/3.2_calculator.c) | 第16~17页 | 当堂任务：两数多功能计算器 | 5 大算术运算、`(double)` 强制类型转换求精确商、带符号取模天条 |
-| 3 | [`3.3_bank_interest.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L03_sequential-programming/solutions/3.3_bank_interest.c) | 第19页 | 课后挑战：银行复利计算器 | `<math.h>` 幂函数 `pow()`、`double` 与 `%lf` 高精度金融计算、Linux 下 `-lm` 链接常识 |
-| 4 | [`exercise_fix_scanf_errors.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L03_sequential-programming/exercises/exercise_fix_scanf_errors.c) | 第14~15页 | 升本改错：输入输出与精度排雷 | `scanf` 缺 `&` 闪退排查、圆面积计算公式、`double` 占位符匹配 |
+| 1 | [`3.1_temp_convert.c`](lecture-demo/3.1_temp_convert.c) | 第14~15页 | 课上精讲：除法截断与 scanf 排雷 | `5/9` 截断为 0 原理、`5.0f/9.0f` 隐式提升、`scanf` 取地址符 `&` 内存机理 |
+| 2 | [`3.2_calculator.c`](lecture-demo/3.2_calculator.c) | 第16~17页 | 当堂任务：两数多功能计算器 | 5 大算术运算、`(double)` 强制类型转换求精确商、带符号取模天条 |
+| 3 | [`3.3_bank_interest.c`](solutions/3.3_bank_interest.c) | 第19页 | 课后挑战：银行复利计算器 | `<math.h>` 幂函数 `pow()`、`double` 与 `%lf` 高精度金融计算、Linux 下 `-lm` 链接常识 |
+| 4 | [`exercise_fix_scanf_errors.c`](exercises/exercise_fix_scanf_errors.c) | 第14~15页 | 升本改错：输入输出与精度排雷 | `scanf` 缺 `&` 闪退排查、圆面积计算公式、`double` 占位符匹配 |
 
 ---
 

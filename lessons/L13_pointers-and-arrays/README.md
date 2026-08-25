@@ -38,10 +38,10 @@ lessons/L13_pointers-and-arrays/
 
 | 序号 | 资产源文件 | 对应 PPT 页码 | 教学定位 | 核心考点 / 技能点 |
 |:---:|:---|:---:|:---|:---|
-| 1 | [`13.1_array_reverse_ptr.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L13_pointers-and-arrays/lecture-demo/13.1_array_reverse_ptr.c) | 第4, 5, 6, 16页 | 课上精讲：指针算术与向心原地逆序 | 数组名作为地址常量、指针加法步长自适应（`arr + size - 1` 物理偏移 `(size-1)*4` 字节）、双指针对向碰头原地对调 |
-| 2 | [`13.2_matrix_ptr_walking.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L13_pointers-and-arrays/lecture-demo/13.2_matrix_ptr_walking.c) | 第9, 10, 11, 12页 | 深度解密：二维数组行/列指针步长对决 | Row-Major 行优先连续线性平铺、列指针 `col_ptr+1` 步长 4B vs 行指针 `row_ptr+1` 步长 16B、四种多维寻址等价式 |
-| 3 | [`13.3_string_cipher.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L13_pointers-and-arrays/solutions/13.3_string_cipher.c) | 第13, 14, 17, 18页 | 工业实战：字符指针滑动扫描电码加密 | 栈区字符数组（可读写） vs 只读常量区（写保护闪退）、`fgets` 缓冲区安全防线、`\0` 隐形结束哨兵扫描 |
-| 4 | [`exercise_fix_pointer_array_errors.c`](file:///Users/liumingwei/01-project/14-lmw-job/c-programming-foundations-teacher/lessons/L13_pointers-and-arrays/exercises/exercise_fix_pointer_array_errors.c) | 第4, 13, 14页 | 专升本经典改错：指针与数组三大地雷 | 数组名常量执行 `a++` 报错、未分配栈空间的字符指针传入 `scanf` 导致崩溃、字符串常量区强行改写段错误 |
+| 1 | [`13.1_array_reverse_ptr.c`](lecture-demo/13.1_array_reverse_ptr.c) | 第4, 5, 6, 16页 | 课上精讲：指针算术与向心原地逆序 | 数组名作为地址常量、指针加法步长自适应（`arr + size - 1` 物理偏移 `(size-1)*4` 字节）、双指针对向碰头原地对调 |
+| 2 | [`13.2_matrix_ptr_walking.c`](lecture-demo/13.2_matrix_ptr_walking.c) | 第9, 10, 11, 12页 | 深度解密：二维数组行/列指针步长对决 | Row-Major 行优先连续线性平铺、列指针 `col_ptr+1` 步长 4B vs 行指针 `row_ptr+1` 步长 16B、四种多维寻址等价式 |
+| 3 | [`13.3_string_cipher.c`](solutions/13.3_string_cipher.c) | 第13, 14, 17, 18页 | 工业实战：字符指针滑动扫描电码加密 | 栈区字符数组（可读写） vs 只读常量区（写保护闪退）、`fgets` 缓冲区安全防线、`\0` 隐形结束哨兵扫描 |
+| 4 | [`exercise_fix_pointer_array_errors.c`](exercises/exercise_fix_pointer_array_errors.c) | 第4, 13, 14页 | 专升本经典改错：指针与数组三大地雷 | 数组名常量执行 `a++` 报错、未分配栈空间的字符指针传入 `scanf` 导致崩溃、字符串常量区强行改写段错误 |
 
 ---
 
