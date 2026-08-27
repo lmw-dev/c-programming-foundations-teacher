@@ -13,6 +13,7 @@
 lessons/L01_intro/
 ├── README.md                                # 本讲教学说明与全景导学指南（本文件）
 ├── lecture-demo/                            # 课堂演示代码（教师现场讲解与演示）
+│   ├── menu_runner.c                        # ⭐ Visual Studio 专属一键式全案交互运行器（零冲突，强烈推荐）
 │   ├── 1.0_instruction_simulator.c         # ⭐ PPT 第10~12页：虚拟7条指令虚拟机与 A+B+C / A*B 模拟器
 │   ├── 1.1_hello_world.c                    # PPT 第14~15页：最简标准C结构逐行剖析与四大基石
 │   ├── 1.2_multi_line_output.c              # PPT 第17页：多行输出与 \n 换行符机制对比
@@ -43,6 +44,7 @@ lessons/L01_intro/
 
 | 序号 | 源文件名 / 资产名 | 对应 PPT 页码 | 教学定位 | 核心考点 / 技能点 |
 |:---:|:---|:---:|:---|:---|
+| ⭐ | [`menu_runner.c`](lecture-demo/menu_runner.c) | 全讲综合 | VS 一键式全案交互运行器 | 单项目零冲突，数字菜单随意调度 6 大演示案例 |
 | 1 | [`1.0_instruction_simulator.c`](lecture-demo/1.0_instruction_simulator.c) | 第10~12页 | 启蒙导入：虚拟指令系统与程序本质 | 7条极简指令集、顺序累加 $A+B+C$、循环累加 $A \times B$ 底层模拟 |
 | 2 | [`1.1_hello_world.c`](lecture-demo/1.1_hello_world.c) | 第14~15页 | 课上精讲：最简标准C程序结构与四大基石 | 预处理指令、`main(void)` 入口、`printf`、`return 0`、分号 `;` |
 | 3 | [`1.5_sum_two_numbers.c`](lecture-demo/1.5_sum_two_numbers.c) | 第16页 | 进阶精讲：求两数之和（例1.2） | 变量定义（先定义后使用）、赋值运算符 `=`、`%d` 整型占位符 |
