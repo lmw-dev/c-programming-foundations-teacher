@@ -1,9 +1,9 @@
-# 第01讲 — 认识C程序：C语言概述、程序结构、开发流程与屏幕输出
+# 第01讲 — 从计算机指令到你的第一个C程序
 
-> **对应章节**：第1章 C语言概述 + 第3章 顺序结构程序设计(起步)  
-> **对应课件**：《C语言程序设计基础》第01讲 PPT逐页文稿（共18页）  
-> **课时设置**：4课时（180分钟）理实一体化课堂  
-> **教学目标**：让专升本/职校零基础学生达成**“能说清、能看懂、能写出、能运行”**的四维学习指标。
+> **对应章节**：第1章 C语言概述 + 第3章 顺序程序设计(起步)  
+> **对应课件**：《C语言程序设计基础》第01讲 PPT逐页文稿（v4全新对齐版，共26页）  
+> **课时设置**：4课时（180分钟）理实一体化大课  
+> **教学目标**：让专升本/职校零基础学生达成**“玩转指令、看懂结构、走通流程、独立编写”**的四维学习指标。
 
 ---
 
@@ -11,25 +11,29 @@
 
 ```
 lessons/L01_intro/
-├── README.md                                # 本讲教学说明与导学指南（本文件）
+├── README.md                                # 本讲教学说明与全景导学指南（本文件）
 ├── lecture-demo/                            # 课堂演示代码（教师现场讲解与演示）
-│   ├── 1.1_hello_world.c                    # 最简标准C结构逐行剖析 (PPT 第5~6页)
-│   ├── 1.2_multi_line_output.c              # 多行输出与 \n 换行符机制 (PPT 第7~8页)
-│   ├── 1.3_student_card.c                   # 三行“我的程序名片”标准案例 (PPT 第12~13页)
-│   ├── 1.4_error_examples.md                # 常见编译报错案例剖析与排雷指南 (PPT 第11页)
-│   └── 1.4_error_fixed.c                    # 唯一要求可编译运行的标准修正版 (PPT 第11页)
+│   ├── 1.0_instruction_simulator.c         # ⭐ PPT 第10~12页：虚拟7条指令虚拟机与 A+B+C / A*B 模拟器
+│   ├── 1.1_hello_world.c                    # PPT 第14~15页：最简标准C结构逐行剖析与四大基石
+│   ├── 1.2_multi_line_output.c              # PPT 第17页：多行输出与 \n 换行符机制对比
+│   ├── 1.3_student_card.c                   # PPT 第23页：标准程序员电子名卡案例
+│   ├── 1.4_error_examples.md                # PPT 第18页：找茬大作战三选段与常见报错排雷指南
+│   ├── 1.4_error_fixed.c                    # PPT 第18&22页：找茬修复与语法/逻辑错误对比标准版
+│   └── 1.5_sum_two_numbers.c                # ⭐ PPT 第16页：两数之和（例1.2）、变量初识与 %d 占位符
 ├── starter/                                 # 学生起步模板（上机骨架与 TODO 指引）
 │   ├── task1_hello_starter.c                # 任务1：运行 Hello, C!
 │   ├── task2_student_card_starter.c         # 任务2：个人名片骨架填空
-│   └── task3_goal_card_starter.c            # 任务3：个性化学习目标与格式对齐
+│   ├── task3_goal_card_starter.c            # 任务3：个性化学习目标名卡与格式对齐
+│   └── task4_sum_two_numbers_starter.c      # ⭐ 任务4：两数之和与改写三数之和实操
 ├── exercises/                               # 当堂练习与评测
-│   ├── exercises_01.md                      # 快速判断、互评标准卡与离堂小测
+│   ├── exercises_01.md                      # 快速判断、找茬对决、互评标准卡与离堂小测
 │   └── exercise_fix_errors.c                # 升本常考题型：经典语法改错练习
 └── solutions/                               # 教师参考答案（教师私有，不公开）
     ├── task1_hello_solution.c               # 任务1参考答案
     ├── task2_student_card_solution.c        # 任务2参考答案
     ├── task3_goal_card_solution.c           # 任务3参考答案
-    ├── homework_01_solution.c               # PPT 第18页课后作业：不少于4行自我介绍
+    ├── task4_sum_two_numbers_solution.c      # ⭐ 任务4参考答案（两数和 + 三数和 + 乘积改写）
+    ├── homework_01_solution.c               # PPT 第26页课后作业：自我介绍 + 爱心字符画拼图
     └── exercises_01_answers.md              # 评测标准答案与详细考点解析
 ```
 
@@ -37,71 +41,53 @@ lessons/L01_intro/
 
 ## 🗺️ 代码资产与 PPT 页码映射
 
-| 序号 | 源文件名 | 对应 PPT 页码 | 教学定位 | 核心考点 / 技能点 |
+| 序号 | 源文件名 / 资产名 | 对应 PPT 页码 | 教学定位 | 核心考点 / 技能点 |
 |:---:|:---|:---:|:---|:---|
-| 1 | [`1.1_hello_world.c`](lecture-demo/1.1_hello_world.c) | 第5~6页 | 课上精讲：最简标准C程序结构 | 预处理指令、`main(void)` 入口、`printf`、`return 0`、分号 `;` |
-| 2 | [`1.2_multi_line_output.c`](lecture-demo/1.2_multi_line_output.c) | 第7~8页 | 课上精讲：多行输出与转义换行 | 顺序执行逻辑、`\n` 换行符与 `/n` 错误辨析 |
-| 3 | [`1.3_student_card.c`](lecture-demo/1.3_student_card.c) | 第12~13页 | 课上案例：三行“我的程序名片” | 多语句组合排版、格式化输出、学习目标设定 |
-| 4 | [`1.4_error_examples.md`](lecture-demo/1.4_error_examples.md)<br>[`1.4_error_fixed.c`](lecture-demo/1.4_error_fixed.c) | 第11页 | 纠错示范：常见错误初步辨析 | 报错案例剖析（漏分号/中文标点/`mian`拼写/未闭合引号）与唯一可编译运行修正版 |
+| 1 | [`1.0_instruction_simulator.c`](lecture-demo/1.0_instruction_simulator.c) | 第10~12页 | 启蒙导入：虚拟指令系统与程序本质 | 7条极简指令集、顺序累加 $A+B+C$、循环累加 $A \times B$ 底层模拟 |
+| 2 | [`1.1_hello_world.c`](lecture-demo/1.1_hello_world.c) | 第14~15页 | 课上精讲：最简标准C程序结构与四大基石 | 预处理指令、`main(void)` 入口、`printf`、`return 0`、分号 `;` |
+| 3 | [`1.5_sum_two_numbers.c`](lecture-demo/1.5_sum_two_numbers.c) | 第16页 | 进阶精讲：求两数之和（例1.2） | 变量定义（先定义后使用）、赋值运算符 `=`、`%d` 整型占位符 |
+| 4 | [`1.2_multi_line_output.c`](lecture-demo/1.2_multi_line_output.c) | 第17页 | 课上精讲：多行输出与转义换行 | 顺序执行逻辑、`\n` 换行符机制、`/n` 错误辨析 |
+| 5 | [`1.4_error_examples.md`](lecture-demo/1.4_error_examples.md)<br>[`1.4_error_fixed.c`](lecture-demo/1.4_error_fixed.c) | 第18、22页 | 现场对决：找茬大作战与错误辨析 | 找茬三选段（漏分号/中文标点/`mian`拼写/未闭合引号）与语法错误 vs 逻辑错误对比 |
+| 6 | [`1.3_student_card.c`](lecture-demo/1.3_student_card.c) | 第23页 | 实践工坊：程序员电子名卡 | 多语句排版、边框对齐、格式化输出、学习目标设定 |
+| 7 | [`homework_01_solution.c`](solutions/homework_01_solution.c) | 第26页 | 课后挑战：名卡升级与字符画拼图 | 4行以上自我介绍档案 + `printf` 字符爱心图案精密控制 |
 
 ---
 
 ## 🏫 教学实施精细化指引
 
-### 1. 案例精析：最简标准 C 结构（PPT 第5~6页）
+### 1. 案例精析：极简虚拟 CPU 指令系统（PPT 第10~12页）
+- **核心源码**：[`1.0_instruction_simulator.c`](lecture-demo/1.0_instruction_simulator.c)
+- **底层揭秘**：计算机硬件由 CPU 和内存构成，只能听懂极简指令（`Input`, `Output`, `Add`, `Sub`, `Set`, `BranchEq`, `Jump`）。
+- **算法演进**：
+  - **顺序结构**：$A+B+C$ 通过两次两两加法顺序完成；
+  - **循环结构**：无乘法指令时，利用 `BranchEq` 条件判断与 `Jump` 无条件跳转，通过 $B$ 次累加 $A$ 模拟实现 $A \times B$。
+
+### 2. 案例精析：最简标准 C 结构与四大基石（PPT 第14~15页）
 - **核心源码**：[`1.1_hello_world.c`](lecture-demo/1.1_hello_world.c)
-- **场景导入**（PPT 第2页）：日常手机、游戏里的程序，如何从代码变成屏幕上的结果？从最小的 C 程序开始走通“编辑—编译—运行—检查”。
-- **经典“建筑模型”板书**：
-  - `#include <stdio.h>` $\rightarrow$ **“拉外援 / 拿工具箱”**（引入标准输入输出库，否则不认识 `printf`）。
-  - `int main(void)` $\rightarrow$ **“进大门”**（程序的唯一入口，C 程序永远从 `main` 开始执行）。
-  - `{ ... }` $\rightarrow$ **“砌围墙”**（函数体的大括号，限定程序执行的代码块范围）。
-  - `printf("...");` $\rightarrow$ **“大喇叭”**（向屏幕广播双引号内的文字内容）。
-  - `\n` $\rightarrow$ **“敲回车”**（换行转义字符，将光标移至下一行首）。
-  - `;` $\rightarrow$ **“打句号”**（C 语句的法定结束标志，每句话说完必须以英文半角分号结句）。
-  - `return 0;` $\rightarrow$ **“安全到家”**（向操作系统汇报：程序正常执行完毕，无异常）。
+- **四大基石板书模型**：
+  - `#include <stdio.h>` $\rightarrow$ **“拉外援 / 引入工具箱”**（标准输入输出库）；
+  - `int main(void)` $\rightarrow$ **“进大门”**（程序的唯一入口）；
+  - `{ ... }` $\rightarrow$ **“砌围墙”**（函数体复合语句边界）；
+  - `printf("...\n");` $\rightarrow$ **“大喇叭”**（控制台输出与换行）；
+  - `;` $\rightarrow$ **“打句号”**（C 语句法定结束符）；
+  - `return 0;` $\rightarrow$ **“安全到家”**（返回操作系统正常状态码）。
 
-### 2. 案例精析：多行输出与转义换行（PPT 第7~8页）
-- **核心源码**：[`1.2_multi_line_output.c`](lecture-demo/1.2_multi_line_output.c)
-- **顺序执行思维**：C 程序是单向自动扶梯，自上而下严格按顺序逐行执行。
-- **`\n` 换行符的机制对比**：
-  - 不带 `\n`：`printf("Hello"); printf("World");` $\rightarrow$ 输出 `HelloWorld`（挤在同一行）。
-  - 带 `\n`：`printf("Hello\n"); printf("World\n");` $\rightarrow$ 分两行输出。
-- **快速选择互动（PPT 第8页）**：
-  - 提问：“下面哪一项能换行？A. `/n`  B. `\n`  C. `n`”
-  - 重点强调按键位置与斜杠方向：“**反斜杠向后倒 `\`（回车键上方），正斜杠向前倾 `/`（除号/问号键）**”。
+### 3. 进阶精析：求两数之和与变量初识（PPT 第16页）
+- **核心源码**：[`1.5_sum_two_numbers.c`](lecture-demo/1.5_sum_two_numbers.c)
+- **变量三步法**：
+  - `int a, b, sum;` $\rightarrow$ 向内存申请整型收纳盒；
+  - `a = 123; b = 456;` $\rightarrow$ 赋值号 `=` 将数据放入盒中；
+  - `printf("sum is %d\n", sum);` $\rightarrow$ `%d` 作为数据定位锚点，动态替换变量值。
 
-### 3. 上机任务组织：规范格式个人信息名卡（PPT 第12~15页）
-- **核心源码**：[`1.3_student_card.c`](lecture-demo/1.3_student_card.c)
-- **实操任务**：在机房打开集成开发环境（Visual Studio 或 Dev-C++），新建源文件 `1.3_student_card.c`，编写并运行一个格式规范的个人信息名卡。
-- **目标效果展示**：
-  ```text
-  ==================================
-  *  姓名(Name)  : 张三            *
-  *  班级(Class) : 职校数控2601班  *
-  *  学号(ID)    : 20260811001     *
-  *  座右铭      : 用代码改变世界！*
-  ==================================
-  ```
-- **任务分层下达**：
-  - **任务 1**：在 IDE 中输入并运行 `Hello, C!`。
-  - **任务 2**：编写带边框格式规范的个人名卡（将姓名、班级、学号替换为真实信息，并挑战右侧边框垂直对齐）。
-  - **任务 3**：改写座右铭为自己的个性化奋斗目标（如“每天敲100行代码，冲刺专升本！”）。
-- **四项自查清单（PPT 第15页）**：
-  - $\square$ 文件后缀确认为 `.c`（非 `.cpp` 或 `.txt`）
-  - $\square$ `main`、花括号 `{}`、分号 `;` 齐全完整
-  - $\square$ `printf` 中的双引号为英文半角 `""`
-  - $\square$ 控制台输出的名卡边框整齐对齐，信息完整
+### 4. 现场对决：找茬大作战与错误辨析（PPT 第18、22页）
+- **核心文档与源码**：[`1.4_error_examples.md`](lecture-demo/1.4_error_examples.md) / [`1.4_error_fixed.c`](lecture-demo/1.4_error_fixed.c)
+- **语法错误 vs 逻辑错误黄金法则**：
+  - **语法错误**：编译器直接抓包报错，顺着行号定位排错；
+  - **逻辑错误**：编译器不报错，但结果荒谬（如 $3+5$ 误写为 $3-5$），必须依靠**单步调试（Debug）**排查！
 
-### 4. 常见错误辨析与排雷（PPT 第11页）
-- **核心源码**：[`1.4_error_fixed.c`](lecture-demo/1.4_error_fixed.c)
-
-| 错误类型 | 典型错误代码 | 编译器经典报错提示 | 排查与修复方法 |
-|:---|:---|:---|:---|
-| **漏写英文分号** | `printf("...")` 缺少末尾 `;` | `error: expected ';' before 'return'` | 定位到报错行的上一行，在末尾补上英文 `;` |
-| **混用中文标点** | `printf("...");；`（中文分号） | `error: stray '\357'` 或 `未知字符` | 切换输入法为英文半角状态，重新敲入 `;` 或 `""` |
-| **主函数拼写错误**| `int mian(void)` | `undefined reference to 'main'` | 检查程序入口名，将 `mian` 改正为 `main` |
-| **转义符方向写反**| `printf("第一行/n第二行\n");` | 无编译报错，控制台直接打印 `/n` | 将正斜杠 `/` 替换为反斜杠 `\` |
-| **双引号不闭合** | `printf("缺少右引号);` | `error: missing terminating '"' character` | 补齐成对的英文双引号 `""` |
+### 5. 机房实操与 Code Review（PPT 第23~24页）
+- **核心源码**：[`1.3_student_card.c`](lecture-demo/1.3_student_card.c) & [`task2_student_card_starter.c`](starter/task2_student_card_starter.c)
+- **Review 互评三步走**：① 读得通（脑内模拟排版） $\rightarrow$ ② 找隐患（检查 `.c` 后缀、分号、`\n`） $\rightarrow$ ③ 点个赞（夸奖精妙排版）。
 
 ---
 
@@ -109,18 +95,7 @@ lessons/L01_intro/
 
 | 课时 | 时长 | 教学环节 | 核心任务与对应 PPT |
 |:---:|:---:|:---|:---|
-| **第1课时** | 45 min | 认知导入与语法精讲 | PPT 第1~7页：C 语言应用背景、`1.1_hello_world.c` 逐行拆解与“建筑模型”板书 |
-| **第2课时** | 45 min | 上机初体验与运行全流程 | PPT 第8~10页：在 IDE 中新建 `.c` 文件，首次完成“编辑—编译—运行—检查”全闭环 |
-| **第3课时** | 45 min | 案例实操与个性化名片 | PPT 第12~15页：讲解 `1.2` 与 `1.3`，学生独立完成三行名片并改写个性化学习目标 |
-| **第4课时** | 45 min | 报错排雷、同伴互评与离堂小测 | PPT 第11、16~18页：演示 `1.4` 报错排雷，开展同伴互评，完成离堂 3 题小测与作业布置 |
-
----
-
-## 📊 代码资产状态
-
-| 资产类别 | 包含文件 | 当前状态 | 备注 |
-|:---|:---|:---:|:---|
-| **课堂演示代码** | `1.1_hello_world.c`, `1.2_multi_line_output.c`, `1.3_student_card.c`, `1.4_error_fixed.c` | **已定稿** | 4 份演示源文件全量通过编译验证 |
-| **起步模板** | `task1_hello_starter.c`, `task2_student_card_starter.c`, `task3_goal_card_starter.c` | **已定稿** | 3 份上机任务骨架 |
-| **当堂练习** | `exercises_01.md`, `exercise_fix_errors.c` | **已定稿** | 1 份测评题单 + 1 份改错练习 |
-| **参考答案** | `task1`~`task3_solution.c`, `homework_01_solution.c`, `exercises_01_answers.md` | **已定稿** | 4 份代码答案 + 1 份题目解析 |
+| **第1课时** | 45 min | **概念破冰与指令游戏** | 课程通关路线图（PPT 1~6） + 虚拟 7 条指令游戏实战（PPT 7~12） |
+| **第2课时** | 45 min | **C 程序解剖与案例精讲** | C 语言历史（PPT 13） + Hello World 与四大基石（PPT 14~15） + 两数之和与 printf 转义（PPT 16~17） |
+| **第3课时** | 45 min | **找茬对决与开发全流程** | 找茬大作战（PPT 18~19） + 算法偶数和（PPT 20） + 编辑/编译/连接/运行四步走与错误辨析（PPT 21~22） |
+| **第4课时** | 45 min | **机房实训与结课测评** | 上机定制程序员名卡（PPT 23） + 同伴 Code Review（PPT 24） + 离堂小测与作业布置（PPT 25~26） |
