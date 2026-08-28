@@ -20,17 +20,27 @@ int main(void)
     printf("     探秘C语言数据收纳盒 —— 幽灵垃圾值实验        \n");
     printf("====================================================\n\n");
 
+#if defined(_MSC_VER)
+#pragma warning(push)
+#pragma warning(disable: 4700) // 临时关闭 MSVC C4700 未初始化变量使用拦截
+#endif
+
     // 1. 声明未初始化的局部变量（仅在内存中划定空间，未清空残留数据）
-    // 说明：添加 volatile 关键字是为了防止现代编译器自动优化或强制报错，确保顺利编译并读取栈上真实的残留内存
-    volatile int ghost_score;
+    // 说明：通过指针间接读取，确保在 MSVC 等严格编译器下顺利编译并真实读取栈上残留的内存
+    int ghost_score;
+    int *ptr_ghost = &ghost_score;
 
     // 打印未初始化变量的值（观察诡异的幽灵垃圾值）
     // 物理原理解析:
     // 内存是公共资源。你申请的这块 4 字节空间，可能上一个程序刚用过。
     // 如果不主动赋初值清空，这些旧程序残留的二进制位就会被当做整数读取出来！
     printf("[实验 1] 读取未初始化的变量 ghost_score:\n");
-    printf("  -> 幽灵垃圾值 (Ghost Value): %d\n", ghost_score);
+    printf("  -> 幽灵垃圾值 (Ghost Value): %d\n", *ptr_ghost);
     printf("  -> 风险警示: 若将垃圾值直接用于计算，将导致程序逻辑彻底失控！\n\n");
+
+#if defined(_MSC_VER)
+#pragma warning(pop)
+#endif
 
     // 2. 规范做法：声明的同时立即显式初始化（赋初值）
     // 物理原理解析:
