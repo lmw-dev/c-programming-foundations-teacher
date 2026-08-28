@@ -167,6 +167,17 @@
 
 ## L03 — 运算符、表达式；顺序结构与基础输入输出
 
+### 案例 3-0：第03讲综合控制台运行器
+| 字段 | 内容 |
+|------|------|
+| 讲次与案例名称 | L03-00 综合案例控制台交互运行器 |
+| 教学目标 | Visual Studio 专属零冲突调度器，一键自由运行第03讲全部 5 个核心理论案例 |
+| 核心处理 | 字符选项驱动菜单循环，安全清空输入缓冲区并调用各案例执行函数 |
+| 输出 | 终端交互式全景教学控制台 |
+| 对应源文件 | [`lessons/L03_sequential-programming/lecture-demo/menu_runner.c`](../lessons/L03_sequential-programming/lecture-demo/menu_runner.c) |
+| 对应PPT页码 | 全讲综合 |
+| 当前状态 | **已定稿** |
+
 ### 案例 3-1：华氏度转摄氏度与整除截断排雷
 | 字段 | 内容 |
 |------|------|
@@ -181,7 +192,7 @@
 | 测试特殊值/错误输入 | 非法字符输入、负温度值 |
 | 常见错误 | 5/9 截断为 0 导致温度被冻结、scanf 漏写 & 产生段错误闪退 |
 | 对应源文件 | [`lessons/L03_sequential-programming/lecture-demo/3.1_temp_convert.c`](../lessons/L03_sequential-programming/lecture-demo/3.1_temp_convert.c) |
-| 对应PPT页码 | 第14~15页 |
+| 对应PPT页码 | 第19页 |
 | 当前状态 | **已定稿** |
 
 ### 案例 3-2：两数多功能计算器与精确商强转
@@ -195,10 +206,41 @@
 | 关键知识点 | 算术运算符、强制类型转换、取模符号判定规则 |
 | 测试正常值 | A=15, B=4 → 商:3, 精确商:3.75, 余数:3 |
 | 测试边界值 | A=20, B=-3 → 商:-6, 精确商:-6.67, 余数:2；A=-15, B=-4 → 商:3, 精确商:3.75, 余数:-3 |
-| 测试特殊值/错误输入 | B=0 除零错误校验 |
-| 常见错误 | 取模操作数混入浮点数、余数正负号判断混淆 |
 | 对应源文件 | [`lessons/L03_sequential-programming/lecture-demo/3.2_calculator.c`](../lessons/L03_sequential-programming/lecture-demo/3.2_calculator.c) |
-| 对应PPT页码 | 第16~17页 |
+| 对应PPT页码 | 第4、11页 |
+| 当前状态 | **已定稿** |
+
+### 案例 3-3：自增自减与短路求值电路模型
+| 字段 | 内容 |
+|------|------|
+| 讲次与案例名称 | L03-03 自增自减与短路求值电路模型 |
+| 教学目标 | 理解前置 ++i vs 后置 i++ 内存物理动作，掌握 && 与 \|\| 短路断路器模型 |
+| 核心处理 | 演示 `j = ++i` 与 `j = i++` 差异，推演 `c = a++ && (b = 3)` 短路求值 |
+| 输出 | 各变量状态跟踪输出 |
+| 对应源文件 | [`lessons/L03_sequential-programming/lecture-demo/3.3_short_circuit_and_inc.c`](../lessons/L03_sequential-programming/lecture-demo/3.3_short_circuit_and_inc.c) |
+| 对应PPT页码 | 第6、8页 |
+| 当前状态 | **已定稿** |
+
+### 案例 3-4：多重存款利息计算器三种方式对比
+| 字段 | 内容 |
+|------|------|
+| 讲次与案例名称 | L03-04 多重存款利息计算器三种方式对比 |
+| 教学目标 | 掌握顺序结构 IPO 模式与复利计算，熟练运用 %.5f 打印高精度金融凭证 |
+| 核心处理 | 谭版例3.2：计算活期、一年定期、两次半年转存三种方式到期本息和并对比 |
+| 输出 | 电子银行存单凭证清单 |
+| 对应源文件 | [`lessons/L03_sequential-programming/lecture-demo/3.4_bank_interest_three_ways.c`](../lessons/L03_sequential-programming/lecture-demo/3.4_bank_interest_three_ways.c) |
+| 对应PPT页码 | 第21页 |
+| 当前状态 | **已定稿** |
+
+### 案例 3-5：putchar 与 getchar 字符流管道
+| 字段 | 内容 |
+|------|------|
+| 讲次与案例名称 | L03-05 putchar 与 getchar 字符流管道 |
+| 教学目标 | 掌握轻量级字符输入输出管道，利用 ASCII 偏移 (+32) 快速实现大写转小写 |
+| 核心处理 | putchar 输出字符与 ASCII 整数，getchar 接收键盘输入并 +32 转换 |
+| 输出 | 字符流与转换后小写字母 |
+| 对应源文件 | [`lessons/L03_sequential-programming/lecture-demo/3.5_char_io_pipeline.c`](../lessons/L03_sequential-programming/lecture-demo/3.5_char_io_pipeline.c) |
+| 对应PPT页码 | 第17页 |
 | 当前状态 | **已定稿** |
 
 ---
