@@ -86,38 +86,81 @@
 
 ## L02 — 标识符、常量和变量；基本数据类型初识
 
-### 案例 2-1：合法与非法标识符辨析
+### 案例 2-0：第02讲综合控制台运行器
 | 字段 | 内容 |
 |------|------|
-| 讲次与案例名称 | L02-01 标识符合法性判断与命名天条 |
-| 教学目标 | 掌握标识符命名规则与四大天条（字母数字下划线、首字符非数字、区分大小写、非关键字） |
-| 输入 | 程序内嵌标识符列表（`score_1`, `2score`, `_temp`, `char`, `my$price`, `018`, `0xg`） |
-| 核心处理 | 对每个标识符判断是否合法并分析违反规则 |
-| 输出 | 合法/非法标识符及深层原因剖析 |
-| 关键知识点 | 标识符命名规则、保留关键字、八/十六进制常量陷阱、蛇形命名法 |
-| 测试正常值 | 典型合法标识符（`score_1`, `_temp`, `student_age`） |
-| 测试边界值 | 单下划线 `_`、长标识符 |
-| 测试特殊值/错误输入 | 数字开头(`2score`)、含非法符号(`my$price`)、关键字(`char`)、八进制非法数字(`018`) |
-| 常见错误 | 混淆关键字与合法标识符、大小写拼写混淆 |
-| 对应源文件 | [`lessons/L02_data-types/exercises/exercise_identifier_check.c`](../lessons/L02_data-types/exercises/exercise_identifier_check.c) |
-| 对应PPT页码 | 第5~7页 |
+| 讲次与案例名称 | L02-00 综合案例控制台交互运行器 |
+| 教学目标 | Visual Studio 专属零冲突调度器，一键自由运行第02讲全部 6 个核心案例 |
+| 核心处理 | 字符选项驱动菜单循环，安全清空输入缓冲区并调用各案例执行函数 |
+| 输出 | 终端交互式全景教学控制台 |
+| 对应源文件 | [`lessons/L02_data-types/lecture-demo/menu_runner.c`](../lessons/L02_data-types/lecture-demo/menu_runner.c) |
+| 对应PPT页码 | 全讲综合 |
 | 当前状态 | **已定稿** |
 
-### 案例 2-2：变量声明、初始化与 sizeof 内存量地尺
+### 案例 2-1：幽灵垃圾值与内存复用机理
 | 字段 | 内容 |
 |------|------|
-| 讲次与案例名称 | L02-02 内存收纳盒物理映像与 sizeof 测量 |
-| 教学目标 | 理解变量物理内存模型（先声明后使用、补码存储、幽灵垃圾值）及掌握 sizeof 运算符 |
-| 输入 | 变量声明与基本数据类型关键字 |
-| 核心处理 | 声明 `int/float/double/char` 变量，使用 `sizeof` 运算符测量物理字节长度 |
-| 输出 | 各变量实例及核心数据类型的字节数表格输出 |
-| 关键知识点 | `sizeof` 运算符、基本数据类型（`char/short/int/long/float/double`）、未初始化幽灵垃圾值 |
-| 测试正常值 | `char=1`, `short=2`, `int=4`, `float=4`, `double=8` |
-| 测试边界值 | 浮点数带 `f` 后缀避免双精度截断警告、大写字母加 32 偏移转换 |
-| 测试特殊值/错误输入 | 局部变量未初始化直接使用产生随机垃圾值 |
-| 常见错误 | `sizeof` 误当成函数、连等声明错误、字符单双引号混淆 |
-| 对应源文件 | [`lessons/L02_data-types/lecture-demo/2.1_ghost_value.c`](../lessons/L02_data-types/lecture-demo/2.1_ghost_value.c)<br>[`lessons/L02_data-types/solutions/2.3_sizeof_ruler.c`](../lessons/L02_data-types/solutions/2.3_sizeof_ruler.c) |
-| 对应PPT页码 | 第9~18页 |
+| 讲次与案例名称 | L02-01 幽灵垃圾值与内存复用机理 |
+| 教学目标 | 探究局部变量未初始化残留随机负数的底层机理，掌握 VS C4700 拦截与安全赋初值 |
+| 核心处理 | 使用 volatile 读取未赋初值栈变量，对比赋初值 0 的安全状态 |
+| 输出 | 幽灵垃圾值与安全初值对照 |
+| 对应源文件 | [`lessons/L02_data-types/lecture-demo/2.1_ghost_value.c`](../lessons/L02_data-types/lecture-demo/2.1_ghost_value.c) |
+| 对应PPT页码 | 第11、20页 |
+| 当前状态 | **已定稿** |
+
+### 案例 2-2：整型值域与 20000+20000 溢出陷阱
+| 字段 | 内容 |
+|------|------|
+| 讲次与案例名称 | L02-02 整型值域与 20000+20000 溢出陷阱 |
+| 教学目标 | 剖析 16 位系统下 40000 溢出为负数 -25536 的补码真相，掌握 (long) 强制类型转换 |
+| 核心处理 | 模拟 16 位整型截断溢出现场，演示 (long long) 强转提升与高规格声明 |
+| 输出 | 正常值 40000 vs 溢出值 -25536 vs 强转安全值 |
+| 对应源文件 | [`lessons/L02_data-types/lecture-demo/2.2_int_overflow.c`](../lessons/L02_data-types/lecture-demo/2.2_int_overflow.c) |
+| 对应PPT页码 | 第15页 |
+| 当前状态 | **已定稿** |
+
+### 案例 2-3：浮点数的“近视眼”精度显微镜
+| 字段 | 内容 |
+|------|------|
+| 讲次与案例名称 | L02-03 浮点数精度显微镜与物理误差分析 |
+| 教学目标 | 实测 float（7位有效精度）与 double（15位有效精度）的存储极限与截断误差 |
+| 核心处理 | 存入 16 位小数，使用 `%.16f` 强制打印观测 float 第 8 位后的严重失真 |
+| 输出 | float 与 double 实际存储值对比 |
+| 对应源文件 | [`lessons/L02_data-types/lecture-demo/2.3_float_precision.c`](../lessons/L02_data-types/lecture-demo/2.3_float_precision.c) |
+| 对应PPT页码 | 第16、22页 |
+| 当前状态 | **已定稿** |
+
+### 案例 2-4：凯撒密码单字偏移与 ASCII 进制密电
+| 字段 | 内容 |
+|------|------|
+| 讲次与案例名称 | L02-04 凯撒密码单字偏移与 ASCII 进制密电 |
+| 教学目标 | 掌握八进制 `\ddd` 与十六进制 `\xhh` 密电还原，理解 char 本质为 1 字节整数 |
+| 核心处理 | 八进制 `\101` 与十六进制 `\x41` 还原为 'A'，执行 `raw_char + 3` 单字凯撒加密 |
+| 输出 | 密电还原结果与明文/密文字符及其 ASCII 码 |
+| 对应源文件 | [`lessons/L02_data-types/lecture-demo/2.4_ascii_mask_caesar.c`](../lessons/L02_data-types/lecture-demo/2.4_ascii_mask_caesar.c) |
+| 对应PPT页码 | 第17、21页 |
+| 当前状态 | **已定稿** |
+
+### 案例 2-5：sizeof 探秘内存物理量地尺
+| 字段 | 内容 |
+|------|------|
+| 讲次与案例名称 | L02-05 sizeof 探秘内存物理量地尺 |
+| 教学目标 | 熟练使用 `sizeof(类型名)` 与 `sizeof 变量名` 测量各基本数据类型的字节数 |
+| 核心处理 | 测量具体变量与 char/short/int/long/float/double 类型的物理空间大小 |
+| 输出 | 格式化类型尺寸表格 |
+| 对应源文件 | [`lessons/L02_data-types/lecture-demo/2.5_sizeof_ruler.c`](../lessons/L02_data-types/lecture-demo/2.5_sizeof_ruler.c) |
+| 对应PPT页码 | 第18、19页 |
+| 当前状态 | **已定稿** |
+
+### 案例 2-6：爱心小超市符号常量智能收银单
+| 字段 | 内容 |
+|------|------|
+| 讲次与案例名称 | L02-06 爱心小超市符号常量智能收银单 |
+| 教学目标 | 综合运用 `#define` 符号常量、scanf 键盘输入、double 计算与 `\t` 控制台排版 |
+| 核心处理 | 定义苹果 5.5 / 香蕉 3.2 符号常量，输入斤数计算 double 总金额并格式化打印 |
+| 输出 | 精美收银结账小票 |
+| 对应源文件 | [`lessons/L02_data-types/lecture-demo/2.6_supermarket_cashier.c`](../lessons/L02_data-types/lecture-demo/2.6_supermarket_cashier.c) |
+| 对应PPT页码 | 第23页 |
 | 当前状态 | **已定稿** |
 
 ---
