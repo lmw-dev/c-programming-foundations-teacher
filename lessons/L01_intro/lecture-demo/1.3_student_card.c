@@ -12,6 +12,8 @@
  * 3. 体验控制台文本排版对齐技巧（中文全角占2列宽度，英文半角占1列宽度）
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

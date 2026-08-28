@@ -10,6 +10,8 @@
  * 3. 理解字符参与算术运算的底层逻辑（如大写字母 + 32 变小写字母）
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

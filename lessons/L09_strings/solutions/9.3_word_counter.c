@@ -10,6 +10,8 @@
  * 3. 攻克连续多重空格、制表符、标点符号干扰的鲁棒性文本解析算法
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <string.h>
 

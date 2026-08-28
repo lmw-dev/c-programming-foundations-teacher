@@ -8,6 +8,8 @@
  * 2. 使用 p->name 和 p->score 输出成员
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 struct Student {

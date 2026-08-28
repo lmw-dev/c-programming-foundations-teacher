@@ -8,6 +8,8 @@
  * 2. 观察多次调用时 count 的保留累加行为
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 void count_invocations(void)

@@ -10,6 +10,8 @@
  * 3. 掌握防御性编程：除零异常精密拦截 (fabs(num2) < 1e-6) 与 default 保底分支
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <math.h>  // 引入 fabs() 浮点数绝对值函数
 

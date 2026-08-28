@@ -9,6 +9,8 @@
  * 3. 遇到非空格且 in_word==0 时，word_count++ 并将 in_word 设为 1
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <string.h>
 

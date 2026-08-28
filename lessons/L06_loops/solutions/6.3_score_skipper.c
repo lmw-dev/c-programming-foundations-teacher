@@ -10,6 +10,8 @@
  * 3. 掌握交互式数据过滤、哨兵退出 (-1) 与及格率统计业务流
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

@@ -9,6 +9,8 @@
  * 3. 验证 a 和 b 成功完成物理对换
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 void swap(int *p1, int *p2);

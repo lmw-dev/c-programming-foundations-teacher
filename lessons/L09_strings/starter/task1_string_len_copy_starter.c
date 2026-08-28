@@ -9,6 +9,8 @@
  * 3. 复制完成后必须在目标数组末尾显式添加 '\0'
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <string.h>
 

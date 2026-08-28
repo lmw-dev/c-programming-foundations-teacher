@@ -8,6 +8,8 @@
  * 2. 实例化并用 strcpy 赋值姓名
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <string.h>
 

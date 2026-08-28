@@ -10,6 +10,8 @@
  * 3. 掌握取模限制区间算法：rand() % 100 得到 0~99，加 1 映射为 1~100
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <stdlib.h>  // 引入 rand() 和 srand()
 #include <time.h>    // 引入 time() 获取系统时钟秒数作为随机种子

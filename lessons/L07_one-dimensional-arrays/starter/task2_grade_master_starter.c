@@ -9,6 +9,8 @@
  * 3. 打印详细的统计报告
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

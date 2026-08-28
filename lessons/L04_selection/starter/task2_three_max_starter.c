@@ -9,6 +9,8 @@
  * 3. 运行测试：输入 12 99 45，输出最大值 99
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

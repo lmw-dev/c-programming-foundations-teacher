@@ -10,6 +10,8 @@
  * 3. 掌握升序起泡排序（Bubble Sort）双重循环物理时序与相邻两两三步易位交换
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 #define STUDENT_COUNT 10  // 符号常量：班级学生总人数

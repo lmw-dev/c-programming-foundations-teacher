@@ -10,6 +10,8 @@
  * 3. 掌握防御性输入清洗机制 (Defensive Input Cleansing): 拦截负数、非法非数字字符与输入流死循环防御
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 // 函数原型声明

@@ -10,6 +10,8 @@
  * 3. 死磕 scanf 中地址符 '&' 的物理内存机理，杜绝内存非法访问崩溃
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

@@ -12,6 +12,8 @@
  * 4. 格式化输出占位符（%d）—— 将整型变量的值动态替换到指定位置输出
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

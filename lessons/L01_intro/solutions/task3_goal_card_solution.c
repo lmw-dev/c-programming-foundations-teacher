@@ -3,6 +3,8 @@
  * 对应课件: 第01讲 PPT 第14页【上机任务3：个性化学习目标】
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

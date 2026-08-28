@@ -12,6 +12,8 @@
  *    编译器计算物理寻址公式为：Address = Base + (i * Columns + j) * sizeof(type)。
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 #define ROWS_A 2

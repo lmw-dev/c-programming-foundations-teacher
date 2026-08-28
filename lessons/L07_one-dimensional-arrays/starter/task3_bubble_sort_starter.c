@@ -9,6 +9,8 @@
  * 3. 打印升序排序后的结果
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

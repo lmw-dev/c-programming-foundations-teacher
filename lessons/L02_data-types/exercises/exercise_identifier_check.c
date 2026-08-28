@@ -6,6 +6,8 @@
  * 观察并修复下方代码中的语法错误，使其能顺利编译并正常输出
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

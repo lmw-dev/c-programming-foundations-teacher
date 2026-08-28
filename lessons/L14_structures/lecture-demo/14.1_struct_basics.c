@@ -12,6 +12,8 @@
  * 3. 领会同类型结构体变量“块复制 (Block Copy)”魔法：stu3 = stu1 底层实现二进制内存快照深拷贝
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <string.h>
 

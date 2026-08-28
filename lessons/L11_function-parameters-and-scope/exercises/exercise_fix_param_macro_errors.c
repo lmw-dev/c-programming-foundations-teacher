@@ -10,6 +10,8 @@
  * 漏洞 4: 跨函数调用计数误用普通局部变量（每次调用重新归零）
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 // 修复点 1: 宏定义末尾绝对不能加分号！

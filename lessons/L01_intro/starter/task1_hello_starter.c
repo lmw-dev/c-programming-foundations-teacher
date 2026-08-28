@@ -9,6 +9,8 @@
  */
 
 // TODO 1: 引入标准输入输出库头文件
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 // TODO 2: 声明主函数（标准写法：返回值为 int，参数为 void）

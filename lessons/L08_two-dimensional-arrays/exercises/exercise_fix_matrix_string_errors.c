@@ -9,6 +9,8 @@
  * 漏洞 3: 字符数组定义长度刚好等于字符数，导致丢失字符串结束符 '\0' 引发乱码
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

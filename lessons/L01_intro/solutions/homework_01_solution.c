@@ -8,6 +8,8 @@
  * 3. 规范要求：全英文半角标点、严格排版对齐、无语法错误
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

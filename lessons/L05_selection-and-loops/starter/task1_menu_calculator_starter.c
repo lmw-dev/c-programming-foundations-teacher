@@ -9,6 +9,8 @@
  * 3. 在除法分支中，防御性拦截除数为 0 的情况
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <math.h>
 

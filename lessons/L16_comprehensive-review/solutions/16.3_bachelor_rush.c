@@ -12,6 +12,8 @@
  * 5. 掌握堆区动态内存的完整安全物理回收 (free_list)，彻底根除内存泄漏
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

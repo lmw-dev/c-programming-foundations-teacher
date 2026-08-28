@@ -9,6 +9,8 @@
  * 3. 编译并运行，测试输入 3.5 公斤时的输出总价是否为 8.75 元
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 // TODO 1: 定义符号常量 APPLE_PRICE 为 2.5f

@@ -10,6 +10,8 @@
  * 3. 深刻理解打擂台算法的高可扩展性与 O(N) 线性时间复杂度（为后续数组求最值打下基石）
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

@@ -17,6 +17,8 @@
  *   i=9: [1*9] [2*9] [3*9] ... [9*9]
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

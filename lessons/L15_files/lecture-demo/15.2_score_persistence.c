@@ -12,6 +12,8 @@
  *    因为文件末尾常留有多余的换行符或空格，fscanf == 3 能严格确保字段完整读入，杜绝重复打印最后一行
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <stdlib.h>
 

@@ -9,6 +9,8 @@
  * 3. 在 main 中验证原数组已被原地修改
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 void reverse_array(int arr[], int size);

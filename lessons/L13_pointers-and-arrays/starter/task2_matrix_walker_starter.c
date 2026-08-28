@@ -8,6 +8,8 @@
  * 2. 使用行指针 int (*rp)[3] 按行输出
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

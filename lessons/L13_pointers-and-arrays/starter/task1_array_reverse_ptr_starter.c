@@ -8,6 +8,8 @@
  * 2. 使用 left 和 right 两个指针在 while(left < right) 条件下对调元素
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 void reverse_array_ptr(int *arr, int size);

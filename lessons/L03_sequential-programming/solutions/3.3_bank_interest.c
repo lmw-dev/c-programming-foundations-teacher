@@ -10,6 +10,8 @@
  * 3. 掌握实际工程常识：Linux/GCC 环境下编译数学库必须手动添加 -lm 链接参数
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <math.h>  // 引入数学库，提供 pow()、sqrt()、fabs() 等数学函数
 

@@ -9,6 +9,8 @@
  * 3. 循环逆序构造 rev，比较 rev == n
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int is_palindrome(int n);

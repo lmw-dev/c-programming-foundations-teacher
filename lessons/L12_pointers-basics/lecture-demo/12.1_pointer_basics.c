@@ -11,6 +11,8 @@
  * 4. 深刻认识野指针（Wild Pointer）危害，建立“初始化为 NULL + 读写前判空”的工业安全防线
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

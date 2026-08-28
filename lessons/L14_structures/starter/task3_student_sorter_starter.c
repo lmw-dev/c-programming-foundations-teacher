@@ -8,6 +8,8 @@
  * 2. 编写 sort_students 进行降序起泡排序（整包置换）
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 struct Student {

@@ -13,6 +13,8 @@
  *    - 地址传递 (print_by_pointer): 仅传递 8 字节物理指针，配以 const 保证只读安全，为企业级首选
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 // 定义学生结构体类型

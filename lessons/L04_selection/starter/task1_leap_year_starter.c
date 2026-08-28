@@ -9,6 +9,8 @@
  * 3. 运行测试：2000年输出闰年，1900年输出平年，2024年输出闰年
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

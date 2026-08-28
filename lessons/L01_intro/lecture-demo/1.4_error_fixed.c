@@ -9,6 +9,8 @@
  * 读提示(行号与信息) -> 定位(光标跳到对应行) -> 修改(检查符号拼写) -> 重新编译运行
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

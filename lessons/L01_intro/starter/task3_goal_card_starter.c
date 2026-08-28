@@ -11,6 +11,8 @@
  *    - 双引号成对且为英文半角
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

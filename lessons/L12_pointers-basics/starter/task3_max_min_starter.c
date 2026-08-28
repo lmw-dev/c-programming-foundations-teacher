@@ -8,6 +8,8 @@
  * 2. 在函数内部通过 *max_val 和 *min_val 将最大最小值带回给 main
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 void get_extremes(int a, int b, int *max_val, int *min_val);

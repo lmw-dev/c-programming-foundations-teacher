@@ -12,6 +12,8 @@
  * 3. 掌握结构体数组作为函数参数进行模块化处理（总分累加计算与起泡排序）
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 #define STUDENT_COUNT 5

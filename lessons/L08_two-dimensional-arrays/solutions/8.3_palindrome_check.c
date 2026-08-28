@@ -10,6 +10,8 @@
  * 3. 掌握防御性字符串输入 scanf("%99s", str) 防止缓冲区溢出 (Buffer Overflow)
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <string.h>
 

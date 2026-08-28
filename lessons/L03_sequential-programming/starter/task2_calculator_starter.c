@@ -9,6 +9,8 @@
  * 3. 运行测试：输入 15 4 时，精确商应输出 3.75，余数应输出 3
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

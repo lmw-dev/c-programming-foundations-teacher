@@ -10,6 +10,8 @@
  * 3. 掌握数学级算法优化：利用 sqrt() 函数将试除上限压缩至根号 n，算力从 O(N) 骤降至 O(sqrt(N))
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <math.h>  // 引入 sqrt() 开平方根函数
 

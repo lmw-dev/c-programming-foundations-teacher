@@ -10,6 +10,8 @@
  * 漏洞 4: 自增运算符优先级混淆导致指针发生意外偏移
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 // 修复点 1: 正确声明指针函数

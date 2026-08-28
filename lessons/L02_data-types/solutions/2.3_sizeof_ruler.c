@@ -10,6 +10,8 @@
  * 3. 理解 C 语言标准并未死规定各类型的具体大小，具体长度由操作系统与编译器决定
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

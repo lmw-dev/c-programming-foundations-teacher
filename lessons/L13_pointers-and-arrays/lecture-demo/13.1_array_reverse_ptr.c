@@ -11,6 +11,8 @@
  * 3. 掌握丢掉方括号下标 [i]、完全使用纯指针操作实现高性能数组读写的资深开发者思维
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 #define SIZE 9

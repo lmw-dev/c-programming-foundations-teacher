@@ -9,6 +9,8 @@
  * 错误 3: double 类型变量在 scanf 中使用了错误的格式占位符
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 #define PI 3.1415926535

@@ -9,6 +9,8 @@
  * 3. 运行测试：1! 到 10! 的累加总和应为 4037913
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

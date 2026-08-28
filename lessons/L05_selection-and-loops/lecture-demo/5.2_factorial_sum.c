@@ -10,6 +10,8 @@
  * 3. 揭秘整型物理溢出（大数爆仓）机理，掌握 long long (占8字节, 格式符 %lld) 的抗溢出保护
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

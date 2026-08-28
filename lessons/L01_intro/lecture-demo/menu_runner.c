@@ -10,6 +10,8 @@
  * 3. 按 Ctrl + F5 运行，即可通过终端数字菜单，自由挑选并执行第 01 讲的全部 6 个核心案例！
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <stdlib.h>
 

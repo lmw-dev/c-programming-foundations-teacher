@@ -9,6 +9,8 @@
  * 漏洞 3: 每行打印完毕后未换行
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

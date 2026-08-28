@@ -9,6 +9,8 @@
  * 3. 观察并思考：你电脑上的 int 和 long 分别占几个字节？
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

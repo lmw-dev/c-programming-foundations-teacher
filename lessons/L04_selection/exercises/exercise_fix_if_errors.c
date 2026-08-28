@@ -9,6 +9,8 @@
  * 漏洞 3: 临界及格边界值缺少等号 (score > 60 应为 score >= 60)
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

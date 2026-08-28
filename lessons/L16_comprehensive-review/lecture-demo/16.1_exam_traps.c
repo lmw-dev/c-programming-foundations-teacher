@@ -12,6 +12,8 @@
  * 5. 陷阱 5: 预处理宏纯文本无脑替换与括号结界 (SQUARE(2+3) -> 11)
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 // 陷阱 4 定义共用体

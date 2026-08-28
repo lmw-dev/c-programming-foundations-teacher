@@ -10,6 +10,8 @@
  * 漏洞 4: 函数定义返回值类型与实际计算精度不匹配导致精度被截断
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 // 修复点 1: 函数原型声明末尾必须加分号

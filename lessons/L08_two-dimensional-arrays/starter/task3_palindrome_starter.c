@@ -9,6 +9,8 @@
  * 3. 若全流程对齐则为回文，若遇不符则立即 break
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <string.h>
 

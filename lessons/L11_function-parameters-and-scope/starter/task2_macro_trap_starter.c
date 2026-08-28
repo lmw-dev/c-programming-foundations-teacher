@@ -8,6 +8,8 @@
  * 2. 牢记宏每个形参和整体都必须加括号
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 // ❌ 未加括号的危险宏

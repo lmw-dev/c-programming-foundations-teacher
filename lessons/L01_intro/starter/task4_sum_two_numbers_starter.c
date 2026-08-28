@@ -8,6 +8,8 @@
  * 2. 【改写挑战】：引入第三个变量 c = 50，计算并输出三数之和 sum3
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

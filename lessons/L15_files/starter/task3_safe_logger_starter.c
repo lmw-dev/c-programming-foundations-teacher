@@ -8,6 +8,8 @@
  * 2. 使用 "a" 模式打开并写入，防止抹除历史记录
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 void append_log(const char *msg)

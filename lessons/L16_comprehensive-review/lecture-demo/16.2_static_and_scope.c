@@ -12,6 +12,8 @@
  * 3. 理解复合语句块作用域（Block Scope）的局部隔离
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 // 1. 全局变量：存放在静态存储区（数据段），文件作用域，生命周期贯穿程序始末

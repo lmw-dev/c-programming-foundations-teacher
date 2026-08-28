@@ -8,6 +8,8 @@
  * 2. 连续调用时 step 成功累加保留
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 void monitor_step(const char *action)

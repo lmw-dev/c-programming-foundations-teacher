@@ -13,6 +13,8 @@
  *    - 第 3 步：子函数通过 * 解引用将计算结果直接写回主调函数中的变量
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 #define CLASS_SIZE 10

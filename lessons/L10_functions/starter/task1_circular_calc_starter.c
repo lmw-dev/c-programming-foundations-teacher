@@ -9,6 +9,8 @@
  * 3. 声明并实现 calculate_cone_volume(r, h) 计算圆锥体积
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 #define PI 3.141592653589793

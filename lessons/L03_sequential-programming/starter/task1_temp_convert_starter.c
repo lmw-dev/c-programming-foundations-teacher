@@ -9,6 +9,8 @@
  * 3. 编译并运行，测试输入 100°F 时输出是否为 37.78°C
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

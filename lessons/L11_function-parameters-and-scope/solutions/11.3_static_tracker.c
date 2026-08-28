@@ -10,6 +10,8 @@
  * 3. 掌握以 static 局部变量代替易受污染的全局变量的软件工程高内聚设计思想
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 // 业务监控函数声明

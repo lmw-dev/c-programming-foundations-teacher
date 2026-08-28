@@ -9,6 +9,8 @@
  * 3. 在除法中进行防御性编程：使用 fabs(num2) < 1e-6 拦截除零错误
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <math.h>
 

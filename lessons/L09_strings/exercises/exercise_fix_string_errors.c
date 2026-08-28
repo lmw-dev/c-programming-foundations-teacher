@@ -10,6 +10,8 @@
  * 漏洞 4: strcat 拼接时目的数组容量不足引发栈内存溢出崩溃
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <string.h>
 

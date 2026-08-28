@@ -11,6 +11,8 @@
  * 3. 字符防错：区分反斜杠 '\' 与正斜杠 '/'
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

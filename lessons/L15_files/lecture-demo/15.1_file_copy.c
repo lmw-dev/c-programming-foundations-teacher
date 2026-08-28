@@ -12,6 +12,8 @@
  *    为什么不执行 fclose() 会丢失末尾未满 512 字节的数据？因为 fclose 会触发强制物理落盘 (Flush)
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <stdlib.h>
 

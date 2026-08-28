@@ -9,6 +9,8 @@
  * 漏洞 3: 循环体内部漏写循环控制变量更新 (i++) 导致死循环
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

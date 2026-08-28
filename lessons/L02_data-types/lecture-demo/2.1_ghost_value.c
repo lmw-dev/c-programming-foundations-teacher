@@ -10,6 +10,8 @@
  * 3. 树立“先声明、后使用，声明同时赋初值”的良好工业级编程习惯
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

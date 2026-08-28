@@ -10,6 +10,8 @@
  * 3. 掌握 float 浮点数的基本输入 (scanf) 与格式化保留两位小数输出 (%.2f)
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 // 定义符号常量：苹果的单价为每公斤（或每斤）2.5 元

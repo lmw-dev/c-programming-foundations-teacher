@@ -11,6 +11,8 @@
  * 4. 深刻理解“成对法则”：为什么向函数传递数组时，必须显式传入一个表示长度的参数 int size
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 #define ARRAY_SIZE 10

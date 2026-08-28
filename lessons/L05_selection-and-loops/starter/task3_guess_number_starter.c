@@ -9,6 +9,8 @@
  * 3. 统计并输出玩家尝试的总次数
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

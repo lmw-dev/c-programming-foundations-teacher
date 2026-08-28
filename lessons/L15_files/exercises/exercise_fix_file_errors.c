@@ -10,6 +10,8 @@
  * 漏洞 4: 写入完毕后未调用 fclose() 导致数据残留缓冲区丢失
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <stdlib.h>
 

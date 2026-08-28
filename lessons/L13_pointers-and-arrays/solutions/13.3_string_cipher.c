@@ -10,6 +10,8 @@
  * 3. 掌握工业级字符串安全输入防线：彻底废弃 gets()，使用 fgets() 杜绝缓冲区溢出与野指针
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <string.h>
 

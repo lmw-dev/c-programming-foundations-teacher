@@ -8,6 +8,8 @@
  * 2. 使用 fscanf 将数据重新读入并在屏幕输出
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 struct Student {

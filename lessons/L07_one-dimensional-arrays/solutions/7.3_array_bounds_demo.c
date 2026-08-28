@@ -14,6 +14,8 @@
  * 3. 树立边界防御意识：严格遵循合法下标区间 [0, size-1]，杜绝缓冲区溢出安全漏洞
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

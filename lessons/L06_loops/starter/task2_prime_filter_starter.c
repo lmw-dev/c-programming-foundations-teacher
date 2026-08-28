@@ -9,6 +9,8 @@
  * 3. 遇到整除时，标志位设 0 并立刻 break
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <math.h>
 

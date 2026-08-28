@@ -10,6 +10,8 @@
  * 4. 格式化输出：每 5 个数一行
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

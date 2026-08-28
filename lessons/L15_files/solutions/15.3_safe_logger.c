@@ -13,6 +13,8 @@
  *    - clearerr(): 错误或结束处理完毕后清洗标志位
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <stdlib.h>
 

@@ -9,6 +9,8 @@
  * 3. 统计有效录入总人数和及格人数 (>= 60)
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

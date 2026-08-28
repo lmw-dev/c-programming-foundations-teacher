@@ -12,6 +12,8 @@
  * 3. 掌握二维元素引用的四种等价形态：grid[i][j] <=> *(*(row_ptr + i) + j)
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 #define ROWS 3

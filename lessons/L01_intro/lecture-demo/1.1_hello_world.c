@@ -6,7 +6,9 @@
  * 适用: C语言零基础初学者
  * 
  * 核心知识点:
- * 1. 预处理指令：#include <stdio.h> 引入标准输入输出库
+ * 1. 预处理指令：#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h> 引入标准输入输出库
  * 2. 主函数声明：int main(void) 是所有 C 程序的唯一入口
  * 3. 函数体边界：花括号 { } 框定执行语句的范围
  * 4. 格式化输出：printf() 函数输出双引号内的文本

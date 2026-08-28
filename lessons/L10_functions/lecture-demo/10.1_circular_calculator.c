@@ -11,6 +11,8 @@
  * 4. 理解函数返回值类型转换规则：函数返回类型拥有最高决定权
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 #define PI 3.141592653589793

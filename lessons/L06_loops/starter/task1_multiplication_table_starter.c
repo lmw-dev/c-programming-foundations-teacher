@@ -9,6 +9,8 @@
  * 3. 每一项使用 printf("%d*%d=%-2d\t", j, i, j*i) 保持对齐
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

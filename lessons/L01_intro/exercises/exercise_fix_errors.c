@@ -9,6 +9,8 @@
  */
 
 // 提示：检查此处引入库的拼写
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 // 提示：检查主函数名称拼写

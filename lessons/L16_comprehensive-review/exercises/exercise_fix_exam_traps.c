@@ -10,6 +10,8 @@
  * 地雷 4: 动态内存分配后未做 NULL 检查与未释放内存泄漏
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

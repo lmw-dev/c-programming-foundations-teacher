@@ -10,6 +10,8 @@
  * 3. 验证取模天条：% 两侧必为整，余数符号始终与被除数（前操作数）保持一致
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

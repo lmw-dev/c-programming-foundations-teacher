@@ -10,6 +10,8 @@
  * 3. 掌握 static 静态局部变量的核心特性：只在首次调用时初始化一次，空间不释放，保留历史痕迹
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 // 全局变量定义：不属于任何函数，整个源文件生命期贯穿始终

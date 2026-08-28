@@ -9,6 +9,8 @@
  * 3. 运行测试：本金 10000 元，年利率 0.03 (3%)，存期 3 年，到期本息和应为 10927.27 元
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <math.h>
 

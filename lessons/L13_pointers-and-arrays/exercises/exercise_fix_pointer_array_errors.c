@@ -10,6 +10,8 @@
  * 漏洞 4: 行指针声明漏加圆括号误写为指针数组
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 void print_matrix_first_row(int (*row_ptr)[3]);

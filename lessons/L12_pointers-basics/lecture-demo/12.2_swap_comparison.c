@@ -13,6 +13,8 @@
  * 3. 树立多函数协作修改外部数据的“黄金三步法则”
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 // 函数原型声明

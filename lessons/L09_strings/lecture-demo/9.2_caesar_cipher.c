@@ -10,6 +10,8 @@
  * 3. 掌握密码学对称加密与解密还原的工程实现
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <string.h>
 

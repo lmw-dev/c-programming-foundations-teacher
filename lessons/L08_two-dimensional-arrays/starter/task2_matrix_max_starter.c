@@ -9,6 +9,8 @@
  * 3. 挑战成功时同步记录 row 与 col 下标
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

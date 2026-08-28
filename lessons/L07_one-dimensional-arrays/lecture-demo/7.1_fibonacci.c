@@ -10,6 +10,8 @@
  * 3. 掌握控制台工程排版：横向制表符 '\t' 配合计数器 (i + 1) % 5 == 0 实现每行 5 个规整输出
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

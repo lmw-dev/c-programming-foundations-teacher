@@ -10,6 +10,8 @@
  * 3. 规避初学者经典地雷：擂主必须初始化为矩阵首元素 matrix[0][0]，严禁初始化为 0 (若全为负数则 0 会误胜)
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 #define ROWS 3

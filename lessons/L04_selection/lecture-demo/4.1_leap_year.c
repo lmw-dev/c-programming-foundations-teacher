@@ -10,6 +10,8 @@
  * 3. 掌握 C 语言逻辑短路求值 (Short-circuit Evaluation) 的底层运行机制
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

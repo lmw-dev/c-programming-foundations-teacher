@@ -10,6 +10,8 @@
  * 3. 揭秘为什么不能直接写 dest = src (数组名是只读地址常量)，掌握手写安全复制与显式封口 '\0' 防御
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <string.h>
 

@@ -8,6 +8,8 @@
  * 2. 使用 while(*s != '\0') 扫描，遇到 'z' 变 'a'，'Z' 变 'A'，其他字母 ASCII+1
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 void encrypt(char *s)

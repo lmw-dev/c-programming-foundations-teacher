@@ -8,6 +8,8 @@
  * 2. 依次比较并交换 (*p1, *p2), (*p1, *p3), (*p2, *p3)，使 *p1 <= *p2 <= *p3
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 void swap(int *p1, int *p2);

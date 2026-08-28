@@ -10,6 +10,8 @@
  * 漏洞 4: 未初始化的结构体指针空中解引用
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <string.h>
 

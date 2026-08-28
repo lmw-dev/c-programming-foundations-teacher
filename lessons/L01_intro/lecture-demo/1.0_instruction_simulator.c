@@ -10,6 +10,8 @@
  * 3. 启蒙顺序结构、分支判断与循环控制（Jump/BranchEq）的核心思想
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

@@ -8,6 +8,8 @@
  * 2. 使用 while ((ch = fgetc(in)) != EOF)
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)

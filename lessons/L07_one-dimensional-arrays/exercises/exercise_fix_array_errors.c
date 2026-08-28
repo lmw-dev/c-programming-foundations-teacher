@@ -9,6 +9,8 @@
  * 漏洞 3: 求平均分时整数除法截断导致丢失小数精度
  */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 int main(void)
