@@ -46,7 +46,7 @@
 
 1. **第01讲全案实施规划落地**：
    - 交付文件：[`02-课件逐字稿/lecture-01-teaching-plan.md`](file:///Users/liumingwei/vaults/WorkbenchVault/1_Projects/P-202608-Adjunct-Teaching_C-Language-Foundation/02-%E8%AF%BE%E4%BB%B6%E9%80%90%E5%AD%97%E7%A8%BF/lecture-01-teaching-plan.md)
-   - 涵盖 4 课时（90min + 90min）行课时序图、虚拟指令角色扮演组织法、四大基石人偶板书、机房多 main 避坑 SOP 及 4 大翻车应急预案；
+   - 涵盖 4 课时（90min + 90min）行课时序图、虚拟指令角色扮演组织法、四大基石人偶板书、机房多 main 避坑 SOP、一键运行器标准演示四步法动线及 4 大翻车应急预案；
 2. **方案 A 彻底执行（真题全量消化入各讲 PPT 与题单）**：
    - **第 01 讲**：`lecture-01-ppt-v4.md` 第 25 页及 `exercises_01.md` / 答案全量吸纳 BIPT 大小写敏感判断真题（`ABC` vs `abc`）、程序基本单位单选真题（函数）与 `main` 入口真题；
    - **第 02 讲**：`lecture-02-ppt-v7.md` 第 24 页及 `exercises_02.md` / 答案全量吸纳 BIPT 变量名首字符下划线真题、八进制地雷 `081` 报错真题与字符/字符串字节度量真题；
